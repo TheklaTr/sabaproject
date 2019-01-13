@@ -35,6 +35,10 @@ public class User implements Serializable {
         return this.username;
     }
 
+    public int GetId() {
+        return this.id;
+    }
+
     public void SetAvatar(String avatar) {
         this.avatar = avatar;
     }

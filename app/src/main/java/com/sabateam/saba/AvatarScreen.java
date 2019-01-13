@@ -3,6 +3,7 @@ package com.sabateam.saba;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class AvatarScreen extends AppCompatActivity {
@@ -21,5 +22,25 @@ public class AvatarScreen extends AppCompatActivity {
         user = (User)intent.getSerializableExtra("userObject");
 
         userText.setText(user.GetUsername());
+    }
+
+    public void SelectedMale(View view) {
+
+        user.SetAvatar("male");
+
+        Intent intent = new Intent(this, MenuScreen.class);
+        intent.putExtra("userObject", user);
+        startActivity(intent);
+
+    }
+
+    public void SelectedFemale(View view) {
+
+        user.SetAvatar("female");
+
+        Intent intent = new Intent(this, MenuScreen.class);
+        intent.putExtra("userObject", user);
+        startActivity(intent);
+
     }
 }

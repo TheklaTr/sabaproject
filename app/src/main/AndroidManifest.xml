@@ -18,12 +18,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AvatarScreen" />
-        <activity android:name=".MenuScreen" />
-        <activity android:name=".FAQScreen" />
-        <activity android:name=".BeActiveScreen" />
-        <activity android:name=".ProgramSelectionScreen" />
-        <activity android:name=".ProgramScreen"></activity>
+        <activity android:name=".AvatarScreen"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".MenuScreen"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".FAQScreen"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".BeActiveScreen"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".ProgramSelectionScreen"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".ProgramScreen"
+            android:screenOrientation="landscape">
+        </activity>
     </application>
 
 </manifest>
