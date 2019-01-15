@@ -6,4 +6,368 @@
     android:layout_height="match_parent"
     tools:context=".ProgramSelectionScreen">
 
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/trnprograms"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/phaseI"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/phaseII"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/week1" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/phaseIII"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/week13" />
+
+    <Button
+        android:id="@+id/week1"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/week2"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week1"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/week3"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week3"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week2"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/week4"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week4"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week3"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/week5"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week5"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/week6"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week6"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week5"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/week7"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week7"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week6"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/week8"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week8"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week7"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/week9"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week9"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week8"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/week10"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week10"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week9"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/week11"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week11"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week10"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/week12"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week12"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week11"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/week13"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week13"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/week5" />
+
+    <Button
+        android:id="@+id/week14"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week14"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week13"
+        app:layout_constraintTop_toBottomOf="@+id/week5" />
+
+    <Button
+        android:id="@+id/week15"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week15"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week14"
+        app:layout_constraintTop_toBottomOf="@+id/week5" />
+
+    <Button
+        android:id="@+id/week16"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week16"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week15"
+        app:layout_constraintTop_toBottomOf="@+id/week5" />
+
+    <Button
+        android:id="@+id/week17"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week17"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/week18"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week18"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week17"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/week19"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week19"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week18"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/week20"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week20"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week19"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/week21"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week21"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week20"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/week22"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week22"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week21"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/week23"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week23"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week22"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/week24"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/week24"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/week23"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
 </android.support.constraint.ConstraintLayout>
