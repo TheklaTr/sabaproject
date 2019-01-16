@@ -7,6 +7,13 @@
     <string name="login">Login</string>
     <string name="proceed">Continue</string>
     <string name="trnprograms">Training programs</string>
+    <string name="trnprogram">Training Program for the week</string>
+    <string name="sets">Sets</string>
+    <string name="reps">Reps</string>
+    <string name="warmup">Warmup</string>
+    <string name="stretches">Stretches</string>
+    <string name="exercises">Exercises</string>
+    <string name="cooldown">Cooldown</string>
     <string name="faq">Frequently asked questions</string>
     <string name="howactive">How to be active</string>
     <string name="phaseI">Phase I</string>

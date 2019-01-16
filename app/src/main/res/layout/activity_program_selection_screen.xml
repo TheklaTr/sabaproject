@@ -66,6 +66,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/buttonshape"
+        android:onClick="TempButtonClick"
         android:text="@string/week1"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
