@@ -46,8 +46,9 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="1150dp"
-        android:layout_height="500dp"
+        android:layout_height="450dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15">
@@ -60,8 +61,8 @@
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/layoutborder"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/layoutborder"
                 android:paddingBottom="40dp">
 
                 <TextView
@@ -138,8 +139,8 @@
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/layoutborder"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/layoutborder"
                 android:paddingBottom="40dp">
 
                 <TextView
@@ -270,8 +271,8 @@
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/layoutborder"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/layoutborder"
                 android:paddingBottom="40dp">
 
                 <TextView
@@ -347,8 +348,8 @@
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/layoutborder"
                 android:layout_marginBottom="16dp"
+                android:background="@drawable/layoutborder"
                 android:paddingBottom="40dp">
 
                 <TextView
@@ -367,4 +368,37 @@
             </android.support.constraint.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginRight="200dp"
+        android:background="@drawable/buttonshape"
+        android:drawableTop="@drawable/paperplane"
+        android:drawablePadding="-5dp"
+        android:onClick="SendProgramToPhone"
+        android:paddingTop="10sp"
+        android:text="@string/sendbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/returnToWeeks"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/buttonshape"
+        android:drawableTop="@drawable/paperplane"
+        android:drawablePadding="-5dp"
+        android:onClick="BackButton"
+        android:paddingTop="10sp"
+        android:text="@string/returntoweeks"
+        app:layout_constraintEnd_toStartOf="@+id/sendBtn"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
 </android.support.constraint.ConstraintLayout>

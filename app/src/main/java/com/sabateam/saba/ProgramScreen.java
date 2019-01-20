@@ -30,4 +30,16 @@ public class ProgramScreen extends AppCompatActivity {
 
         builder.create().show();
     }
+
+    public void SendProgramToPhone(View view) {
+
+        // Implementation here
+        // Either send directly, or open up a new screen where the connection is established
+        // with instructions
+    }
+
+    public void BackButton(View view){
+
+        super.onBackPressed();
+    }
 }
