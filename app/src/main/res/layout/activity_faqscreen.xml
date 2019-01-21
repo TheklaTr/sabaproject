@@ -6,4 +6,333 @@
     android:layout_height="match_parent"
     tools:context=".FAQScreen">
 
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/faq"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/questionsScroller"
+        android:layout_width="1150dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/layoutborder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/audioImg"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="95dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <TextView
+                android:id="@+id/faq1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/faq1"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/faq2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq2"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq1" />
+
+            <TextView
+                android:id="@+id/faq3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq3"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq2" />
+
+            <TextView
+                android:id="@+id/faq4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq4"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq3" />
+
+            <TextView
+                android:id="@+id/faq5"
+                android:layout_width="900dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq5"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq4" />
+
+            <TextView
+                android:id="@+id/faq6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq6"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq5" />
+
+            <TextView
+                android:id="@+id/faq7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq7"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq6" />
+
+            <TextView
+                android:id="@+id/faq8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq8"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq7" />
+
+            <TextView
+                android:id="@+id/faq9"
+                android:layout_width="900dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq9"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq8" />
+
+            <TextView
+                android:id="@+id/faq13"
+                android:layout_width="900dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq13"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq9" />
+
+            <TextView
+                android:id="@+id/faq14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq14"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq13" />
+
+            <TextView
+                android:id="@+id/faq15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq15"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq14" />
+
+            <TextView
+                android:id="@+id/faq16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq16"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq15" />
+
+            <TextView
+                android:id="@+id/faq17"
+                android:layout_width="900dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq17"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq16" />
+
+            <TextView
+                android:id="@+id/faq18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq18"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq17" />
+
+            <TextView
+                android:id="@+id/faq19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq19"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq18" />
+
+            <TextView
+                android:id="@+id/faq20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq20"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq19" />
+
+            <TextView
+                android:id="@+id/faq21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq21"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq20" />
+
+            <TextView
+                android:id="@+id/faq22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/faq22"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faq21" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <ToggleButton
+        android:id="@+id/languageToggle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonshape"
+        android:checked="true"
+        android:text="ToggleButton"
+        android:textOff="Tswana"
+        android:textOn="English"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <ImageView
+        android:id="@+id/flagImg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/languageToggle"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:srcCompat="@drawable/ukflag" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:srcCompat="@drawable/points" />
 </android.support.constraint.ConstraintLayout>
