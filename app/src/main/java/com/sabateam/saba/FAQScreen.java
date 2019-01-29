@@ -11,6 +11,11 @@ public class FAQScreen extends AppCompatActivity {
 
     boolean selectedEnglish;
     int[] flags = {R.drawable.ukflag, R.drawable.saflag};
+
+    // Maybe do similar int-arrays as above for both english voice and tswana voice
+    // Set the voices into the array same way the flags are set
+    // Instead of R.drawable.image it might be something like R.raw.voicename
+
     ImageView flag;
 
     @Override
@@ -39,5 +44,14 @@ public class FAQScreen extends AppCompatActivity {
                 }
             }
         });
+
+        // Toggle button above sets the selectedEnglish boolean value
+        // so maybe we can do a check here for each sound button, something like this pseudocode
+
+        /* once the id of button is identified:
+        *   if selectedEnglish (meaning its true)
+        *       play sound from correct index from english voice array
+        *   else
+        *       play sound from same index at tswana voice array*/
     }
 }
