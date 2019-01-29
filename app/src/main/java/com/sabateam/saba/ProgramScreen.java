@@ -1,10 +1,13 @@
 package com.sabateam.saba;
 
+import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.VideoView;
 
 public class ProgramScreen extends AppCompatActivity {
 
@@ -19,16 +22,12 @@ public class ProgramScreen extends AppCompatActivity {
     }
 
     // Temp method for button
-    public void TempShowAlert(View view){
+    public void ShowExerciseInfo(View view){
 
-        ImageView image = new ImageView(this);
-        image.setImageResource(R.drawable.nwuni_logo);
+        Intent intent = new Intent(this, ExerciseInfo.class);
+        startActivity(intent);
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(this)
-                .setMessage("Gif of the move would be here, maybe")
-                .setPositiveButton("Done", null).setView(image);
 
-        builder.create().show();
     }
 
     public void SendProgramToPhone(View view) {

@@ -3,4 +3,6 @@
     <color name="colorPrimary">#FF0000</color>
     <color name="colorPrimaryDark">#FF0000</color>
     <color name="colorAccent">#d81b60</color>
+    <color name="purpleCustom">#6c3d91</color>
+    <color name="reddishCustom">#d03263</color>
 </resources>
