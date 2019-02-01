@@ -2,6 +2,7 @@ package com.sabateam.saba;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.VideoView;
 
 public class ProgramScreen extends AppCompatActivity {
-
 
 
     @Override
@@ -28,6 +28,31 @@ public class ProgramScreen extends AppCompatActivity {
         startActivity(intent);
 
 
+    }
+
+    // Temp method for demonstration
+    public void ShowExerciseInDialog(View view) {
+
+        VideoView videoFeed = new VideoView(this);
+        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.character_vid;
+        videoFeed.setVideoPath(videoPath);
+
+        AlertDialog.Builder builder =
+                new AlertDialog.Builder(this).
+                        setView(videoFeed).
+                        setPositiveButton("OK", null);
+
+
+        videoFeed.setZOrderOnTop(true);
+        videoFeed.start();
+        builder.create().show();
+
+        videoFeed.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.setLooping(true);
+            }
+        });
     }
 
     public void SendProgramToPhone(View view) {

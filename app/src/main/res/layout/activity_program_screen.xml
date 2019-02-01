@@ -134,6 +134,20 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/runner" />
+
+                <ImageButton
+                    android:id="@+id/wuImg2"
+                    android:layout_width="98dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="ShowExerciseInDialog"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="@+id/wuImg"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/login3" />
             </android.support.constraint.ConstraintLayout>
 
             <android.support.constraint.ConstraintLayout
