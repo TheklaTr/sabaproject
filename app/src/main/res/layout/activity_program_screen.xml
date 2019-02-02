@@ -23,26 +23,13 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="350dp"
-        android:layout_marginLeft="350dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="500dp"
         android:layout_marginTop="8dp"
         android:text="@string/sets"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/reps"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/textView15"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <ScrollView
@@ -73,52 +60,38 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
                     android:layout_weight="1"
-                    android:text="@string/warmup"
+                    android:text="Aerobic Training"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/wuMove"
+                    android:id="@+id/move1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="48dp"
                     android:layout_marginLeft="48dp"
                     android:layout_marginTop="8dp"
                     android:layout_weight="1"
-                    android:text="wu_01"
+                    android:text="move1"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
                 <TextView
-                    android:id="@+id/wuSets"
+                    android:id="@+id/move1sets"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="370dp"
-                    android:layout_marginLeft="370dp"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
                     android:layout_marginTop="8dp"
                     android:layout_weight="1"
                     android:text="1"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
-                <TextView
-                    android:id="@+id/wuReps"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="170dp"
-                    android:layout_marginLeft="170dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="1"
-                    android:text="10 min"
-                    android:textColor="@android:color/black"
-                    android:textSize="30sp"
-                    app:layout_constraintStart_toEndOf="@+id/wuSets"
                     app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
                 <ImageButton
@@ -165,32 +138,130 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
                     android:layout_weight="1"
-                    android:text="@string/stretches"
+                    android:text="Strength Training"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/stMove1"
+                    android:id="@+id/move2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="48dp"
                     android:layout_marginLeft="48dp"
                     android:layout_marginTop="8dp"
                     android:layout_weight="1"
-                    android:text="st_01"
+                    android:text="move2"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
                 <TextView
-                    android:id="@+id/stSets1"
+                    android:id="@+id/move3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="370dp"
-                    android:layout_marginLeft="370dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move3"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move2" />
+
+                <TextView
+                    android:id="@+id/move4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move4"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move3" />
+
+                <TextView
+                    android:id="@+id/move5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move5"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move4" />
+
+                <TextView
+                    android:id="@+id/move6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move6"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move5" />
+
+                <TextView
+                    android:id="@+id/move7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move7"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move6" />
+
+                <TextView
+                    android:id="@+id/move8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move8"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move7" />
+
+                <TextView
+                    android:id="@+id/move9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move9"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move8" />
+
+                <TextView
+                    android:id="@+id/move2sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
                     android:layout_marginTop="8dp"
                     android:layout_weight="1"
                     android:text="2"
@@ -200,86 +271,103 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
                 <TextView
-                    android:id="@+id/stReps1"
+                    android:id="@+id/move3sets"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="170dp"
-                    android:layout_marginLeft="170dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="1"
-                    android:text="10"
-                    android:textColor="@android:color/black"
-                    android:textSize="30sp"
-                    app:layout_constraintStart_toEndOf="@+id/stSets1"
-                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
-                <ImageButton
-                    android:id="@+id/stImg1"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="800dp"
-                    android:layout_marginLeft="800dp"
-                    android:layout_marginTop="40dp"
-                    android:background="@android:color/transparent"
-                    android:scaleType="fitXY"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/runner" />
-
-                <TextView
-                    android:id="@+id/stMove2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="48dp"
-                    android:layout_marginLeft="48dp"
-                    android:layout_marginTop="144dp"
-                    android:layout_weight="1"
-                    android:text="st_02"
-                    android:textColor="@android:color/black"
-                    android:textSize="30sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
-                <TextView
-                    android:id="@+id/stSets2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="370dp"
-                    android:layout_marginLeft="370dp"
-                    android:layout_marginTop="144dp"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
                     android:layout_weight="1"
                     android:text="2"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+                    app:layout_constraintTop_toBottomOf="@+id/move2sets" />
 
                 <TextView
-                    android:id="@+id/stReps2"
+                    android:id="@+id/move4sets"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="170dp"
-                    android:layout_marginLeft="170dp"
-                    android:layout_marginTop="144dp"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
                     android:layout_weight="1"
-                    android:text="10"
+                    android:text="2"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
-                    app:layout_constraintStart_toEndOf="@+id/stSets2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
-                <ImageButton
-                    android:id="@+id/stImg2"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="800dp"
-                    android:layout_marginLeft="800dp"
-                    android:layout_marginTop="40dp"
-                    android:background="@android:color/transparent"
-                    android:scaleType="fitXY"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/stImg1"
-                    app:srcCompat="@drawable/runner" />
+                    app:layout_constraintTop_toBottomOf="@+id/move3sets" />
+
+                <TextView
+                    android:id="@+id/move5sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move4sets" />
+
+                <TextView
+                    android:id="@+id/move6sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move5sets" />
+
+                <TextView
+                    android:id="@+id/move7sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move6sets" />
+
+                <TextView
+                    android:id="@+id/move8sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move7sets" />
+
+                <TextView
+                    android:id="@+id/move9sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move8sets" />
+
             </android.support.constraint.ConstraintLayout>
 
             <android.support.constraint.ConstraintLayout
@@ -297,32 +385,74 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
                     android:layout_weight="1"
-                    android:text="@string/exercises"
+                    android:text="Balance and Coordination"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/eMove1"
+                    android:id="@+id/move10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="48dp"
                     android:layout_marginLeft="48dp"
                     android:layout_marginTop="8dp"
                     android:layout_weight="1"
-                    android:text="e_01"
+                    android:text="move10"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
                 <TextView
-                    android:id="@+id/eSets1"
+                    android:id="@+id/move11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="370dp"
-                    android:layout_marginLeft="370dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move11"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move10" />
+
+                <TextView
+                    android:id="@+id/move12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move12"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move11" />
+
+                <TextView
+                    android:id="@+id/move13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move13"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move12" />
+
+                <TextView
+                    android:id="@+id/move10sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
                     android:layout_marginTop="8dp"
                     android:layout_weight="1"
                     android:text="2"
@@ -332,31 +462,47 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
                 <TextView
-                    android:id="@+id/eReps1"
+                    android:id="@+id/move11sets"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="170dp"
-                    android:layout_marginLeft="170dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
                     android:layout_weight="1"
-                    android:text="10"
+                    android:text="2"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
-                    app:layout_constraintStart_toEndOf="@+id/eSets1"
-                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
-
-                <ImageButton
-                    android:id="@+id/eImg1"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="800dp"
-                    android:layout_marginLeft="800dp"
-                    android:layout_marginTop="40dp"
-                    android:background="@android:color/transparent"
-                    android:scaleType="fitXY"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/runner" />
+                    app:layout_constraintTop_toBottomOf="@+id/move10sets" />
+
+                <TextView
+                    android:id="@+id/move12sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move11sets" />
+
+                <TextView
+                    android:id="@+id/move13sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move12sets" />
+
             </android.support.constraint.ConstraintLayout>
 
             <android.support.constraint.ConstraintLayout
@@ -374,11 +520,179 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
                     android:layout_weight="1"
-                    android:text="@string/cooldown"
+                    android:text="Flexibility"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/move14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:text="move14"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <TextView
+                    android:id="@+id/move15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move15"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move14" />
+
+                <TextView
+                    android:id="@+id/move16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move16"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move15" />
+
+                <TextView
+                    android:id="@+id/move17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move17"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move16" />
+
+                <TextView
+                    android:id="@+id/move18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move18"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move17" />
+
+                <TextView
+                    android:id="@+id/move19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="move19"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move18" />
+
+                <TextView
+                    android:id="@+id/move14sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <TextView
+                    android:id="@+id/move15sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move14sets" />
+
+                <TextView
+                    android:id="@+id/move16sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move15sets" />
+
+                <TextView
+                    android:id="@+id/move17sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move16sets" />
+
+                <TextView
+                    android:id="@+id/move18sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move17sets" />
+
+                <TextView
+                    android:id="@+id/move19sets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="600dp"
+                    android:layout_marginLeft="600dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/move18sets" />
             </android.support.constraint.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
