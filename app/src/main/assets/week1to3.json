@@ -1,43 +1,55 @@
 {
-  "program":
+  "aerobic":
   {
-    "move1":"Rhytmic Steps",
-    "move2":"Stationary body weight squats",
-    "move3":"Standing calve raises",
-    "move4":"Leg extensions",
-    "move5":"Standing knee flexion",
-    "move6":"Bicep curls",
-    "move7":"Tricep kickbacks",
-    "move8":"Shrugs",
-    "move9":"Upright rows",
-    "move10":"Balance on one leg (chair for support)",
-    "move11":"Balance on one leg closed eyes",
-    "move12":"Staggered stance (with each leg)",
-    "move13":"Clock reach (Each side)",
-    "move14":"Seated shoulder and upper back stretch",
-    "move15":"Shoulder rolls",
-    "move16":"Tricep stretch",
-    "move17":"Standing quad stretch (both legs)",
-    "move18":"Calf stretch",
-    "move19":"Knee to chest",
-    "move1sets":"15min",
-    "move2sets":"2 x 10",
-    "move3sets":"2 x 10",
-    "move4sets":"2 x 10",
-    "move5sets":"2 x 10",
-    "move6sets":"2 x 10",
-    "move7sets":"2 x 10",
-    "move8sets":"2 x 10",
-    "move9sets":"2 x 10",
-    "move10sets":"2 x 30s",
-    "move11sets":"2 x 30s",
-    "move12sets":"2 x 30s",
-    "move13sets":"2 x 4",
-    "move14sets":"2 x 5",
-    "move15sets":"2 x 5",
-    "move16sets":"2 x 30s",
-    "move17sets":"2 x 30s",
-    "move18sets":"2 x 30s",
-    "move19sets":"2 x 30s"
+    "move1":"Rhytmic Steps"
+  },
+  "strength":
+  {
+    "move1":"Stationary body weight squats",
+    "move2":"Standing calve raises",
+    "move3":"Leg extensions",
+    "move4":"Standing knee flexion",
+    "move5":"Bicep curls",
+    "move6":"Tricep kickbacks",
+    "move7":"Shrugs",
+    "move8":"Upright rows"
+  },
+  "balance":
+  {
+    "move1":"Balance on one leg (chair for support)",
+    "move2":"Balance on one leg closed eyes",
+    "move3":"Staggered stance (with each leg)",
+    "move4":"Clock reach (Each side)"
+  },
+  "flex":
+  {
+    "move1":"Seated shoulder and upper back stretch",
+    "move2":"Shoulder rolls",
+    "move3":"Tricep stretch",
+    "move4":"Standing quad stretch (both legs)",
+    "move5":"Calf stretch",
+    "move6":"Knee to chest"
+  },
+  "sets":
+  {
+    "move1":"15min",
+    "move2":"2 x 10",
+    "move3":"2 x 10",
+    "move4":"2 x 10",
+    "move5":"2 x 10",
+    "move6":"2 x 10",
+    "move7":"2 x 10",
+    "move8":"2 x 10",
+    "move9":"2 x 10",
+    "move10":"2 x 30s",
+    "move11":"2 x 30s",
+    "move12":"2 x 30s",
+    "move13":"2 x 4",
+    "move14":"2 x 5",
+    "move15":"2 x 5",
+    "move16":"2 x 30s",
+    "move17":"2 x 30s",
+    "move18":"2 x 30s",
+    "move19":"2 x 30s"
   }
 }

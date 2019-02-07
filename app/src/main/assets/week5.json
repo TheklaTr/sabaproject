@@ -1,18 +1,18 @@
 {
   "aerobic":
   {
-    "move1":"High knee march"
+    "move1":"Rhytmic step-ups"
   },
   "strength":
   {
     "move1":"Squats with small weight",
-    "move2":"Calve raises with small weight",
+    "move2":"Standing Calv raises with small weight",
     "move3":"Stationary lunge",
     "move4":"Straight leg raise",
     "move5":"Bicep curls",
     "move6":"Tricep extention",
     "move7":"Diagonal inward shoulder raise",
-    "move8":"Overead press"
+    "move8":"Overhead press"
   },
   "balance":
   {
@@ -37,7 +37,7 @@
     "move3":"2 x 10",
     "move4":"2 x 10",
     "move5":"2 x 10",
-    "move6":"2 x 15",
+    "move6":"2 x 10",
     "move7":"2 x 10",
     "move8":"2 x 10",
     "move9":"2 x 10",

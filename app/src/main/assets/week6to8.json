@@ -1,0 +1,55 @@
+{
+  "aerobic":
+  {
+    "move1":"High knee march",
+    "move2":"Rythmic step-ups"
+  },
+  "strength":
+  {
+    "move1":"Squats with lunge light weight",
+    "move2":"Step up with light weight",
+    "move3":"Standing calf raises with small weight",
+    "move4":"Hammer curls",
+    "move5":"Tricep dips on chair",
+    "move6":"Side raises",
+    "move7":"Modified sit-up",
+    "move8":"Alternative arm and leg"
+  },
+  "balance":
+  {
+    "move1":"Balance board with assistance",
+    "move2":"Crossover walk (both directions)",
+    "move3":"Single leg stand without chair"
+  },
+  "flex":
+  {
+    "move1":"Door frame stretch",
+    "move2":"Cat and camel",
+    "move3":"Hamstring stretch",
+    "move4":"Back stretch",
+    "move5":"Calve stretch",
+    "move6":"Bum stretch"
+  },
+  "sets":
+  {
+    "move1":"10min",
+    "move2":"10min",
+    "move3":"2 x 10",
+    "move4":"2 x 10",
+    "move5":"3 x 10",
+    "move6":"2 x 15",
+    "move7":"2 x 10",
+    "move8":"2 x 10",
+    "move9":"2 x 10",
+    "move10":"2 x 10",
+    "move11":"2 x 20s",
+    "move12":"2 x 10",
+    "move13":"2 x 30s",
+    "move14":"2 x 20s",
+    "move15":"2 x 5 x 20s",
+    "move16":"3 x 20s",
+    "move17":"3 x 20s",
+    "move18":"2 x 20s",
+    "move19":"2 x 20s"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "aerobic":
+  {
+    "move1":"Fast walk outside"
+  },
+  "strength":
+  {
+    "move1":"Walking lunges",
+    "move2":"Squats with light weight",
+    "move3":"Calve raises",
+    "move4":"Front raises",
+    "move5":"Bent over rowing",
+    "move6":"Alternative arm and leg",
+    "move7":"Crunches",
+    "move8":"Pelvic lifts"
+  },
+  "balance":
+  {
+    "move1":"Balance board without assistance",
+    "move2":"Crossover walk (both directions)"
+  },
+  "flex":
+  {
+    "move1":"Door frame stretch",
+    "move2":"Hamstring stretch",
+    "move3":"Quadriceps stretch",
+    "move4":"Back stretch"
+  },
+  "sets":
+  {
+    "move1":"25min",
+    "move2":"3 x 10",
+    "move3":"3 x 15",
+    "move4":"3 x 10",
+    "move5":"3 x 10",
+    "move6":"3 x 15",
+    "move7":"3 x 10",
+    "move8":"3 x 15",
+    "move9":"3 x 15",
+    "move10":"2 x 30s",
+    "move11":"3 x 10",
+    "move12":"2 x 30s",
+    "move13":"2 x 30s",
+    "move14":"2 x 30s",
+    "move15":"2 x 30s"
+  }
+}

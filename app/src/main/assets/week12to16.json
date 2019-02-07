@@ -1,0 +1,41 @@
+{
+  "aerobic":
+  {
+    "move1":"Fast walking/slow jog/dancing"
+  },
+  "strength":
+  {
+    "move1":"Squats with medium weight",
+    "move2":"Step lunges",
+    "move3":"Side raises",
+    "move4":"Push-ups",
+    "move5":"Plank",
+    "move6":"Crunches"
+  },
+  "balance":
+  {
+    "move1":"Balance board"
+  },
+  "flex":
+  {
+    "move1":"Cat and camel",
+    "move2":"Hamstring stretch",
+    "move3":"Back stretch",
+    "move4":"Bum stretch"
+  },
+  "sets":
+  {
+    "move1":"30min",
+    "move2":"3 x 15",
+    "move3":"3 x 15",
+    "move4":"3 x 15",
+    "move5":"3 x 15",
+    "move6":"2 x 30s",
+    "move7":"5 x 15",
+    "move8":"2 x 60s",
+    "move9":"2 x 8 x 10s",
+    "move10":"2 x 30s",
+    "move11":"2 x 30s",
+    "move12":"2 x 30s"
+  }
+}
