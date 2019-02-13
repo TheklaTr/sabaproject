@@ -4,46 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg2"
     tools:context=".MenuScreen">
 
     <Button
         android:id="@+id/trainingBtn"
-        android:layout_width="600dp"
+        android:layout_width="550dp"
         android:layout_height="100dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="180dp"
         android:background="@drawable/buttonshape"
         android:onClick="ToTrainingPrograms"
         android:text="@string/trnprograms"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/faqBtn"
-        android:layout_width="600dp"
+        android:layout_width="550dp"
         android:layout_height="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="35dp"
         android:background="@drawable/buttonshape"
         android:onClick="ToFAQ"
         android:text="@string/faq"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/trainingBtn" />
 
     <Button
         android:id="@+id/activeBtn"
-        android:layout_width="600dp"
+        android:layout_width="550dp"
         android:layout_height="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="35dp"
         android:background="@drawable/buttonshape"
         android:onClick="ToHowToBeActive"
         android:text="@string/howactive"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/faqBtn" />
+
+    <Button
+        android:id="@+id/logOutBtn"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/logout"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/activeBtn"
+        app:layout_constraintStart_toStartOf="@+id/activeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/activeBtn" />
 
     <TextView
         android:id="@+id/textView6"
