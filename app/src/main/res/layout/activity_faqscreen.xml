@@ -36,16 +36,87 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/audioImg"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginStart="95dp"
-                android:layout_marginLeft="95dp"
-                android:layout_marginTop="10dp"
+                android:id="@+id/faqbut1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="173dp"
+                android:layout_marginLeft="173dp"
+                android:layout_marginTop="16dp"
                 android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
+                android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="173dp"
+                android:layout_marginLeft="173dp"
+                android:layout_marginTop="560dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="173dp"
+                android:layout_marginLeft="173dp"
+                android:layout_marginTop="440dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="173dp"
+                android:layout_marginLeft="173dp"
+                android:layout_marginTop="316dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="173dp"
+                android:layout_marginLeft="173dp"
+                android:layout_marginTop="212dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="173dp"
+                android:layout_marginLeft="173dp"
+                android:layout_marginTop="40dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut1"
                 app:srcCompat="@drawable/speaker" />
 
             <TextView
@@ -294,6 +365,8 @@
                 android:textSize="30sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/faq21" />
+
+
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
