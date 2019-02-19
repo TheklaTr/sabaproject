@@ -36,6 +36,188 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/faqbut19"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="172dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="1976dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="172dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="656dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="172dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="760dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="164dp"
+                android:layout_marginLeft="164dp"
+                android:layout_marginTop="868dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut10"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="172dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="1008dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut13"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="172dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="1336dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut18"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="172dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="1876dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut17"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="172dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="1772dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut16"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="172dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="1680dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut15"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="172dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="1584dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut14"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="172dp"
+                android:layout_marginLeft="172dp"
+                android:layout_marginTop="1444dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut12"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="164dp"
+                android:layout_marginLeft="164dp"
+                android:layout_marginTop="1232dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
+                android:id="@+id/faqbut11"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="164dp"
+                android:layout_marginLeft="164dp"
+                android:layout_marginTop="1132dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:tag="donald"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageButton
                 android:id="@+id/faqbut1"
                 android:layout_width="60dp"
                 android:layout_height="60dp"

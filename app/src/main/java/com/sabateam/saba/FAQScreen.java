@@ -58,7 +58,7 @@ public class FAQScreen extends AppCompatActivity {
         ArrayList<ImageButton> buttons = new ArrayList<>();
 
         // Program crashes if the button count in layout is less than the number here
-        int buttonCount = 6;
+        int buttonCount = 19;
         for (int i = 1; i <= buttonCount; i++) {
             int id = getResources().getIdentifier("faqbut" + i, "id", getPackageName());
 
