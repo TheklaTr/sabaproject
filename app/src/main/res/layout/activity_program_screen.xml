@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg6"
     tools:context=".ProgramScreen">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="80dp"
         android:text="@string/trnprogram"
         android:textColor="@android:color/black"
         android:textSize="30sp"
@@ -23,8 +24,8 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="500dp"
-        android:layout_marginLeft="500dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginLeft="400dp"
         android:layout_marginTop="8dp"
         android:text="@string/sets"
         android:textColor="@android:color/black"
@@ -35,7 +36,7 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="1150dp"
-        android:layout_height="450dp"
+        android:layout_height="400dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15">
@@ -48,12 +49,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:baselineAligned="false"
-                android:orientation="horizontal"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/layoutborder"
-                android:weightSum="3"
-                android:paddingBottom="40dp">
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingBottom="40dp"
+                android:weightSum="3">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -152,12 +153,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:baselineAligned="false"
-                android:orientation="horizontal"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/layoutborder"
-                android:weightSum="3"
-                android:paddingBottom="40dp">
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingBottom="40dp"
+                android:weightSum="3">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -226,7 +227,7 @@
                         android:id="@+id/strengthVid"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"/>
+                        android:orientation="vertical" />
 
                 </LinearLayout>
 
@@ -235,12 +236,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:baselineAligned="false"
-                android:orientation="horizontal"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/layoutborder"
-                android:weightSum="3"
-                android:paddingBottom="40dp">
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingBottom="40dp"
+                android:weightSum="3">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -309,7 +310,7 @@
                         android:id="@+id/balanceVid"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"/>
+                        android:orientation="vertical" />
 
                 </LinearLayout>
 
@@ -318,12 +319,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:baselineAligned="false"
-                android:orientation="horizontal"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/layoutborder"
-                android:weightSum="3"
-                android:paddingBottom="40dp">
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingBottom="40dp"
+                android:weightSum="3">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -392,7 +393,7 @@
                         android:id="@+id/flexVid"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"/>
+                        android:orientation="vertical" />
 
                 </LinearLayout>
 
@@ -420,16 +421,27 @@
         android:id="@+id/returnToWeeks"
         android:layout_width="140dp"
         android:layout_height="70dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
         android:background="@drawable/buttonshape"
         android:drawableTop="@drawable/paperplane"
         android:drawablePadding="-5dp"
         android:onClick="BackButton"
         android:paddingTop="10sp"
         android:text="@string/returntoweeks"
-        app:layout_constraintEnd_toStartOf="@+id/sendBtn"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/swipeImg"
+        android:layout_width="105dp"
+        android:layout_height="486dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/swipe" />
 
 </android.support.constraint.ConstraintLayout>

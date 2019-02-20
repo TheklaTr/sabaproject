@@ -26,21 +26,21 @@ public class AvatarScreen extends AppCompatActivity {
 
     public void SelectedMale(View view) {
 
-        user.SetAvatar("male");
-
-        Intent intent = new Intent(this, MenuScreen.class);
-        intent.putExtra("userObject", user);
-        startActivity(intent);
-
+        SetAvatarAndGo("male");
     }
 
     public void SelectedFemale(View view) {
 
-        user.SetAvatar("female");
+        SetAvatarAndGo("female");
+    }
+
+    public void SetAvatarAndGo(String avatar) {
+
+        user.SetAvatar(avatar);
 
         Intent intent = new Intent(this, MenuScreen.class);
         intent.putExtra("userObject", user);
         startActivity(intent);
-
+        finish();
     }
 }

@@ -7,6 +7,22 @@
     android:background="@drawable/bg5"
     tools:context=".ProgramSelectionScreen">
 
+    <Button
+        android:id="@+id/returnToWeeks3"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/buttonshape"
+        android:drawableTop="@drawable/paperplane"
+        android:drawablePadding="-5dp"
+        android:onClick="BackButton"
+        android:paddingTop="10sp"
+        android:text="@string/returntomenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"

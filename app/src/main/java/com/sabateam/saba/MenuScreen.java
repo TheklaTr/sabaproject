@@ -1,6 +1,8 @@
 package com.sabateam.saba;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -53,5 +55,38 @@ public class MenuScreen extends AppCompatActivity {
         // inside 'How to be Active'
         Intent intent = new Intent(this, BeActiveScreen.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void onBackPressed(){
+
+        // Do nothing in here for now. We are overriding the default onBackPressed
+        // method with empty implementation so that we can prevent users from getting back to
+        // avatar selection and login screen by pressing the back button
+    }
+
+    // ask the user of they really want to logout
+    public void ShowConfirmation(View view) {
+
+        AlertDialog.Builder confirmation = new AlertDialog.Builder(this);
+        confirmation.setMessage("Are you sure you want to logout?")
+                .setPositiveButton("Logout", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        Logout();
+                    }
+                }).setNegativeButton("Cancel", null);
+
+        confirmation.create();
+        confirmation.show();
+
+    }
+
+    private void Logout(){
+
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

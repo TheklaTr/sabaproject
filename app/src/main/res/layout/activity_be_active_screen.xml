@@ -6,4 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".BeActiveScreen">
 
+    <Button
+        android:id="@+id/returnToWeeks4"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/buttonshape"
+        android:drawableTop="@drawable/paperplane"
+        android:drawablePadding="-5dp"
+        android:onClick="BackButton"
+        android:paddingTop="10sp"
+        android:text="@string/returntoweeks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

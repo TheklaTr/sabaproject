@@ -23,9 +23,6 @@ import android.widget.LinearLayout.LayoutParams;
 
 public class ProgramScreen extends AppCompatActivity {
 
-    static String[] programArray = new String[38];
-    //static TextView[] moveTexts = new TextView[19];
-    //static TextView[] moveSetTexts = new TextView[19];
     static TextView[] moveTexts;
     static TextView[] moveSetTexts;
 
@@ -34,6 +31,8 @@ public class ProgramScreen extends AppCompatActivity {
     static List<String> balance = new ArrayList<>();
     static List<String> flexes = new ArrayList<>();
     static List<String> sets = new ArrayList<>();
+
+    int place;
 
     LinearLayout linear1;
     LinearLayout linear2;
@@ -55,9 +54,6 @@ public class ProgramScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_program_screen);
 
-        // Receive bundle from program selection
-        //Bundle bundle = this.getIntent().getExtras();
-        //programArray = bundle.getStringArray("sentItem");
 
         receivedJson = (String) getIntent().getStringExtra("sentItem");
 
@@ -83,10 +79,19 @@ public class ProgramScreen extends AppCompatActivity {
         linear11 = (LinearLayout) findViewById(R.id.balanceVid);
         linear12 = (LinearLayout) findViewById(R.id.flexVid);
 
-        int place = 0;
+        place = 0;
 
-        for(int i = 0; i < aerobics.size(); i++) {
 
+        // Sets the contents of exercise page
+        SetContent(aerobics.size(), linear1, linear5, aerobics);
+        SetContent(strength.size(), linear2, linear6, strength);
+        SetContent(balance.size(), linear3, linear7, balance);
+        SetContent(flexes.size(), linear4, linear8, flexes);
+    }
+
+    public void SetContent(int size, LinearLayout linearA, LinearLayout linearB, List<String> moveList) {
+
+        for(int i = 0; i < size; i++) {
             moveTexts[place] = new TextView(this);
             moveSetTexts[place] = new TextView(this);
             LayoutParams layoutParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
@@ -95,92 +100,15 @@ public class ProgramScreen extends AppCompatActivity {
             layoutParams.weight = 0.33F;
             moveTexts[place].setLayoutParams(layoutParams);
             moveSetTexts[place].setLayoutParams(layoutParams);
-            moveTexts[place].setText(aerobics.get(i));
+            moveTexts[place].setText(moveList.get(i));
             moveSetTexts[place].setText(sets.get(place));
             moveTexts[place].setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
             moveSetTexts[place].setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
-            linear1.addView(moveTexts[place]);
-            linear5.addView(moveSetTexts[place]);
+            linearA.addView(moveTexts[place]);
+            linearB.addView(moveSetTexts[place]);
 
             place++;
         }
-
-        for(int i = 0; i < strength.size(); i++) {
-
-            moveTexts[place] = new TextView(this);
-            moveSetTexts[place] = new TextView(this);
-            LayoutParams layoutParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-            layoutParams.gravity = Gravity.LEFT;
-            layoutParams.setMargins(16, 16, 0,20);
-            layoutParams.weight = 0.33F;
-            moveTexts[place].setLayoutParams(layoutParams);
-            moveSetTexts[place].setLayoutParams(layoutParams);
-            moveTexts[place].setText(strength.get(i));
-            moveSetTexts[place].setText(sets.get(place));
-            moveTexts[place].setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
-            moveSetTexts[place].setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
-            linear2.addView(moveTexts[place]);
-            linear6.addView(moveSetTexts[place]);
-
-            place++;
-        }
-
-        for(int i = 0; i < balance.size(); i++) {
-
-            moveTexts[place] = new TextView(this);
-            moveSetTexts[place] = new TextView(this);
-            LayoutParams layoutParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-            layoutParams.gravity = Gravity.LEFT;
-            layoutParams.setMargins(16, 16, 0,20);
-            layoutParams.weight = 0.33F;
-            moveTexts[place].setLayoutParams(layoutParams);
-            moveSetTexts[place].setLayoutParams(layoutParams);
-            moveTexts[place].setText(balance.get(i));
-            moveSetTexts[place].setText(sets.get(place));
-            moveTexts[place].setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
-            moveSetTexts[place].setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
-            linear3.addView(moveTexts[place]);
-            linear7.addView(moveSetTexts[place]);
-
-            place++;
-        }
-
-        for(int i = 0; i < flexes.size(); i++) {
-
-            moveTexts[place] = new TextView(this);
-            moveSetTexts[place] = new TextView(this);
-            LayoutParams layoutParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-            layoutParams.gravity = Gravity.LEFT;
-            layoutParams.setMargins(16, 16, 0,20);
-            layoutParams.weight = 0.33F;
-            moveTexts[place].setLayoutParams(layoutParams);
-            moveSetTexts[place].setLayoutParams(layoutParams);
-            moveTexts[place].setText(flexes.get(i));
-            moveSetTexts[place].setText(sets.get(place));
-            moveTexts[place].setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
-            moveSetTexts[place].setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
-            linear4.addView(moveTexts[place]);
-            linear8.addView(moveSetTexts[place]);
-
-            place++;
-        }
-
-
-        // Find the id's of the textviews and sets the contents from programarray
-/*        for(int i = 0; i < 19; i++) {
-
-            String moves = "move" + (i+1);
-            String moveSets = "move" + (i+1) + "sets";
-            int moveResId = getResources().getIdentifier(moves, "id", getPackageName());
-            int moveSetsResId = getResources().getIdentifier(moveSets, "id", getPackageName());
-
-            moveTexts[i] = (TextView) findViewById(moveResId);
-            moveSetTexts[i] = (TextView) findViewById(moveSetsResId);
-
-            moveTexts[i].setText(programArray[i]);
-            moveSetTexts[i].setText(programArray[i+19]);
-        }*/
-
     }
 
     // Temp method for button
@@ -238,11 +166,6 @@ public class ProgramScreen extends AppCompatActivity {
             for (int i = 0; i < move.length(); i++) {
 
                 String moveCounter = "move" + (i+1);
-                //String moveSets = "move" + (i+1) +"sets";
-
-                //program[i] = trainingProgram.getString(move);
-                //program[i+19] = trainingProgram.getString(moveSets);
-
                 list.add(move.getString(moveCounter));
             }
 
@@ -257,5 +180,6 @@ public class ProgramScreen extends AppCompatActivity {
     public void BackButton(View view){
 
         super.onBackPressed();
+        finish();
     }
 }

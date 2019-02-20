@@ -46,11 +46,13 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, AvatarScreen.class);
                 intent.putExtra("userObject", user);
                 startActivity(intent);
+                finish();
 
             } else {
                 Intent intent = new Intent(this, MenuScreen.class);
                 intent.putExtra("userObject", user);
                 startActivity(intent);
+                finish();
             }
 
         } else {

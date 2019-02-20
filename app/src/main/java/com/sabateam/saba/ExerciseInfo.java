@@ -34,5 +34,6 @@ public class ExerciseInfo extends AppCompatActivity {
     public void BackButton(View view){
 
         super.onBackPressed();
+        finish();
     }
 }

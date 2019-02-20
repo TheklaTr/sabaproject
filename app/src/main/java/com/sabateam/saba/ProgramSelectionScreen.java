@@ -16,7 +16,6 @@ import java.lang.reflect.Array;
 
 public class ProgramSelectionScreen extends AppCompatActivity implements View.OnClickListener {
 
-    static String[] program = new String[38];
     static String returnedJson;
     static Button[] buttons = new Button[24];
 
@@ -186,8 +185,6 @@ public class ProgramSelectionScreen extends AppCompatActivity implements View.On
 
     public void FetchProgramAndSendIt(String jsonString) {
 
-        //Bundle bundle = new Bundle();
-        //bundle.putStringArray("sentItem", array);
 
         Intent intent = new Intent(this, ProgramScreen.class);
         intent.putExtra("sentItem", jsonString);
@@ -216,25 +213,9 @@ public class ProgramSelectionScreen extends AppCompatActivity implements View.On
     }
 
 
-    public void JsonIntoArray(String jsonString) {
+    public void BackButton(View view){
 
-        try {
-
-            JSONObject reader = new JSONObject(jsonString);
-            JSONObject trainingProgram = reader.getJSONObject("program");
-
-            for (int i = 0; i < 19; i++) {
-
-                String move = "move" + (i+1);
-                String moveSets = "move" + (i+1) +"sets";
-
-                program[i] = trainingProgram.getString(move);
-                program[i+19] = trainingProgram.getString(moveSets);
-            }
-
-        } catch (JSONException ex) {
-            ex.printStackTrace();
-        }
-
+        super.onBackPressed();
+        finish();
     }
 }
