@@ -5,8 +5,15 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
+
+import com.google.android.gms.common.util.NumberUtils;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import org.w3c.dom.Text;
 
 public class MenuScreen extends AppCompatActivity {
 
@@ -20,6 +27,9 @@ public class MenuScreen extends AppCompatActivity {
         // Gets the User object from previous intent
         Intent intent = getIntent();
         user = (User)intent.getSerializableExtra("userObject");
+
+        // For database
+        databaseReference = FirebaseDatabase.getInstance().getReference("User");
 
         // Some debugging stuff. Will be removed when not needed anymore
         TextView idTxt = (TextView)findViewById(R.id.debugID);
@@ -73,7 +83,7 @@ public class MenuScreen extends AppCompatActivity {
                 .setPositiveButton("Logout", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
+                        SendToDatabase();
                         Logout();
                     }
                 }).setNegativeButton("Cancel", null);
@@ -89,4 +99,17 @@ public class MenuScreen extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+    DatabaseReference databaseReference;
+
+    private void SendToDatabase(){
+        String exampleData = user.GetUsername();
+        //      Integer id = user.GetId().toString();
+
+        String id = databaseReference.push().getKey();
+//        User user = new User(id,exampleData);
+
+        databaseReference.child(id).setValue(id,exampleData);
+
+    }
+
 }
