@@ -95,8 +95,6 @@ public class MenuScreen extends AppCompatActivity {
 
     private void Logout(){
 
-        SendToDatabase();
-
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
