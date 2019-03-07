@@ -6,6 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".FAQScreen">
 
+    <ImageView
+        android:id="@+id/swipeImg2"
+        android:layout_width="105dp"
+        android:layout_height="486dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/swipe" />
+
+    <Button
+        android:id="@+id/returnToWeeks5"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/buttonshape"
+        android:drawableTop="@drawable/paperplane"
+        android:drawablePadding="-5dp"
+        android:onClick="BackButton"
+        android:paddingTop="10sp"
+        android:text="@string/returntomenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
@@ -22,7 +49,7 @@
     <ScrollView
         android:id="@+id/questionsScroller"
         android:layout_width="1150dp"
-        android:layout_height="400dp"
+        android:layout_height="450dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="120dp"
@@ -39,191 +66,191 @@
                 android:id="@+id/faqbut19"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="172dp"
-                android:layout_marginLeft="172dp"
-                android:layout_marginTop="1976dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut18"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut7"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="172dp"
-                android:layout_marginLeft="172dp"
-                android:layout_marginTop="656dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut6"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut8"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="172dp"
-                android:layout_marginLeft="172dp"
-                android:layout_marginTop="760dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut7"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut9"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="164dp"
-                android:layout_marginLeft="164dp"
-                android:layout_marginTop="868dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut8"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut10"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="172dp"
-                android:layout_marginLeft="172dp"
-                android:layout_marginTop="1008dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut9"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut13"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="172dp"
-                android:layout_marginLeft="172dp"
-                android:layout_marginTop="1336dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut12"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut18"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="172dp"
-                android:layout_marginLeft="172dp"
-                android:layout_marginTop="1876dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut17"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut17"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="172dp"
-                android:layout_marginLeft="172dp"
-                android:layout_marginTop="1772dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut16"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut16"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="172dp"
-                android:layout_marginLeft="172dp"
-                android:layout_marginTop="1680dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut15"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut15"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="172dp"
-                android:layout_marginLeft="172dp"
-                android:layout_marginTop="1584dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut14"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut14"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="172dp"
-                android:layout_marginLeft="172dp"
-                android:layout_marginTop="1444dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut13"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut12"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="164dp"
-                android:layout_marginLeft="164dp"
-                android:layout_marginTop="1232dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut11"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut11"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="164dp"
-                android:layout_marginLeft="164dp"
-                android:layout_marginTop="1132dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut10"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut1"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="173dp"
-                android:layout_marginLeft="173dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
@@ -235,64 +262,64 @@
                 android:id="@+id/faqbut6"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="173dp"
-                android:layout_marginLeft="173dp"
-                android:layout_marginTop="560dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut5"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut5"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="173dp"
-                android:layout_marginLeft="173dp"
-                android:layout_marginTop="440dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut4"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut4"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="173dp"
-                android:layout_marginLeft="173dp"
-                android:layout_marginTop="316dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut3"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut3"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="173dp"
-                android:layout_marginLeft="173dp"
-                android:layout_marginTop="212dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:tag="donald"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faqbut2"
                 app:srcCompat="@drawable/speaker" />
 
             <ImageButton
                 android:id="@+id/faqbut2"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="173dp"
-                android:layout_marginLeft="173dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
                 android:layout_marginTop="40dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
@@ -307,12 +334,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="30dp"
                 android:text="@string/faq1"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut1" />
 
             <TextView
                 android:id="@+id/faq2"
@@ -320,12 +347,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq2"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq1" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut2" />
 
             <TextView
                 android:id="@+id/faq3"
@@ -333,12 +360,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq3"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut3"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq2" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut3" />
 
             <TextView
                 android:id="@+id/faq4"
@@ -346,12 +373,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq4"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut4"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq3" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut4" />
 
             <TextView
                 android:id="@+id/faq5"
@@ -359,12 +386,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq5"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq4" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut5" />
 
             <TextView
                 android:id="@+id/faq6"
@@ -372,12 +399,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq6"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut6"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq5" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut6" />
 
             <TextView
                 android:id="@+id/faq7"
@@ -385,12 +412,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq7"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut7"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq6" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut7" />
 
             <TextView
                 android:id="@+id/faq8"
@@ -398,12 +425,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq8"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut8"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq7" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut8" />
 
             <TextView
                 android:id="@+id/faq9"
@@ -411,12 +438,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq9"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut9"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq8" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut9" />
 
             <TextView
                 android:id="@+id/faq13"
@@ -424,12 +451,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq13"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut10"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq9" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut10" />
 
             <TextView
                 android:id="@+id/faq14"
@@ -437,12 +464,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq14"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut11"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq13" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut11" />
 
             <TextView
                 android:id="@+id/faq15"
@@ -450,12 +477,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq15"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut12"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq14" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut12" />
 
             <TextView
                 android:id="@+id/faq16"
@@ -463,12 +490,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq16"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut13"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq15" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut13" />
 
             <TextView
                 android:id="@+id/faq17"
@@ -476,12 +503,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq17"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut14"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq16" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut14" />
 
             <TextView
                 android:id="@+id/faq18"
@@ -489,12 +516,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq18"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut15"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq17" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut15" />
 
             <TextView
                 android:id="@+id/faq19"
@@ -502,12 +529,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq19"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut16"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq18" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut16" />
 
             <TextView
                 android:id="@+id/faq20"
@@ -515,12 +542,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq20"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut17"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq19" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut17" />
 
             <TextView
                 android:id="@+id/faq21"
@@ -528,12 +555,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq21"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut18"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq20" />
+                app:layout_constraintTop_toTopOf="@+id/faqbut18" />
 
             <TextView
                 android:id="@+id/faq22"
@@ -541,13 +568,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
                 android:layout_marginLeft="250dp"
-                android:layout_marginTop="60dp"
                 android:text="@string/faq22"
                 android:textColor="@android:color/black"
                 android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/faqbut19"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faq21" />
-
+                app:layout_constraintTop_toTopOf="@+id/faqbut19" />
 
 
         </android.support.constraint.ConstraintLayout>

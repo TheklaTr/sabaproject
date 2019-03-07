@@ -25,6 +25,8 @@ public class ProgramScreen extends AppCompatActivity {
 
     static TextView[] moveTexts;
     static TextView[] moveSetTexts;
+    int[] videoArray = {R.raw.character_vid, R.raw.calf_raises_female,
+            R.raw.calf_raises_male, R.raw.high_knees_male, R.raw.push_ups_male};
 
     static List<String> aerobics = new ArrayList<>();
     static List<String> strength = new ArrayList<>();
@@ -182,4 +184,49 @@ public class ProgramScreen extends AppCompatActivity {
         super.onBackPressed();
         finish();
     }
+
+    // Temp methods for showing the animations, delete after ICT Showroom
+    public void ShowCalfFemale(View view){
+
+        ShowVideo(1);
+    }
+
+    public void ShowCalfMale(View view){
+
+        ShowVideo(2);
+    }
+
+    public void ShowHighKnees(View view){
+
+        ShowVideo(3);
+    }
+
+    public void ShowPushUps(View view) {
+
+        ShowVideo(4);
+    }
+
+    private void ShowVideo(int index) {
+        VideoView videoFeed = new VideoView(this);
+        String videoPath = "android.resource://" + getPackageName() + "/" + videoArray[index];
+        videoFeed.setVideoPath(videoPath);
+
+        AlertDialog.Builder builder =
+                new AlertDialog.Builder(this).
+                        setView(videoFeed).
+                        setPositiveButton("OK", null);
+
+
+        videoFeed.setZOrderOnTop(true);
+        videoFeed.start();
+        builder.create().show();
+
+        videoFeed.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.setLooping(true);
+            }
+        });
+    }
+
 }

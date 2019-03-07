@@ -24,6 +24,19 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/moveInfo"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="400dp"
         android:layout_marginLeft="400dp"
         android:layout_marginTop="8dp"
@@ -127,21 +140,73 @@
 
                         <ImageButton
                             android:id="@+id/wuImg2"
-                            android:layout_width="98dp"
+                            android:layout_width="match_parent"
                             android:layout_height="100dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
                             android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:onClick="ShowExerciseInDialog"
+                            android:background="@drawable/buttonshape"
+                            android:onClick="ShowExerciseInfo"
                             android:scaleType="centerInside"
-                            app:srcCompat="@drawable/login3" />
+                            app:srcCompat="@drawable/runner" />
 
                         <ImageButton
                             android:id="@+id/wuImg"
-                            android:layout_width="100dp"
+                            android:layout_width="match_parent"
                             android:layout_height="100dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
                             android:layout_weight="1"
-                            android:background="@android:color/transparent"
-                            android:onClick="ShowExerciseInfo"
+                            android:background="@drawable/buttonshape"
+                            android:onClick="ShowExerciseInDialog"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/runner" />
+
+                        <ImageButton
+                            android:id="@+id/wuImg3"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/buttonshape"
+                            android:onClick="ShowCalfFemale"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/runner" />
+
+                        <ImageButton
+                            android:id="@+id/wuImg4"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/buttonshape"
+                            android:onClick="ShowCalfMale"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/runner" />
+
+                        <ImageButton
+                            android:id="@+id/wuImg5"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/buttonshape"
+                            android:onClick="ShowHighKnees"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/runner" />
+
+                        <ImageButton
+                            android:id="@+id/wuImg6"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/buttonshape"
+                            android:onClick="ShowPushUps"
                             android:scaleType="centerInside"
                             app:srcCompat="@drawable/runner" />
                     </LinearLayout>

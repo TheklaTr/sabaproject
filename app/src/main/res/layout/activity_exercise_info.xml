@@ -33,15 +33,28 @@
         android:id="@+id/returnToWeeks2"
         android:layout_width="140dp"
         android:layout_height="70dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
         android:background="@drawable/buttonshape"
         android:drawableTop="@drawable/paperplane"
         android:drawablePadding="-5dp"
         android:onClick="BackButton"
         android:paddingTop="10sp"
         android:text="@string/goback"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="500dp"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="200dp"
+        android:text="This is one way we could show the animation and information about the move"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseInfo" />
 </android.support.constraint.ConstraintLayout>

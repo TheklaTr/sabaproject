@@ -86,4 +86,10 @@ public class FAQScreen extends AppCompatActivity {
              *       play sound from same index at tswana voice array*/
         }
     }
+
+    public void BackButton(View view){
+
+        super.onBackPressed();
+        finish();
+    }
 }

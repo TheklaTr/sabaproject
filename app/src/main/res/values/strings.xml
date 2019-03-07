@@ -11,6 +11,7 @@
     <string name="sendbutton">Send to phone</string>
     <string name="returntoweeks">Return to weeks</string>
     <string name="goback">Go back</string>
+    <string name="moveInfo">Animated move</string>
     <string name="returntomenu">Return to menu</string>
     <string name="sets">Sets and Reps</string>
     <string name="warmup">Warmup</string>
