@@ -18,6 +18,7 @@ import org.w3c.dom.Text;
 public class MenuScreen extends AppCompatActivity {
 
     User user;
+    DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class MenuScreen extends AppCompatActivity {
         user = (User)intent.getSerializableExtra("userObject");
 
         // For database
-        databaseReference = FirebaseDatabase.getInstance().getReference("User");
+        databaseReference = FirebaseDatabase.getInstance().getReference();
 
         // Some debugging stuff. Will be removed when not needed anymore
         TextView idTxt = (TextView)findViewById(R.id.debugID);
@@ -83,7 +84,6 @@ public class MenuScreen extends AppCompatActivity {
                 .setPositiveButton("Logout", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        SendToDatabase();
                         Logout();
                     }
                 }).setNegativeButton("Cancel", null);
@@ -95,20 +95,20 @@ public class MenuScreen extends AppCompatActivity {
 
     private void Logout(){
 
+        SendToDatabase();
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }
-    DatabaseReference databaseReference;
+
 
     private void SendToDatabase(){
-        String exampleData = user.GetUsername();
-        //      Integer id = user.GetId().toString();
 
-        String id = databaseReference.push().getKey();
-//        User user = new User(id,exampleData);
+        String msg1 = "First message";
+        String msg2 = "Second message";
 
-        databaseReference.child(id).setValue(id,exampleData);
+        DataCollection dCollection = new DataCollection(msg1, msg2);
+        databaseReference.child("messages").push().setValue(dCollection);
 
     }
 
