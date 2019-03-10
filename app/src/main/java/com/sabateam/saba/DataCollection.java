@@ -7,23 +7,24 @@ import java.io.Serializable;
 
 public class DataCollection implements Serializable {
 
-    private String message1;
-    private String message2;
+    private String data1;
+    private String data2;
 
-    public DataCollection(String message1, String message2) {
-        this.message1 = message1;
-        this.message2 = message2;
+    public DataCollection(String data1, String data2) {
+        this.data1 = data1;
+        this.data2 = data2;
     }
 
     public DataCollection() {
+        //Firebase requires empty constructor
     }
 
-    public String getMessage1() {
-        return message1;
+    public String getData1() {
+        return data1;
     }
 
-    public String getMessage2() {
-        return message2;
+    public String getData2() {
+        return data2;
     }
 
 }

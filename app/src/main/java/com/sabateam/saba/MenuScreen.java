@@ -104,10 +104,14 @@ public class MenuScreen extends AppCompatActivity {
 
     private void SendToDatabase(){
 
-        String msg1 = "First message";
-        String msg2 = "Second message";
+        // Set the values of Datacollection object
+        String msg1 = user.GetUsername();
+        String msg2 = user.GetAvatar();
 
+        // This class handles the creation of object that is sended to Firebase
         DataCollection dCollection = new DataCollection(msg1, msg2);
+
+        // Sends the data to a collection named 'messages' in Firebase
         databaseReference.child("messages").push().setValue(dCollection);
 
     }
