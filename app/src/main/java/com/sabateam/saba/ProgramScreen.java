@@ -1,17 +1,22 @@
 package com.sabateam.saba;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Layout;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.VideoView;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -21,17 +26,21 @@ import java.util.ArrayList;
 import java.util.List;
 import android.widget.LinearLayout.LayoutParams;
 
+import com.google.android.gms.vision.text.Line;
+
 public class ProgramScreen extends AppCompatActivity {
 
     static TextView[] moveTexts;
     static TextView[] moveSetTexts;
-    int[] videoArray = {R.raw.character_vid, R.raw.calf_raises_female,
-            R.raw.calf_raises_male, R.raw.high_knees_male, R.raw.push_ups_male};
+    static ImageButton[] moveAnimations;
+    int[] videoArray;
 
     static List<String> aerobics = new ArrayList<>();
     static List<String> strength = new ArrayList<>();
     static List<String> balance = new ArrayList<>();
     static List<String> flexes = new ArrayList<>();
+    static List<String> animationsMale = new ArrayList<>();
+    static List<String> animationsFemale = new ArrayList<>();
     static List<String> sets = new ArrayList<>();
 
     int place;
@@ -63,10 +72,14 @@ public class ProgramScreen extends AppCompatActivity {
         strength = JsonIntoList(receivedJson, "strength");
         balance = JsonIntoList(receivedJson, "balance");
         flexes = JsonIntoList(receivedJson, "flex");
+        animationsMale = JsonIntoList(receivedJson, "animations_male");
+        animationsFemale = JsonIntoList(receivedJson, "animations_female");
         sets = JsonIntoList(receivedJson, "sets");
 
         moveTexts = new TextView[sets.size()];
         moveSetTexts = new TextView[sets.size()];
+        moveAnimations = new ImageButton[sets.size()];
+        videoArray = new int[sets.size()];
 
         linear1 = (LinearLayout) findViewById(R.id.aerobicMoves);
         linear2 = (LinearLayout) findViewById(R.id.strengthMoves);
@@ -83,35 +96,77 @@ public class ProgramScreen extends AppCompatActivity {
 
         place = 0;
 
+        // Sets the correct animations into the videoArray
+        SetVideoArray(sets.size());
+
 
         // Sets the contents of exercise page
-        SetContent(aerobics.size(), linear1, linear5, aerobics);
-        SetContent(strength.size(), linear2, linear6, strength);
-        SetContent(balance.size(), linear3, linear7, balance);
-        SetContent(flexes.size(), linear4, linear8, flexes);
+        SetContent(aerobics.size(), linear1, linear5, linear9, aerobics);
+        SetContent(strength.size(), linear2, linear6, linear10, strength);
+        SetContent(balance.size(), linear3, linear7, linear11, balance);
+        SetContent(flexes.size(), linear4, linear8, linear12, flexes);
     }
 
-    public void SetContent(int size, LinearLayout linearA, LinearLayout linearB, List<String> moveList) {
+    public void SetContent(int size, LinearLayout linearA, LinearLayout linearB, LinearLayout linearC, List<String> moveList) {
 
         for(int i = 0; i < size; i++) {
             moveTexts[place] = new TextView(this);
             moveSetTexts[place] = new TextView(this);
+            moveAnimations[place] = new ImageButton(this);
+
             LayoutParams layoutParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
             layoutParams.gravity = Gravity.LEFT;
-            layoutParams.setMargins(16, 16, 0,20);
+            layoutParams.setMargins(16, 90, 0,40);
             layoutParams.weight = 0.33F;
+
             moveTexts[place].setLayoutParams(layoutParams);
             moveSetTexts[place].setLayoutParams(layoutParams);
             moveTexts[place].setText(moveList.get(i));
             moveSetTexts[place].setText(sets.get(place));
             moveTexts[place].setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
             moveSetTexts[place].setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
+
             linearA.addView(moveTexts[place]);
             linearB.addView(moveSetTexts[place]);
+
+            LayoutParams imageParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
+            imageParams.setMargins(16, 10, 0,15);
+            imageParams.weight = 0.33F;
+
+            moveAnimations[place].setImageResource(R.drawable.placeholderimg);
+            moveAnimations[place].setLayoutParams(imageParams);
+            moveAnimations[place].setOnClickListener(animationListener);
+            moveAnimations[place].setBackgroundColor(Color.TRANSPARENT);
+            moveAnimations[place].setTag(place);
+            moveAnimations[place].setId(place);
+            linearC.addView(moveAnimations[place]);
 
             place++;
         }
     }
+
+    private View.OnClickListener animationListener = new View.OnClickListener(){
+
+        @Override
+        public void onClick(View v){
+            // For debugging
+            Toast.makeText(ProgramScreen.this, "ID " + v.getId(), Toast.LENGTH_LONG).show();
+
+            ShowExerciseInDialog(v.getId());
+        }
+    };
+
+    private void SetVideoArray(int size) {
+
+        for(int i = 0; i < size; i++){
+
+            String nameOfAnimation = animationsMale.get(i);
+            int resID = getResources().getIdentifier(nameOfAnimation, "raw", getPackageName());
+
+            videoArray[i] = resID;
+        }
+    }
+
 
     // Temp method for button
     public void ShowExerciseInfo(View view){
@@ -122,11 +177,13 @@ public class ProgramScreen extends AppCompatActivity {
 
     }
 
+
+
     // Temp method for demonstration
-    public void ShowExerciseInDialog(View view) {
+    public void ShowExerciseInDialog(int idNumber) {
 
         VideoView videoFeed = new VideoView(this);
-        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.character_vid;
+        String videoPath = "android.resource://" + getPackageName() + "/" + getResources().getIdentifier("" + videoArray[idNumber], "raw", getPackageName());
         videoFeed.setVideoPath(videoPath);
 
         AlertDialog.Builder builder =
@@ -185,48 +242,5 @@ public class ProgramScreen extends AppCompatActivity {
         finish();
     }
 
-    // Temp methods for showing the animations, delete after ICT Showroom
-    public void ShowCalfFemale(View view){
-
-        ShowVideo(1);
-    }
-
-    public void ShowCalfMale(View view){
-
-        ShowVideo(2);
-    }
-
-    public void ShowHighKnees(View view){
-
-        ShowVideo(3);
-    }
-
-    public void ShowPushUps(View view) {
-
-        ShowVideo(4);
-    }
-
-    private void ShowVideo(int index) {
-        VideoView videoFeed = new VideoView(this);
-        String videoPath = "android.resource://" + getPackageName() + "/" + videoArray[index];
-        videoFeed.setVideoPath(videoPath);
-
-        AlertDialog.Builder builder =
-                new AlertDialog.Builder(this).
-                        setView(videoFeed).
-                        setPositiveButton("OK", null);
-
-
-        videoFeed.setZOrderOnTop(true);
-        videoFeed.start();
-        builder.create().show();
-
-        videoFeed.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                mp.setLooping(true);
-            }
-        });
-    }
 
 }

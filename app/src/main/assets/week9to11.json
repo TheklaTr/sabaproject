@@ -43,5 +43,41 @@
     "move13":"2 x 30s",
     "move14":"2 x 30s",
     "move15":"2 x 30s"
+  },
+  "animations_male":
+  {
+    "move1":"high_knees_male",
+    "move2":"high_knees_male",
+    "move3":"high_knees_male",
+    "move4":"high_knees_male",
+    "move5":"high_knees_male",
+    "move6":"high_knees_male",
+    "move7":"high_knees_male",
+    "move8":"high_knees_male",
+    "move9":"high_knees_male",
+    "move10":"high_knees_male",
+    "move11":"high_knees_male",
+    "move12":"high_knees_male",
+    "move13":"high_knees_male",
+    "move14":"high_knees_male",
+    "move15":"high_knees_male"
+  },
+  "animations_female":
+  {
+    "move1":"high_knees_male",
+    "move2":"high_knees_male",
+    "move3":"high_knees_male",
+    "move4":"high_knees_male",
+    "move5":"high_knees_male",
+    "move6":"high_knees_male",
+    "move7":"high_knees_male",
+    "move8":"high_knees_male",
+    "move9":"high_knees_male",
+    "move10":"high_knees_male",
+    "move11":"high_knees_male",
+    "move12":"high_knees_male",
+    "move13":"high_knees_male",
+    "move14":"high_knees_male",
+    "move15":"high_knees_male"
   }
 }

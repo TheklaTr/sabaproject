@@ -112,7 +112,7 @@
 
 
                         <TextView
-                            android:id="@+id/aerobicText2"
+                            android:id="@+id/aerobicSetEmpty"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_marginStart="16dp"
@@ -138,77 +138,17 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <ImageButton
-                            android:id="@+id/wuImg2"
+                        <TextView
+                            android:id="@+id/aerobicSetEmpty2"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:layout_marginLeft="50dp"
-                            android:layout_marginRight="50dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/buttonshape"
-                            android:onClick="ShowExerciseInfo"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/runner" />
-
-                        <ImageButton
-                            android:id="@+id/wuImg"
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:layout_marginLeft="50dp"
-                            android:layout_marginRight="50dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/buttonshape"
-                            android:onClick="ShowExerciseInDialog"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/runner" />
-
-                        <ImageButton
-                            android:id="@+id/wuImg3"
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:layout_marginLeft="50dp"
-                            android:layout_marginRight="50dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/buttonshape"
-                            android:onClick="ShowCalfFemale"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/runner" />
-
-                        <ImageButton
-                            android:id="@+id/wuImg4"
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:layout_marginLeft="50dp"
-                            android:layout_marginRight="50dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/buttonshape"
-                            android:onClick="ShowCalfMale"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/runner" />
-
-                        <ImageButton
-                            android:id="@+id/wuImg5"
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:layout_marginLeft="50dp"
-                            android:layout_marginRight="50dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/buttonshape"
-                            android:onClick="ShowHighKnees"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/runner" />
-
-                        <ImageButton
-                            android:id="@+id/wuImg6"
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:layout_marginLeft="50dp"
-                            android:layout_marginRight="50dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/buttonshape"
-                            android:onClick="ShowPushUps"
-                            android:scaleType="centerInside"
-                            app:srcCompat="@drawable/runner" />
+                            android:layout_height="0dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="0.33"
+                            android:text="Aerobic Training"
+                            android:textColor="@android:color/transparent"
+                            android:textSize="30sp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -292,7 +232,20 @@
                         android:id="@+id/strengthVid"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical" />
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/StrengthVidEmpty"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="0.33"
+                            android:text="Aerobic Training"
+                            android:textColor="@android:color/transparent"
+                            android:textSize="30sp" />
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -375,7 +328,20 @@
                         android:id="@+id/balanceVid"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical" />
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/BalanceVidEmpty"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="0.33"
+                            android:text="Aerobic Training"
+                            android:textColor="@android:color/transparent"
+                            android:textSize="30sp" />
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -458,7 +424,20 @@
                         android:id="@+id/flexVid"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical" />
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/FlexVidEmpty"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="0.33"
+                            android:text="Aerobic Training"
+                            android:textColor="@android:color/transparent"
+                            android:textSize="30sp" />
+                    </LinearLayout>
 
                 </LinearLayout>
 
