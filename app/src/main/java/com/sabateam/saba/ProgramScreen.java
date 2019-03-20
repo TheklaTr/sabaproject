@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.text.Layout;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -29,6 +30,11 @@ import android.widget.LinearLayout.LayoutParams;
 import com.google.android.gms.vision.text.Line;
 
 public class ProgramScreen extends AppCompatActivity {
+
+    CardView aerobicBox;
+    CardView strengthBox;
+    CardView balanceBox;
+    CardView flexBox;
 
     static TextView[] moveTexts;
     static TextView[] moveSetTexts;
@@ -105,6 +111,16 @@ public class ProgramScreen extends AppCompatActivity {
         SetContent(strength.size(), linear2, linear6, linear10, strength);
         SetContent(balance.size(), linear3, linear7, linear11, balance);
         SetContent(flexes.size(), linear4, linear8, linear12, flexes);
+
+        // Finds the expandable cards and sets them GONE
+        aerobicBox = (CardView)findViewById(R.id.aerobicCard);
+        strengthBox = (CardView)findViewById(R.id.strengthCard);
+        balanceBox = (CardView)findViewById(R.id.balanceCard);
+        flexBox = (CardView)findViewById(R.id.flexCard);
+        aerobicBox.setVisibility(View.GONE);
+        strengthBox.setVisibility(View.GONE);
+        balanceBox.setVisibility(View.GONE);
+        flexBox.setVisibility(View.GONE);
     }
 
     public void SetContent(int size, LinearLayout linearA, LinearLayout linearB, LinearLayout linearC, List<String> moveList) {
@@ -236,10 +252,57 @@ public class ProgramScreen extends AppCompatActivity {
     }
 
 
+
+
     public void BackButton(View view){
 
         super.onBackPressed();
         finish();
+    }
+
+    // Placeholder methods for sliding the training views
+    public void AerobicToggle(View v){
+        if(aerobicBox.isShown()){
+            CustomAnim.SlideUp(this, aerobicBox);
+            aerobicBox.setVisibility(View.GONE);
+        }
+        else {
+            aerobicBox.setVisibility(View.VISIBLE);
+            CustomAnim.SlideDown(this, aerobicBox);
+        }
+    }
+
+    public void StrengthToggle(View v){
+        if(strengthBox.isShown()){
+            CustomAnim.SlideUp(this, strengthBox);
+            strengthBox.setVisibility(View.GONE);
+        }
+        else {
+            strengthBox.setVisibility(View.VISIBLE);
+            CustomAnim.SlideDown(this, strengthBox);
+        }
+    }
+
+    public void BalanceToggle(View v){
+        if(balanceBox.isShown()){
+            CustomAnim.SlideUp(this, balanceBox);
+            balanceBox.setVisibility(View.GONE);
+        }
+        else {
+            balanceBox.setVisibility(View.VISIBLE);
+            CustomAnim.SlideDown(this, balanceBox);
+        }
+    }
+
+    public void FlexToggle(View v){
+        if(flexBox.isShown()){
+            CustomAnim.SlideUp(this, flexBox);
+            flexBox.setVisibility(View.GONE);
+        }
+        else {
+            flexBox.setVisibility(View.VISIBLE);
+            CustomAnim.SlideDown(this, flexBox);
+        }
     }
 
 

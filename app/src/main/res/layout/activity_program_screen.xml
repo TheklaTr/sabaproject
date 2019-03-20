@@ -20,428 +20,542 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/moveInfo"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="400dp"
-        android:layout_marginLeft="400dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/sets"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="1150dp"
-        android:layout_height="400dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="450dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15">
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+            <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/layoutborder"
-                android:baselineAligned="false"
-                android:orientation="horizontal"
-                android:paddingBottom="40dp"
-                android:weightSum="3">
+                android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/aerobicToggle"
+                    android:layout_width="400dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/buttonshape"
+                    android:clickable="true"
+                    android:onClick="AerobicToggle"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="Aerobic"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
 
-                    <LinearLayout
-                        android:id="@+id/aerobicMoves"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-
-                        <TextView
-                            android:id="@+id/aerobicText"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_weight="0.33"
-                            android:text="Aerobic Training"
-                            android:textColor="@android:color/black"
-                            android:textSize="30sp" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:id="@+id/aerobicReps"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-
-                        <TextView
-                            android:id="@+id/aerobicSetEmpty"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_weight="0.33"
-                            android:text="Aerobic Training"
-                            android:textColor="@android:color/transparent"
-                            android:textSize="30sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:id="@+id/aerobicVid"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/aerobicSetEmpty2"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_weight="0.33"
-                            android:text="Aerobic Training"
-                            android:textColor="@android:color/transparent"
-                            android:textSize="30sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
+            <android.support.v7.widget.CardView
+                android:id="@+id/aerobicCard"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/layoutborder"
-                android:baselineAligned="false"
-                android:orientation="horizontal"
-                android:paddingBottom="40dp"
-                android:weightSum="3">
+                android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:id="@+id/aerobicContainer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:layout_marginBottom="16dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:paddingBottom="40dp"
+                    android:weightSum="3">
 
                     <LinearLayout
-                        android:id="@+id/strengthMoves"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
-
-                        <TextView
-                            android:id="@+id/strengthText"
+                        <LinearLayout
+                            android:id="@+id/aerobicMoves"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_weight="0.33"
-                            android:text="Strength"
-                            android:textColor="@android:color/black"
-                            android:textSize="30sp" />
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/aerobicText"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="0.33"
+                                android:text="Aerobic Training"
+                                android:textColor="@android:color/transparent"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/aerobicReps"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/aerobicSetEmpty"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="0.33"
+                                android:text="Sets and Reps"
+                                android:textColor="@android:color/black"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/aerobicVid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/aerobicSetEmpty2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="0.33"
+                                android:text="Animated move"
+                                android:textColor="@android:color/black"
+                                android:textSize="24sp" />
+                        </LinearLayout>
 
                     </LinearLayout>
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+            </android.support.v7.widget.CardView>
 
-                    <LinearLayout
-                        android:id="@+id/strengthReps"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-
-                        <TextView
-                            android:id="@+id/strengthText2"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_weight="0.33"
-                            android:text="Strength"
-                            android:textColor="@android:color/transparent"
-                            android:textSize="30sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:id="@+id/strengthVid"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical" >
-
-                        <TextView
-                            android:id="@+id/StrengthVidEmpty"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_weight="0.33"
-                            android:text="Aerobic Training"
-                            android:textColor="@android:color/transparent"
-                            android:textSize="30sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
+            <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/layoutborder"
-                android:baselineAligned="false"
-                android:orientation="horizontal"
-                android:paddingBottom="40dp"
-                android:weightSum="3">
+                android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/strengthToggle"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/buttonshape"
+                    android:clickable="true"
+                    android:onClick="StrengthToggle"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="Strength"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
 
-                    <LinearLayout
-                        android:id="@+id/balanceMoves"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-
-                        <TextView
-                            android:id="@+id/balanceText"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_weight="0.33"
-                            android:text="Balance"
-                            android:textColor="@android:color/black"
-                            android:textSize="30sp" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:id="@+id/balanceReps"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-
-                        <TextView
-                            android:id="@+id/balanceText2"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_weight="0.33"
-                            android:text="Balance"
-                            android:textColor="@android:color/transparent"
-                            android:textSize="30sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:id="@+id/balanceVid"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical" >
-
-                        <TextView
-                            android:id="@+id/BalanceVidEmpty"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_weight="0.33"
-                            android:text="Aerobic Training"
-                            android:textColor="@android:color/transparent"
-                            android:textSize="30sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
+            <android.support.v7.widget.CardView
+                android:id="@+id/strengthCard"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/layoutborder"
-                android:baselineAligned="false"
-                android:orientation="horizontal"
-                android:paddingBottom="40dp"
-                android:weightSum="3">
+                android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:id="@+id/strengthContainer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:layout_marginBottom="16dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:paddingBottom="40dp"
+                    android:weightSum="3">
 
                     <LinearLayout
-                        android:id="@+id/flexMoves"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
-
-                        <TextView
-                            android:id="@+id/flexText"
+                        <LinearLayout
+                            android:id="@+id/strengthMoves"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_weight="0.33"
-                            android:text="Flexibility"
-                            android:textColor="@android:color/black"
-                            android:textSize="30sp" />
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/strengthText"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="0.33"
+                                android:text="Strength"
+                                android:textColor="@android:color/transparent"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/strengthReps"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/strengthText2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="0.33"
+                                android:text="Sets and Reps"
+                                android:textColor="@android:color/black"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/strengthVid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/StrengthVidEmpty"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="0.33"
+                                android:text="Animated move"
+                                android:textColor="@android:color/black"
+                                android:textSize="24sp" />
+                        </LinearLayout>
 
                     </LinearLayout>
 
                 </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/balanceToggle"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/buttonshape"
+                    android:clickable="true"
+                    android:onClick="BalanceToggle"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="Balance"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/balanceCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:id="@+id/balanceContainer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:layout_marginBottom="16dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:paddingBottom="40dp"
+                    android:weightSum="3">
 
                     <LinearLayout
-                        android:id="@+id/flexReps"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
-
-                        <TextView
-                            android:id="@+id/flexText2"
+                        <LinearLayout
+                            android:id="@+id/balanceMoves"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_weight="0.33"
-                            android:text="Flexibility"
-                            android:textColor="@android:color/transparent"
-                            android:textSize="30sp" />
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/balanceText"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="0.33"
+                                android:text="Balance"
+                                android:textColor="@android:color/transparent"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/balanceReps"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/balanceText2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="0.33"
+                                android:text="Sets and Reps"
+                                android:textColor="@android:color/black"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/balanceVid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/BalanceVidEmpty"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="0.33"
+                                android:text="Animated move"
+                                android:textColor="@android:color/black"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
                     </LinearLayout>
 
                 </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/flexToggle"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/buttonshape"
+                    android:clickable="true"
+                    android:onClick="FlexToggle"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="Flexibility"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/flexCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:id="@+id/flexContainer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:layout_marginBottom="16dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:paddingBottom="40dp"
+                    android:weightSum="3">
 
                     <LinearLayout
-                        android:id="@+id/flexVid"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical" >
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/FlexVidEmpty"
+                        <LinearLayout
+                            android:id="@+id/flexMoves"
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_weight="0.33"
-                            android:text="Aerobic Training"
-                            android:textColor="@android:color/transparent"
-                            android:textSize="30sp" />
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/flexText"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="0.33"
+                                android:text="Flexibility"
+                                android:textColor="@android:color/transparent"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/flexReps"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/flexText2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="0.33"
+                                android:text="Sets and Reps"
+                                android:textColor="@android:color/black"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/flexVid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/FlexVidEmpty"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="0.33"
+                                android:text="Animated move"
+                                android:textColor="@android:color/black"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
                     </LinearLayout>
 
                 </LinearLayout>
+            </android.support.v7.widget.CardView>
 
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
@@ -465,7 +579,7 @@
         android:id="@+id/returnToWeeks"
         android:layout_width="140dp"
         android:layout_height="70dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         android:background="@drawable/buttonshape"
@@ -474,8 +588,8 @@
         android:onClick="BackButton"
         android:paddingTop="10sp"
         android:text="@string/returntoweeks"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/sendBtn"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
     <ImageView
         android:id="@+id/swipeImg"
