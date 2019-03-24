@@ -5,11 +5,13 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.sabateam.saba"
-        minSdkVersion 15
+        minSdkVersion 21 // changed from 15 to avoid multidex error (Joel)
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true //for multidex error (Joel)
+
     }
     buildTypes {
         release {

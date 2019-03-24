@@ -107,9 +107,31 @@ public class MenuScreen extends AppCompatActivity {
         // Set the values of Datacollection object
         String msg1 = user.GetUsername();
         String msg2 = user.GetAvatar();
+        String msg3 = Integer.toString(user.GetId()); //sending integers
+        /*
+      To do: Security rules
+      Datatracking:
+        Login identifier = Date+Time+User
+        FAQ Access (Y/N)
+            Which questions
+            How many times
+        How To be Active Access (Y/N)
+            Which entries
+            How many times
+        Exercise programs
+            # times accessed
+            Downloaded (Y/N)
+                Phone or print
+            Time since last download (post data collection problem?)
+            Exercises
+                Which ones
+                # times
+            Current phase + week
+
+         */
 
         // This class handles the creation of object that is sended to Firebase
-        DataCollection dCollection = new DataCollection(msg1, msg2);
+        DataCollection dCollection = new DataCollection(msg1, msg2, msg3);
 
         // Sends the data to a collection named 'messages' in Firebase
         databaseReference.child("messages").push().setValue(dCollection);
