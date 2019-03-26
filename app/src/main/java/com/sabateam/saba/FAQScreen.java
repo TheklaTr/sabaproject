@@ -1,5 +1,6 @@
 package com.sabateam.saba;
 
+import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.support.v7.app.AppCompatActivity;
@@ -86,8 +87,16 @@ public class FAQScreen extends AppCompatActivity {
         }
     }
 
-    public void BackButton(View view){
+    private void setDataBaseFAQData (int dbFAQData1){
+        SharedPreferences mSharedPreferences = getSharedPreferences("bdFAQData1", MODE_PRIVATE);
+        SharedPreferences.Editor mEditor = mSharedPreferences.edit();
+        mEditor.putInt("bdFAQData1", dbFAQData1);
+        mEditor.apply();
+    }
 
+
+    public void BackButton(View view){
+        setDataBaseFAQData(122);
         super.onBackPressed();
         finish();
     }

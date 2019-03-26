@@ -2,6 +2,7 @@ package com.sabateam.saba;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.support.v7.app.AlertDialog;
@@ -25,7 +26,6 @@ public class MenuScreen extends AppCompatActivity {
 
     User user;
     DatabaseReference databaseReference;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +64,7 @@ public class MenuScreen extends AppCompatActivity {
 
         // No need to pass in User object here but we might need to pass in some
         // Data object here if we are gathering data on what FAQ's users are clicking
+        storeDataExample(5); // dummy data
         Intent intent = new Intent(this, FAQScreen.class);
         startActivity(intent);
     }
@@ -103,23 +104,50 @@ public class MenuScreen extends AppCompatActivity {
     }
 
     private void Logout(){
-
         SendToDatabase();
+        storeDataExample(0);
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }
 
 
+    private void storeDataExample(int dataExample){ //make creators in .javas to store in sharedpreference
+        SharedPreferences mSharedPreferences = getSharedPreferences("dataExampleOne", MODE_PRIVATE);
+        SharedPreferences.Editor mEditor = mSharedPreferences.edit();
+        mEditor.putInt("dataExampleOne", dataExample);
+        mEditor.apply();
+    }
+
+    private int getSharedData() {
+        SharedPreferences mSharedPreferences = getSharedPreferences("dataExampleOne", MODE_PRIVATE);
+        int dataToBeSent = mSharedPreferences.getInt("dataExampleOne", 0);
+        return  dataToBeSent;
+    }
+    private int getDataBaseFAQData() {
+        SharedPreferences mSharedPreferences = getSharedPreferences("bdFAQData1a", MODE_PRIVATE);
+        int dataToBeSent = mSharedPreferences.getInt("bdFAQData1a", 0);
+        return  dataToBeSent;
+    }
+    /*
+    private int getDataBaseFAQData2() {
+        SharedPreferences mSharedPreferences = getSharedPreferences("bdFAQData2a", MODE_PRIVATE);
+        int dataToBeSent2 = mSharedPreferences.getInt("bdFAQData2a", 0);
+        return  dataToBeSent2;
+    }
+    */
+
+
     private void SendToDatabase(){
 
-        // Set the values of Datacollection object
+        // Set the values of Data collection object
         String msg1 = user.GetUsername();
         String msg2 = user.GetAvatar();
-        String msg3 = Integer.toString(user.GetId()); //sending integers TODO Tonin lisäys, lähetät tällä hetken numeron tekstimuodossa
-        /*
+        Integer msg3 = getSharedData();
+        String msg4 = Integer.toString(getDataBaseFAQData());
+    /*
       To do: Security rules
-      Datatracking:
+      Data tracking:
         Login identifier = Date+Time+User
         FAQ Access (Y/N)
             Which questions
@@ -136,17 +164,16 @@ public class MenuScreen extends AppCompatActivity {
                 Which ones
                 # times
             Current phase + week
+    */
 
-         */
 
         // This class handles the creation of object that is sent to Firebase
-        DataCollection dCollection = new DataCollection(msg1, msg2, msg3);
+        DataCollection dCollection = new DataCollection(msg1, msg2, msg3, msg4);
 
         // Sends the data to a collection named 'messages' in Firebase
         databaseReference.child("messages").push().setValue(dCollection);
 
     }
-
 
 
 }
