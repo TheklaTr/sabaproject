@@ -32,6 +32,7 @@ public class MenuScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_screen);
 
+
         // Gets the User object from previous intent
         Intent intent = getIntent();
         user = (User)intent.getSerializableExtra("userObject");
@@ -46,7 +47,6 @@ public class MenuScreen extends AppCompatActivity {
         idTxt.setText(Integer.toString(user.GetId()));
         usernameTxt.setText((user.GetUsername()));
         avatarTxt.setText(user.GetAvatar());
-
 
     }
 
