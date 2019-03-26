@@ -62,4 +62,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordField" />
 
+    <ImageButton
+        android:id="@+id/selectUk"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/transparent"
+        android:onClick="TranslateToEnglish"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/selectSA"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ukflag" />
+
+    <ImageButton
+        android:id="@+id/selectSA"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="100dp"
+        android:background="@android:color/transparent"
+        android:onClick="TranslateToTSwana"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/selectUk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/selectUk"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/saflag" />
+
 </android.support.constraint.ConstraintLayout>

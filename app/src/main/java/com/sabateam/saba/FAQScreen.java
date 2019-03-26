@@ -1,7 +1,6 @@
 package com.sabateam.saba;
 
 import android.media.AudioManager;
-import android.media.Image;
 import android.media.SoundPool;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -33,7 +32,7 @@ public class FAQScreen extends AppCompatActivity {
         setContentView(R.layout.activity_faqscreen);
 
 
-        ToggleButton toggle = (ToggleButton) findViewById(R.id.languageToggle);
+        ToggleButton toggle = (ToggleButton) findViewById(R.id.languageToggler);
 
         toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

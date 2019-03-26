@@ -2,23 +2,30 @@ package com.sabateam.saba;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
+import android.util.DisplayMetrics;
+import android.view.Menu;
 import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
-import com.google.android.gms.common.util.NumberUtils;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import org.w3c.dom.Text;
+import java.io.Serializable;
+import java.util.Locale;
 
 public class MenuScreen extends AppCompatActivity {
 
     User user;
     DatabaseReference databaseReference;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +46,8 @@ public class MenuScreen extends AppCompatActivity {
         idTxt.setText(Integer.toString(user.GetId()));
         usernameTxt.setText((user.GetUsername()));
         avatarTxt.setText(user.GetAvatar());
+
+
     }
 
     public void ToTrainingPrograms(View view){
@@ -107,7 +116,7 @@ public class MenuScreen extends AppCompatActivity {
         // Set the values of Datacollection object
         String msg1 = user.GetUsername();
         String msg2 = user.GetAvatar();
-        String msg3 = Integer.toString(user.GetId()); //sending integers
+        String msg3 = Integer.toString(user.GetId()); //sending integers TODO Tonin lisäys, lähetät tällä hetken numeron tekstimuodossa
         /*
       To do: Security rules
       Datatracking:
@@ -130,12 +139,14 @@ public class MenuScreen extends AppCompatActivity {
 
          */
 
-        // This class handles the creation of object that is sended to Firebase
+        // This class handles the creation of object that is sent to Firebase
         DataCollection dCollection = new DataCollection(msg1, msg2, msg3);
 
         // Sends the data to a collection named 'messages' in Firebase
         databaseReference.child("messages").push().setValue(dCollection);
 
     }
+
+
 
 }
