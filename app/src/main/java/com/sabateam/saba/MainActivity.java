@@ -1,12 +1,20 @@
 package com.sabateam.saba;
 
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         givenPassword = (EditText)findViewById(R.id.passwordField);
 
         Log.d("test tag", "test message");
+
     }
 
     public void Login(View view) {
@@ -58,5 +67,28 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Wrong username or password", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    // Translation buttons
+    public void TranslateToEnglish(View v){
+        SetLocale("en");
+    }
+
+    public void TranslateToTSwana(View v) {
+        SetLocale("tn");
+    }
+
+    public void SetLocale(String lang) {
+
+        Locale myLocale = new Locale(lang);
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+
+        conf.locale = myLocale;
+        res.updateConfiguration(conf, dm);
+        Intent refresh = new Intent(this, MainActivity.class);
+        finish();
+        startActivity(refresh);
     }
 }

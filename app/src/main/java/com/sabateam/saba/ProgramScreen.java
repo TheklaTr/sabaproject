@@ -132,7 +132,7 @@ public class ProgramScreen extends AppCompatActivity {
 
             LayoutParams layoutParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
             layoutParams.gravity = Gravity.LEFT;
-            layoutParams.setMargins(16, 90, 0,40);
+            layoutParams.setMargins(16, 65, 0,40);
             layoutParams.weight = 0.33F;
 
             moveTexts[place].setLayoutParams(layoutParams);
@@ -145,7 +145,7 @@ public class ProgramScreen extends AppCompatActivity {
             linearA.addView(moveTexts[place]);
             linearB.addView(moveSetTexts[place]);
 
-            LayoutParams imageParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
+            LayoutParams imageParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
             imageParams.setMargins(16, 10, 0,15);
             imageParams.weight = 0.33F;
 
@@ -175,6 +175,9 @@ public class ProgramScreen extends AppCompatActivity {
     private void SetVideoArray(int size) {
 
         for(int i = 0; i < size; i++){
+
+            // TODO Avatar check in here
+            // if user has selected male, populate videoArray with male moves else with female moves
 
             String nameOfAnimation = animationsMale.get(i);
             int resID = getResources().getIdentifier(nameOfAnimation, "raw", getPackageName());
