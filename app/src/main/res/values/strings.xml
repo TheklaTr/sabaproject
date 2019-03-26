@@ -57,15 +57,37 @@
     <string name="faq7">How often should a diabetic patient exercise? </string>
     <string name="faq8">How do one get rid of muscle cramps during and after exercise?</string>
     <string name="faq9">What is the cause of dizziness, fatigue and body weakness in the mornings?</string>
-    <string name="faq13">Anemia? Always being told to eat certain food to avoid it but what is the cause?</string>
-    <string name="faq14">How safe is it to exercise if one is injured? </string>
-    <string name="faq15">What is the purpose of a warm-up?</string>
-    <string name="faq16">What is the effect of sports drink during exercise?</string>
-    <string name="faq17">If one exercise everyday but for shorter time, would they see better results?</string>
-    <string name="faq18">What is the fastest way to get a flat stomach?</string>
-    <string name="faq19">Is it safe to exercise when one has flu? </string>
-    <string name="faq20">Would one gain weight if they stopped exercising?</string>
-    <string name="faq21">What is the best time to exercise? Morning or evening?</string>
-    <string name="faq22">Does sweating a lot mean one is losing more fat?</string>
-
+    <string name="faq10">Anemia? Always being told to eat certain food to avoid it but what is the cause?</string>
+    <string name="faq11">How safe is it to exercise if one is injured? </string>
+    <string name="faq12">What is the purpose of a warm-up?</string>
+    <string name="faq13">If one exercise everyday but for shorter time, would they see better results?</string>
+    <string name="faq14">What is the fastest way to get a flat stomach?</string>
+    <string name="faq15">Is it safe to exercise when one has flu? </string>
+    <string name="faq16">Would one gain weight if they stopped exercising?</string>
+    <string name="faq17">What is the best time to exercise? Morning or evening?</string>
+    <string name="faq18">Does sweating a lot mean one is losing more fat?</string>
+    <string name="faq1a">Lack of exercise put one at a risk of developing many diseases including heart diseases, high blood pressure, diabetes, cancers and osteoporosis.\n
+It improves blood flow which helps in reducing most diseases especially those that affect the heart.\n
+Exercise can help in reducing and maintaining healthy weight\n
+Helps control blood sugar and cho lesterol levels.\n
+Helps to delay diseases for the aging population\n
+Exercise helps to promote better sleep and improve mood.\n
+Helps improving flexibility.\n</string>
+    <string name="faq2a">The recommended guidelines for exercise is 30 minutes of moderate intensity at least 5 times in a week or 150 minutes of moderate activity per week. And 75 minutes of vigorous intensity per week. Instead of doing the whole minutes you can also split it into 10 minutes of three repetitions.</string>
+    <string name="faq3a">It could not really be said like that but exercise is a choice like any other lifestyles people choose but exercise throughout lifetime have positive results especially in the elderly, as we grow old our bodies tend to lose stamina and strength which naturally decreases our physical functionality.  Helps strengthen muscle strength which helps in maintaining balance and reduces risks of falls in elders.</string>
+    <string name="faq4a">Being unable to see doesn’t mean you cannot be active. People with disabilities including those of visual impairments can also benefit from exercise, however It’s recommended that they should consult with their medical doctors and optometrists since some conditions can be affected by exercises such as lifting, straining or rapid movements. As long as you discuss your needs with the fitness instructor they can always create a program suitable for you and also do one on one sessions if required. Home exercises can also be prescribed for those who can’t afford the fitness instructors. </string>
+    <string name="faq5a">Exercise helps in managing hypertension and diabetes, however there are certain lifestyle habits that must be altered for it to work efficiently. Habits like smoking, unhealthy diet, excessive alcohol usage and unhealthy weight are contradictory to exercise.</string>
+    <string name="faq6a">Losing weight means burning more calories than you consume (eat and drink) and exercise can help with that. Evidence suggest that cardio/aerobic exercise is the best way to lose weight as it doesn’t have much effect on the muscle mass but effective in burning calories. Examples of cardio include swimming, running, cycling and walking.</string>
+    <string name="faq7a">Diabetes is often affected by factors such as weight and activity levels, which can all be managed. ACSM recommended that diabetic patients should exercise three to five times a week and burn a total of about 1000 calories. Patients can begin with 10-15 minutes of exercise working up to 30 minutes per session.</string>
+    <string name="faq8a">Wearing appropriate shoes during a work-out, stretching properly after warm up and cooling down is very important. Consuming the right amount of fluids to prevent dehydration. Choose an exercise program suitable for your body and exercise at your own pace.  </string>
+    <string name="faq9a">Dizziness is usually experienced if people have other medical conditions. Other than that, in the morning it could be caused by sudden change of balance as your body from waking up and into a standing position. Sleep apnea, dehydration and low blood sugar can also lead to dizziness and fatigue in the morning.</string>
+    <string name="faq10a">Anemia in simple terms means you don’t have enough healthy red blood cells in the body which results in reduced oxygen flow to the organs. It can be caused by loss of blood through bleeding, if one’s body cannot produce enough red blood cells and also if the body destroy red blood cells by itself.</string>
+    <string name="faq11a">For safety reasons, it is wise to get a medical clearance from your doctor first and then also approval from your physician. Their recommendations will help you on how much you should exercise and also what type of exercises you should do/avoid.</string>
+    <string name="faq12a">Warming up before any activity is a way of getting your body ready for the activity by raising your body and muscle temperatures, thus increasing blood flow to the working muscles and supplying them with enough oxygen. Warm-up can also help in preventing injuries during activity as well as preparing your body mentally for the upcoming activity. </string>
+    <string name="faq13a">Aim for a minimum level of 30 minutes of moderate activity 5 times a week, you can split your 30 minutes into 10-minute bout if you like; OR 150 minutes of moderate activity per week, OR 75 minutes of vigorous activity per week. Using those recommendations and increasing your intensity gradually will help you see better results.</string>
+    <string name="faq14a">There is no short cut to loosing belly fat except through exercise and a balanced diet, so consulting a physician and a dietician for a good exercise and eating plan that fit your body and your fitness goals is the best way. </string>
+    <string name="faq15a">Most people believe that when you have flu you should exercise to “sweat it out” but it is not really good to exercise when you have flu because your immune system is compromised already due to the sickness. When we exercise our metabolism increases due to a rise in body temperature and if you start with an increased temperature, it will be hard for your body to bring the temperature back to its normal state. Sweating out too much can lead into dehydration and you might end up losing more fluids that you actually need.</string>
+    <string name="faq16a">It is more likely to happen that you will gain weight if you stopped exercising because when your muscles lose some of their fat-burning abilities, your metabolism slows down from lack of activity and if the food you are consuming is not burned out then it is stored as fat within your body especially if you don’t change your diet.</string>
+    <string name="faq17a">There is not really the best time to exercise, the best thing you can do for yourself is to choose a routine that will suitably fit your goals and stick to it.</string>
+    <string name="faq18a">Sweating a lot only means you are losing water weight and yes it can lead you to lose weight but only temporary because the moment you drink water the weight will return to your body as you replenished the fluids you lost. </string>
 </resources>

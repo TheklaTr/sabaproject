@@ -57,526 +57,1006 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21">
 
-        <android.support.constraint.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <ImageButton
-                android:id="@+id/faqbut19"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut18"
-                app:srcCompat="@drawable/speaker" />
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <ImageButton
-                android:id="@+id/faqbut7"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut6"
-                app:srcCompat="@drawable/speaker" />
+                <TextView
+                    android:id="@+id/faq1"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq1AnswerToggle"
+                    android:text="@string/faq1"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 1" />
 
-            <ImageButton
-                android:id="@+id/faqbut8"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut7"
-                app:srcCompat="@drawable/speaker" />
+            </android.support.constraint.ConstraintLayout>
 
-            <ImageButton
-                android:id="@+id/faqbut9"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut8"
-                app:srcCompat="@drawable/speaker" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq1card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <ImageButton
-                android:id="@+id/faqbut10"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut9"
-                app:srcCompat="@drawable/speaker" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/faqbut13"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut12"
-                app:srcCompat="@drawable/speaker" />
+                    <TextView
+                        android:id="@+id/faq1a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq1a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 1" />
 
-            <ImageButton
-                android:id="@+id/faqbut18"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut17"
-                app:srcCompat="@drawable/speaker" />
+                    <ImageButton
+                        android:id="@+id/faqbut1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/faqbut17"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut16"
-                app:srcCompat="@drawable/speaker" />
+            </android.support.v7.widget.CardView>
 
-            <ImageButton
-                android:id="@+id/faqbut16"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut15"
-                app:srcCompat="@drawable/speaker" />
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <ImageButton
-                android:id="@+id/faqbut15"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut14"
-                app:srcCompat="@drawable/speaker" />
+                <TextView
+                    android:id="@+id/faq2"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq2AnswerToggle"
+                    android:text="@string/faq2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 2" />
 
-            <ImageButton
-                android:id="@+id/faqbut14"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut13"
-                app:srcCompat="@drawable/speaker" />
+            </android.support.constraint.ConstraintLayout>
 
-            <ImageButton
-                android:id="@+id/faqbut12"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut11"
-                app:srcCompat="@drawable/speaker" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq2card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <ImageButton
-                android:id="@+id/faqbut11"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut10"
-                app:srcCompat="@drawable/speaker" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/faqbut1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="20dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/speaker" />
+                    <TextView
+                        android:id="@+id/faq2a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq2a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 2" />
 
-            <ImageButton
-                android:id="@+id/faqbut6"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut5"
-                app:srcCompat="@drawable/speaker" />
+                    <ImageButton
+                        android:id="@+id/faqbut2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/faqbut5"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut4"
-                app:srcCompat="@drawable/speaker" />
+            </android.support.v7.widget.CardView>
 
-            <ImageButton
-                android:id="@+id/faqbut4"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut3"
-                app:srcCompat="@drawable/speaker" />
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <ImageButton
-                android:id="@+id/faqbut3"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut2"
-                app:srcCompat="@drawable/speaker" />
+                <TextView
+                    android:id="@+id/faq3"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq3AnswerToggle"
+                    android:text="@string/faq3"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 3" />
 
-            <ImageButton
-                android:id="@+id/faqbut2"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
-                android:layout_marginTop="40dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:tag="donald"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/faqbut1"
-                app:srcCompat="@drawable/speaker" />
+            </android.support.constraint.ConstraintLayout>
 
-            <TextView
-                android:id="@+id/faq1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq1"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut1" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq3card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/faq2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq2"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut2" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/faq3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq3"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut3"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut3" />
+                    <TextView
+                        android:id="@+id/faq3a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq3a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 3" />
 
-            <TextView
-                android:id="@+id/faq4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq4"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut4"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut4" />
+                    <ImageButton
+                        android:id="@+id/faqbut3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
 
-            <TextView
-                android:id="@+id/faq5"
-                android:layout_width="900dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq5"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut5" />
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/faq6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq6"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut6"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut6" />
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/faq7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq7"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut7"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut7" />
+                <TextView
+                    android:id="@+id/faq4"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq4AnswerToggle"
+                    android:text="@string/faq4"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 4" />
 
-            <TextView
-                android:id="@+id/faq8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq8"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut8"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut8" />
+            </android.support.constraint.ConstraintLayout>
 
-            <TextView
-                android:id="@+id/faq9"
-                android:layout_width="900dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq9"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut9"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut9" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq4card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/faq13"
-                android:layout_width="900dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq13"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut10"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut10" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/faq14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq14"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut11"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut11" />
+                    <TextView
+                        android:id="@+id/faq4a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq4a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 4" />
 
-            <TextView
-                android:id="@+id/faq15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq15"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut12"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut12" />
+                    <ImageButton
+                        android:id="@+id/faqbut4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
 
-            <TextView
-                android:id="@+id/faq16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq16"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut13"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut13" />
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/faq17"
-                android:layout_width="900dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq17"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut14"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut14" />
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/faq18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq18"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut15"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut15" />
+                <TextView
+                    android:id="@+id/faq5"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq5AnswerToggle"
+                    android:text="@string/faq5"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 5" />
 
-            <TextView
-                android:id="@+id/faq19"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq19"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut16"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut16" />
+            </android.support.constraint.ConstraintLayout>
 
-            <TextView
-                android:id="@+id/faq20"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq20"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut17"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut17" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq5card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/faq21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq21"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut18"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut18" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/faq22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="250dp"
-                android:layout_marginLeft="250dp"
-                android:text="@string/faq22"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/faqbut19"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/faqbut19" />
+                    <TextView
+                        android:id="@+id/faq5a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq5a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 5" />
 
+                    <ImageButton
+                        android:id="@+id/faqbut5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
 
-        </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/faq6"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq6AnswerToggle"
+                    android:text="@string/faq6"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 6" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq6card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/faq6a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq6a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 6" />
+
+                    <ImageButton
+                        android:id="@+id/faqbut6"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/faq7"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq7AnswerToggle"
+                    android:text="@string/faq7"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 7" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq7card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/faq7a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq7a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 7" />
+
+                    <ImageButton
+                        android:id="@+id/faqbut7"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/faq8"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq8AnswerToggle"
+                    android:text="@string/faq8"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 8" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq8card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/faq8a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq8a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 8" />
+
+                    <ImageButton
+                        android:id="@+id/faqbut8"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/faq9"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq9AnswerToggle"
+                    android:text="@string/faq9"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 9" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq9card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/faq9a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq9a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 9" />
+
+                    <ImageButton
+                        android:id="@+id/faqbut9"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/faq10"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq10AnswerToggle"
+                    android:text="@string/faq10"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 10" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq10card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/faq10a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq10a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 10" />
+
+                    <ImageButton
+                        android:id="@+id/faqbut10"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/faq11"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq11AnswerToggle"
+                    android:text="@string/faq11"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 11" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq11card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/faq11a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq11a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 11" />
+
+                    <ImageButton
+                        android:id="@+id/faqbut11"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/faq12"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq12AnswerToggle"
+                    android:text="@string/faq12"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 12" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq12card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/faq12a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq12a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 12" />
+
+                    <ImageButton
+                        android:id="@+id/faqbut12"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/faq13"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq13AnswerToggle"
+                    android:text="@string/faq13"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 13" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq13card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/faq13a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq13a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 13" />
+
+                    <ImageButton
+                        android:id="@+id/faqbut13"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/faq14"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq14AnswerToggle"
+                    android:text="@string/faq14"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 14" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq14card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/faq14a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq14a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 14" />
+
+                    <ImageButton
+                        android:id="@+id/faqbut14"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/faq15"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq15AnswerToggle"
+                    android:text="@string/faq15"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 15" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq15card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/faq15a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq15a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 15" />
+
+                    <ImageButton
+                        android:id="@+id/faqbut15"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/faq16"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq16AnswerToggle"
+                    android:text="@string/faq16"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 16" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq16card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/faq16a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq16a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 16" />
+
+                    <ImageButton
+                        android:id="@+id/faqbut16"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/faq17"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq17AnswerToggle"
+                    android:text="@string/faq17"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 17" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq17card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/faq17a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq17a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 17" />
+
+                    <ImageButton
+                        android:id="@+id/faqbut17"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/faq18"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:clickable="true"
+                    android:onClick="Faq18AnswerToggle"
+                    android:text="@string/faq18"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="kysymys 18" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/faq18card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/faq18a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/faq18a"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        tools:text="vastaus 18" />
+
+                    <ImageButton
+                        android:id="@+id/faqbut18"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:tag="donald"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/speaker"
+                        tools:layout_editor_absoluteX="28dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
     </ScrollView>
 
     <ToggleButton
@@ -616,4 +1096,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21"
         app:srcCompat="@drawable/points" />
+
 </android.support.constraint.ConstraintLayout>
