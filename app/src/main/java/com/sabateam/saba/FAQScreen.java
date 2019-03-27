@@ -54,7 +54,7 @@ public class FAQScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faqscreen);
 
-        faq1a = (CardView)findViewById(R.id.faq1card);
+        faq1a = (CardView)findViewById(R.id.faq1cardtest);
         faq2a = (CardView)findViewById(R.id.faq2card);
         faq3a = (CardView)findViewById(R.id.faq3card);
         faq4a = (CardView)findViewById(R.id.faq4card);
