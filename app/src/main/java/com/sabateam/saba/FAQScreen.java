@@ -91,7 +91,6 @@ public class FAQScreen extends AppCompatActivity {
         faq17a.setVisibility(View.GONE);
         faq18a.setVisibility(View.GONE);
 
-        
 
         sounds = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
 
@@ -135,7 +134,9 @@ public class FAQScreen extends AppCompatActivity {
             faq1a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq1a);
         }
+        int faq1Answer = 1;
     }
+
     public void Faq2AnswerToggle(View v){
         if(faq2a.isShown()){
             CustomAnim.SlideUp(this, faq2a);
@@ -145,6 +146,8 @@ public class FAQScreen extends AppCompatActivity {
             faq2a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq2a);
         }
+        int faq2Answer = 1;
+
     }
     public void Faq3AnswerToggle(View v){
         if(faq3a.isShown()){

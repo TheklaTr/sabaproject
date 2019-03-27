@@ -1,10 +1,12 @@
 package com.sabateam.saba;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.provider.ContactsContract;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -75,6 +77,7 @@ public class MenuScreen extends AppCompatActivity {
         // we might have to pass in the Data model in case we need to track happenings
         // inside 'How to be Active'
         Intent intent = new Intent(this, BeActiveScreen.class);
+        DataCollection.saveIntForDataBase(this, "howToBeActiveAccessed", 1);
         startActivity(intent);
     }
 
@@ -104,34 +107,41 @@ public class MenuScreen extends AppCompatActivity {
     }
 
     private void Logout(){
+
         SendToDatabase();
+        flushSharedPreferences();
         storeDataExample(0);
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }
-
+    public void flushSharedPreferences(){
+        SharedPreferences preferences = getSharedPreferences("dataBaseSharedPreferences", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.clear();
+        editor.commit();
+    }
 
     private void storeDataExample(int dataExample){ //make creators in .javas to store in sharedpreference
-        SharedPreferences mSharedPreferences = getSharedPreferences("dataExampleOne", MODE_PRIVATE);
+        SharedPreferences mSharedPreferences = getSharedPreferences("dataBaseSharedPreferences", MODE_PRIVATE);
         SharedPreferences.Editor mEditor = mSharedPreferences.edit();
         mEditor.putInt("dataExampleOne", dataExample);
         mEditor.apply();
     }
 
     private int getSharedData() {
-        SharedPreferences mSharedPreferences = getSharedPreferences("dataExampleOne", MODE_PRIVATE);
+        SharedPreferences mSharedPreferences = getSharedPreferences("dataBaseSharedPreferences", MODE_PRIVATE);
         int dataToBeSent = mSharedPreferences.getInt("dataExampleOne", 0);
         return  dataToBeSent;
     }
     private int getDataBaseFAQData() {
-        SharedPreferences mSharedPreferences = getSharedPreferences("bdFAQData1a", MODE_PRIVATE);
+        SharedPreferences mSharedPreferences = getSharedPreferences("dataBaseSharedPreferences", MODE_PRIVATE);
         int dataToBeSent = mSharedPreferences.getInt("bdFAQData1a", 0);
         return  dataToBeSent;
     }
     /*
     private int getDataBaseFAQData2() {
-        SharedPreferences mSharedPreferences = getSharedPreferences("bdFAQData2a", MODE_PRIVATE);
+        SharedPreferences mSharedPreferences = getSharedPreferences("dataBaseSharedPreferences", MODE_PRIVATE);
         int dataToBeSent2 = mSharedPreferences.getInt("bdFAQData2a", 0);
         return  dataToBeSent2;
     }
@@ -142,7 +152,7 @@ public class MenuScreen extends AppCompatActivity {
 
         // Set the values of Data collection object
         String msg1 = user.GetUsername();
-        String msg2 = user.GetAvatar();
+        String msg2 = Integer.toString(DataCollection.getIntForDataBase(this, "howToBeActiveAccessed"));
         Integer msg3 = getSharedData();
         String msg4 = Integer.toString(getDataBaseFAQData());
     /*
