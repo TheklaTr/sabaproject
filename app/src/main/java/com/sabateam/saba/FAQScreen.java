@@ -38,9 +38,6 @@ public class FAQScreen extends AppCompatActivity {
     CardView faq19a;
 
 
-
-    boolean selectedEnglish;
-    int[] flags = {R.drawable.ukflag, R.drawable.saflag};
     private SoundPool sounds;
     private Map<String, Object> clips = new HashMap<>();
     // Maybe do similar int-arrays as above for both english voice and tswana voice
@@ -93,26 +90,7 @@ public class FAQScreen extends AppCompatActivity {
         faq17a.setVisibility(View.GONE);
         faq18a.setVisibility(View.GONE);
 
-
-        ToggleButton toggle = (ToggleButton) findViewById(R.id.languageToggler);
-
-        toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
-                if (isChecked) {
-                    selectedEnglish = true;
-                    flag = (ImageView) findViewById(R.id.flagImg);
-                    flag.setImageResource(flags[0]);
-
-                } else {
-                    selectedEnglish = false;
-                    flag = (ImageView) findViewById(R.id.flagImg);
-                    flag.setImageResource(flags[1]);
-
-                }
-            }
-        });
+        
 
         sounds = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
 

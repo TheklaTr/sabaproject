@@ -58,14 +58,39 @@
     <string name="faq7">Gantsi go le go kana kang go ikatisa fa e le molwetse a o nang le bolwetse ba sukiri?</string>
     <string name="faq8">O tlosa jang dicramp tsa mosifa ka nako le morago ga go ikatisa?</string>
     <string name="faq9">Ke eng se se bakang motsikitlelo, go lapa le bokoa mo mosong?</string>
+    <string name="faq10">"Anemia? Ba bolelelwa go ja dijo tse di rileng go tila go mme ke eng se se tlhodileng? "</string>
+    <string name="faq11">"A go babalesegile go ikatisa morago ga kgobalo? "</string>
+    <string name="faq12">"Lebaka la go thuthufatsa mmele ke eng? "</string>
     <string name="faq13">Anemia? Ba bolelelwa go ja dijo tse di rileng go tila go mme ke eng se se tlhodileng?</string>
     <string name="faq14">A go babalesegile go ikatisa morago ga kgobalo?</string>
     <string name="faq15">Lebaka la go thuthufatsa mmele ke eng?</string>
     <string name="faq16">What is the effect of sports drink during exercise?</string>
     <string name="faq17">Fa o ikatisa letsatsi le letsatsi mme ka nako e khutshwane, go ra go re o tla ba bona dipholo tse di botoka?</string>
     <string name="faq18">Ke eng e berekelang ka pele go fokotsa mokhaba?</string>
-    <string name="faq19">A go babalesegile go ikatisa fa o na le mofikela?</string>
-    <string name="faq20">O ka nna bokete fa o emisa go diragatsa?</string>
-    <string name="faq21">Nako e e siameng ya go diragatsa ke neng? Mo mosong kgotsa bosigo?</string>
-    <string name="faq22">A go fufula go le gontsi go raya gore motho o latlhegelwa ke mafura go feta?</string>
+    <string name="faq1a">"Tlhokego ya go ikatisa sengwe mo kotsing ya malwetse a mantsi go akaretsa le malwetse a pelo, kgatelelo ya madi e e kwa godimo, bolwetse jwa sukiri, cancers le bolwetse jwa.\n
+        Go tokafatsa kelelomadi se se thusang go fokotsa malwetse a a botlhokwa thata tse di amang pelo.\n
+        E ka thusa go fokotsa boima le go tsweletsa boima bo bo siameng.\n
+        E thusa go laola sukiri mo madding le kholesetorolo.\n
+        E thusa go diega malwetse mo go bagolo.\n
+        Go ikatisa go thusa go rotloetsa go robala le go tokafatsa boikutlo.\n
+        Go thusa go tokafatsa matlhagatlhaga. "</string>
+    <string name="faq2a">Dikaelo tse di atlanegisitsweng ke go dirisa metsotso e le 30 ya bogareng ba bonnye makgetlo a le 5 ka beke kgotsa ka nnang 150 metsotso ya tiro e e ka beke. Le metsotso e e 75 e thatafala go feta ka beke. Boemong jwa go dira ditshwetso tse di dirilweng mo kopanong e e feletseng gape o ka kgaoganngwa go nna metsotso e le 10 ga raro</string>
+    <string name="faq3a">"Go se ka tota e e jalo mme ke Tlhopho nngwe le nngwe e e tshwanang le mekgwa yotlhe ya botshelo jwa batho ba ba tlhophang mme go na le dipholo tse di siameng tota go bagodi, jaaka re gola wa ditlamo tsa rona di na le go latlhegelwa ke maitsetsepelo le nonofo e e ka fokotsang mmele ya rona o se batlang. E thusa go gagamatsa mosifa thata ya go thusa go tsweletsa tekano le go fokotsa mathata a a welang mo go tsa bagolo. "</string>
+    <string name="faq4a">"Go se kgone go bona ga se reye gore ga o kgone go nna matlhagatlhaga. Batho ba ba nang le bogole go akaretsa tseo tsa bofofu ba ka bona dipoelo go tswa go diragatsa, le fa go ntse jalo go atlanegisiwa gore ba tshwanetse go ikgolaganya le dingaka tsa kalafi le ngaka ya matlho ka maemo a a ka amiwang ke dingwe tsa di katiso tse di jaaka go ya ka mekgatlho ya ka bonako. Fa o sekaseka ditlhokego tsa gago le mokaedi wa boitekanelo ba ka tlhama porokeramo e tshwanetseng go dirisiwa go wena  mme gape le go dira sengwe ka nako e le nngwe fa go tlhokega. Dingaka tsa basegi ka kgona go dira dikatiso tsa go dira kwa gae mo go ba ba ka se kgone go buisana le bone. "</string>
+    <string name="faq5a">"Go ikatisa go thusa go laola kgatelelo ya madi e e kwa godimo le bolwetse jwa sukiri, le fa go ntse jalo go na le mokgwa wa botshelo e e siameng gore di tshwanetse go fetolwa gore e dire ka nonofo. Mokgwa wa go rata go tsuba, dijo tse di sa siamang, go nwa bojalwa le boima bo bo sa siamang e e ganetsang go diragatsa. "</string>
+    <string name="faq6a">Go latlhegelwa ke bokete e kaya go fisa calories tse o di jang (dijo le dino) mme go ikatisa go thusa ka seo. Bosupi bo bontshang gore ditukiso tsa cardio ke tsela e e siameng ya go latlhegelwa ke bokete jaaka ga e na le seabe mo go boima ba mesifa mme e e tukang dicalories. Dikao tsa cardio di akaretsa go thuma, go swaya baesekele, go taboga le go tsamaya.</string>
+    <string name="faq7a">"Bolwetse jwa sukiri gantsi e amiwa ke mabaka jaaka boima le maemo a tiro e, e ka laolwa. Acsm go atlanegisiwa gore balwetse ba ba nang le bolwetse ba sukiri ba tshwanetse go diragatsa malatsi a le mararo go ya go di le tlhano ka beke le go fisa palogotlhe ya diketekete tsa di calories. Balwetse ba ka kgona go simolola ka 10-15 ya metsotso ya go ikatisa go fitlha go ya go metsotso e le 30 ka nako.  "</string>
+    <string name="faq8a">"Go rwala ditlhako tsa maleba ka nako ya kopano, gagamatso le tsiditsano ya mmele e botlhokwa thata. Go nwa diedi gape go thibela thlokego ya metsi mo mmeleng. Tlhopha lenaneo la go diragatsa le siametseng mmele wa gago le go diragatsa kwa gago. "</string>
+    <string name="faq9a">"Motsikitlelo gantsi o ama batho ba ba nang le maitemogelo mangwe a tsa kalafi. Kwa ntle ga gore, mo mosong e e ka tlholwang ke phetogo e e tlwaelegileng ya tekatekano ka gore mmele wa gago go tswa mo o tsogang le mo maemong a leruri. "</string>
+    <string name="faq10a">Anemia ka mareo a a bonolo go raya gore ga o na madi a a lekaneng a a siameng disele tsa mo mmeleng, go baka go tlhaelo ya go tlisa okosijene mo mmeleng. E e ka tlholwang ke tatlhego ya madi ka go tswa madi, fa mmele o sa kgone go ntsha disele tse khibidu tsa madi a a lekaneng, le fa setlamo se senya disele tsa madi ka boyona</string>
+    <string name="faq11a">"Go ya ka mabaka a pabalesego, go botoka go bona kalafi sa kgololo go tswa go ngaka ya gago ya ntlha mme gape le kamogelo go tswa moalafeng wa gago. Tsona di tla go thusa gore o tshwanetse go diragatsa gape le gore ke mofuta ofe wa taolo o tshwanetse go dira ka tila. "</string>
+    <string name="faq12a">"Kgotelo ya ka pele ga tiro nngwe le nngwe ke tsela ya go bona o siametse tiro ka go godisa themphereitšha ya mesifa le mmele wa gago, ka seo o oketsa kelelo ya madi go dira mesifa mo mesifa e e dirang dikatiso le kabo e e nang le okosijene di lekaneng. Thithofatso ka thusa gape go thibela dikgobalo mo tirong gammogo le go baakanyetsa mo tlhaloganyong le mmele wa gago go tlotla tiro. "</string>
+    <string name="faq13a">"A maemo a bonnye metsotso e le 30 ya bogareng ga 5 ka beke, o ka kgona go kgaoganya gago ya metsotso e le 30 ka 10-minute bout fa o batla; kgotsa metsotso e le 150 tsa tiro ka beke, kgotsa metsotso e e 75 ya tiro e e tlhogang ka beke. Go dirisa dikatlanegiso le go oketsa ba gago ba ka tla go thusa go bona dipholo tse di botoka. "</string>
+    <string name="faq14a">Ga go na sepe se se khutshwane le go fokotsa mafura mo mpeng ka ntle ga go ikatisa le go ja dijo tse di nang le dikotla, ka jalo go rerisana le moalafi wa dikatiso le dietitian go diragatsa togamaano e e siameng le go ja sentle gore mmele wa gago le nonofo ya maikaelelo a gago ke tsela e e gaisang.</string>
+    <string name="faq15a">"Batho ba bantsi ba dumela gore fa o na le mofikela, o tshwanetse go diragatsa go re o fufule fela ga se pila tota go diragatsa fa o na le mofikela, ka gore kemo ya maitlhabelo a a sa siamang ka ntlha ya bolwetse. Fa re ikatisa joo ya rona e ntse e oketsega ka ntlha ya go mo themphereitšha le fa o simolola ka go mogote, go tla nna thata gore mmele wa gago go ya kwa go yona naga e e tlwaelegileng. Go fufula thata go tlhola go re mmele wa gago o tlhoke metsi mme o ka iphitlhela ke le diedi tse o di tlhokang . "</string>
+    <string name="faq16a">Go ka direga gore o tla nna le bokete fa o emisa go diragatsa ka gonne fa gago mesifa e latlhegelwa ke dingwe tsa bona go tswana le bokgoni jwa go ka fisa mafura, joo gago go fokotsega ga o go tlhoka tiro gape fa dijo tse o di jang di nna mo mmeleng, di tlo go bolokwa jaaka mafura mo mmeleng tota fa o sa fetole dijo tse o dijang.</string>
+    <string name="faq17a">Tota ga go na nako e e siameng ya go ikatisa, selo se segolo se o ka se dirang ka bowena ke go tlhopha yone e e tla tshwanelang go tsena ka maikaelelo a gago le go tsepama mo go yone</string>
+    <string name="faq18a">Go fufula thata fela go raya gore o latlhegelwa ke metsi a a bokete e bile e ka dirang gore o latlhegelwe ke mmele fela nakwana ka nako e o nwa metsi e tla boela kagonne mmele wa gago o busetsa metsi o latlhegetsweng ke one.</string>
+
+
 </resources>
