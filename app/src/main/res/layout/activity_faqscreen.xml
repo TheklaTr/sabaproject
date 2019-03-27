@@ -25,8 +25,7 @@
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         android:background="@drawable/buttonshape"
-        android:drawableTop="@drawable/paperplane"
-        android:drawablePadding="-5dp"
+        android:padding="5dp"
         android:onClick="BackButton"
         android:paddingTop="10sp"
         android:text="@string/returntomenu"
@@ -51,8 +50,7 @@
         android:layout_width="1150dp"
         android:layout_height="450dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/layoutborder"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21">
@@ -87,7 +85,7 @@
             </android.support.constraint.ConstraintLayout>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/faq1card"
+                android:id="@+id/faq1cardtest"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -1058,43 +1056,5 @@
 
         </LinearLayout>
     </ScrollView>
-
-    <ToggleButton
-        android:id="@+id/languageToggler"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/buttonshape"
-        android:checked="true"
-        android:text="ToggleButton"
-        android:textOff="Tswana"
-        android:textOn="English"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
-
-    <ImageView
-        android:id="@+id/flagImg"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:scaleType="fitXY"
-        app:layout_constraintStart_toEndOf="@+id/languageToggler"
-        app:layout_constraintTop_toBottomOf="@+id/textView21"
-        app:srcCompat="@drawable/ukflag" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21"
-        app:srcCompat="@drawable/points" />
 
 </android.support.constraint.ConstraintLayout>
