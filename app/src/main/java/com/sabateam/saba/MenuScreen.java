@@ -51,9 +51,10 @@ public class MenuScreen extends AppCompatActivity {
         avatarTxt.setText(user.GetAvatar());
 
     }
-
+    int timesTrainingProgrammesAccessed =0;
     public void ToTrainingPrograms(View view){
-
+        timesTrainingProgrammesAccessed++;
+        DataCollection.saveIntForDataBase(this, "trainingProgrammesAccessed", timesTrainingProgrammesAccessed);
         Intent intent = new Intent(this, ProgramSelectionScreen.class);
 
         // We need to pass in the current progress if we need to regulate on
@@ -66,7 +67,7 @@ public class MenuScreen extends AppCompatActivity {
 
         // No need to pass in User object here but we might need to pass in some
         // Data object here if we are gathering data on what FAQ's users are clicking
-        storeDataExample(5); // dummy data
+        DataCollection.saveIntForDataBase(this, "faqPageAccessed", 1);
         Intent intent = new Intent(this, FAQScreen.class);
         startActivity(intent);
     }
@@ -107,10 +108,8 @@ public class MenuScreen extends AppCompatActivity {
     }
 
     private void Logout(){
-
         SendToDatabase();
         flushSharedPreferences();
-        storeDataExample(0);
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
@@ -151,37 +150,90 @@ public class MenuScreen extends AppCompatActivity {
     private void SendToDatabase(){
 
         // Set the values of Data collection object
-        String msg1 = user.GetUsername();
-        String msg2 = Integer.toString(DataCollection.getIntForDataBase(this, "howToBeActiveAccessed"));
-        Integer msg3 = getSharedData();
-        String msg4 = Integer.toString(getDataBaseFAQData());
-    /*
-      To do: Security rules
-      Data tracking:
-        Login identifier = Date+Time+User
-        FAQ Access (Y/N)
-            Which questions
-            How many times
-        How To be Active Access (Y/N)
-            Which entries
-            How many times
-        Exercise programs
-            # times accessed
-            Downloaded (Y/N)
-                Phone or print
-            Time since last download (post data collection problem?)
-            Exercises
-                Which ones
-                # times
-            Current phase + week
-    */
+        String msg1 = "user:" + user.GetUsername();
+        Integer msg2 = DataCollection.getIntForDataBase(this, "dataExampleOne");
+        Integer msg3 = 6;
+        String avatar = DataCollection.getStringForDataBase(this, "selectedAvatar");
+        Integer FAQAccessed = DataCollection.getIntForDataBase(this, "faqPageAccessed");
+        Integer faqdata1 = DataCollection.getIntForDataBase(this, "faq1Access");
+        Integer faqdata2 = DataCollection.getIntForDataBase(this, "faq2Access");
+        Integer faqdata3 = DataCollection.getIntForDataBase(this, "faq3Access");
+        Integer faqdata4 = DataCollection.getIntForDataBase(this, "faq4Access");
+        Integer faqdata5 = DataCollection.getIntForDataBase(this, "faq5Access");
+        Integer faqdata6 = DataCollection.getIntForDataBase(this, "faq6Access");
+        Integer faqdata7 = DataCollection.getIntForDataBase(this, "faq7Access");
+        Integer faqdata8 = DataCollection.getIntForDataBase(this, "faq8Access");
+        Integer faqdata9 = DataCollection.getIntForDataBase(this, "faq9Access");
+        Integer faqdata10 = DataCollection.getIntForDataBase(this, "faq10Access");
+        Integer faqdata11 = DataCollection.getIntForDataBase(this, "faq11Access");
+        Integer faqdata12 = DataCollection.getIntForDataBase(this, "faq12Access");
+        Integer faqdata13 = DataCollection.getIntForDataBase(this, "faq13Access");
+        Integer faqdata14 = DataCollection.getIntForDataBase(this, "faq14Access");
+        Integer faqdata15 = DataCollection.getIntForDataBase(this, "faq15Access");
+        Integer faqdata16 = DataCollection.getIntForDataBase(this, "faq16Access");
+        Integer faqdata17 = DataCollection.getIntForDataBase(this, "faq17Access");
+        Integer faqdata18 = DataCollection.getIntForDataBase(this, "faq18Access");
+        Integer sentToPhone = DataCollection.getIntForDataBase(this, "sentToPhone");
+        Integer trainingProgrammesAccessed = DataCollection.getIntForDataBase(this, "trainingProgrammesAccessed");
+
 
 
         // This class handles the creation of object that is sent to Firebase
-        DataCollection dCollection = new DataCollection(msg1, msg2, msg3, msg4);
+        DataCollection dCollection = new DataCollection(
+                msg1,
+                msg2,
+                msg3,
+                avatar,
+                FAQAccessed,
+                faqdata1,
+                faqdata2,
+                faqdata3,
+                faqdata4,
+                faqdata5,
+                faqdata6,
+                faqdata7,
+                faqdata8,
+                faqdata9,
+                faqdata10,
+                faqdata11,
+                faqdata12,
+                faqdata13,
+                faqdata14,
+                faqdata15,
+                faqdata16,
+                faqdata17,
+                faqdata18,
+                sentToPhone,
+                trainingProgrammesAccessed
+                );
 
         // Sends the data to a collection named 'messages' in Firebase
         databaseReference.child("messages").push().setValue(dCollection);
+    /*
+      To do:
+      Security rules
+      Sending data on startup if previous user didn't log out
+      Data tracking:
+        Login identifier = Date+Time+User
+        FAQ Access (Y/N)                DONE
+            Which questions             DONE
+            How many times              DONE
+        How To be Active Access (Y/N)   LATER
+            Which entries               ^
+            How many times              ^
+        Exercise programs               DONE
+            # times accessed            DONE
+            Downloaded (Y/N)            Done for phone, print not in the code yet (I think)
+                Phone or print
+            Time since last download (post data collection problem?)
+            Exercises                   Not done, not sure if I want to make all of them separately like the FAQ
+                Which ones              ^
+                # times                 ^
+            Current phase + week        Is this in the code yet?
+    */
+
+
+
 
     }
 

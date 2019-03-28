@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, MenuScreen.class);
                 intent.putExtra("userObject", user);
                 startActivity(intent);
+                DataCollection.saveStringForDataBase(this, "selectedAvatar", user.GetAvatar());
                 finish();
             }
 

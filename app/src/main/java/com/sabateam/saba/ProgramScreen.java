@@ -229,6 +229,7 @@ public class ProgramScreen extends AppCompatActivity {
         // Implementation here
         // Either send directly, or open up a new screen where the connection is established
         // with instructions
+        DataCollection.saveIntForDataBase(this,"sentToPhone", 1); //save info for database
     }
 
 

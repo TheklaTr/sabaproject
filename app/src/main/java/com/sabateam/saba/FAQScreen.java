@@ -125,6 +125,27 @@ public class FAQScreen extends AppCompatActivity {
              *       play sound from same index at tswana voice array*/
         }
     }
+    int faq1Access = 0;
+    int faq2Access = 0;
+    int faq3Access = 0;
+    int faq4Access = 0;
+    int faq5Access = 0;
+    int faq6Access = 0;
+    int faq7Access = 0;
+    int faq8Access = 0;
+    int faq9Access = 0;
+    int faq10Access = 0;
+    int faq11Access = 0;
+    int faq12Access = 0;
+    int faq13Access = 0;
+    int faq14Access = 0;
+    int faq15Access = 0;
+    int faq16Access = 0;
+    int faq17Access = 0;
+    int faq18Access = 0;
+    int faq19Access = 0;
+
+
     public void Faq1AnswerToggle(View v){
         if(faq1a.isShown()){
             CustomAnim.SlideUp(this, faq1a);
@@ -133,8 +154,9 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq1a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq1a);
+            faq1Access++;
+            DataCollection.saveIntForDataBase(this, "faq1Access", faq1Access);
         }
-        int faq1Answer = 1;
     }
 
     public void Faq2AnswerToggle(View v){
@@ -145,8 +167,9 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq2a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq2a);
+            faq2Access++;
+            DataCollection.saveIntForDataBase(this, "faq2Access", faq2Access);
         }
-        int faq2Answer = 1;
 
     }
     public void Faq3AnswerToggle(View v){
@@ -157,6 +180,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq3a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq3a);
+            faq3Access++;
+            DataCollection.saveIntForDataBase(this, "faq3Access", faq3Access);
         }
     }
     public void Faq4AnswerToggle(View v){
@@ -167,6 +192,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq4a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq4a);
+            faq4Access++;
+            DataCollection.saveIntForDataBase(this, "faq4Access", faq4Access);
         }
     }
     public void Faq5AnswerToggle(View v){
@@ -177,6 +204,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq5a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq5a);
+            faq5Access++;
+            DataCollection.saveIntForDataBase(this, "faq5Access", faq5Access);
         }
     }
     public void Faq6AnswerToggle(View v){
@@ -187,6 +216,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq6a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq6a);
+            faq6Access++;
+            DataCollection.saveIntForDataBase(this, "faq6Access", faq6Access);
         }
     }
     public void Faq7AnswerToggle(View v){
@@ -197,6 +228,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq7a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq7a);
+            faq7Access++;
+            DataCollection.saveIntForDataBase(this, "faq7Access", faq7Access);
         }
     }
     public void Faq8AnswerToggle(View v){
@@ -207,6 +240,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq8a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq8a);
+            faq8Access++;
+            DataCollection.saveIntForDataBase(this, "faq8Access", faq8Access);
         }
     }
     public void Faq9AnswerToggle(View v){
@@ -217,6 +252,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq9a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq9a);
+            faq9Access++;
+            DataCollection.saveIntForDataBase(this, "faq9Access", faq9Access);
         }
     }
     public void Faq10AnswerToggle(View v){
@@ -227,6 +264,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq10a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq10a);
+            faq10Access++;
+            DataCollection.saveIntForDataBase(this, "faq10Access", faq10Access);
         }
     }
     public void Faq11AnswerToggle(View v){
@@ -237,6 +276,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq11a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq11a);
+            faq11Access++;
+            DataCollection.saveIntForDataBase(this, "faq11Access", faq11Access);
         }
     }
     public void Faq12AnswerToggle(View v){
@@ -247,6 +288,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq12a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq12a);
+            faq12Access++;
+            DataCollection.saveIntForDataBase(this, "faq12Access", faq12Access);
         }
     }
     public void Faq13AnswerToggle(View v){
@@ -257,6 +300,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq13a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq13a);
+            faq13Access++;
+            DataCollection.saveIntForDataBase(this, "faq13Access", faq13Access);
         }
     }
     public void Faq14AnswerToggle(View v){
@@ -267,6 +312,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq14a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq14a);
+            faq14Access++;
+            DataCollection.saveIntForDataBase(this, "faq14Access", faq14Access);
         }
     }
     public void Faq15AnswerToggle(View v){
@@ -277,6 +324,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq15a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq15a);
+            faq15Access++;
+            DataCollection.saveIntForDataBase(this, "faq15Access", faq15Access);
         }
     }
     public void Faq16AnswerToggle(View v){
@@ -287,6 +336,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq16a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq16a);
+            faq16Access++;
+            DataCollection.saveIntForDataBase(this, "faq16Access", faq16Access);
         }
     }
     public void Faq17AnswerToggle(View v){
@@ -297,6 +348,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq17a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq17a);
+            faq17Access++;
+            DataCollection.saveIntForDataBase(this, "faq17Access", faq17Access);
         }
     }
     public void Faq18AnswerToggle(View v){
@@ -307,6 +360,8 @@ public class FAQScreen extends AppCompatActivity {
         else {
             faq18a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq18a);
+            faq18Access++;
+            DataCollection.saveIntForDataBase(this, "faq18Access", faq18Access);
         }
     }
     public void Faq19AnswerToggle(View v){
@@ -318,6 +373,8 @@ public class FAQScreen extends AppCompatActivity {
             faq19a.setVisibility(View.VISIBLE);
             CustomAnim.SlideDown(this, faq19a);
         }
+        faq19Access++;
+        DataCollection.saveIntForDataBase(this, "faq19Access", faq19Access);
     }
 
     private void setDataBaseFAQData (int dbFAQData1){

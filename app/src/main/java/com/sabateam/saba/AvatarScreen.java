@@ -27,11 +27,13 @@ public class AvatarScreen extends AppCompatActivity {
     public void SelectedMale(View view) {
 
         SetAvatarAndGo("male");
+        DataCollection.saveStringForDataBase(this, "selectedAvatar", "Male");
     }
 
     public void SelectedFemale(View view) {
 
         SetAvatarAndGo("female");
+        DataCollection.saveStringForDataBase(this, "selectedAvatar", "Female");
     }
 
     public void SetAvatarAndGo(String avatar) {
