@@ -1,0 +1,92 @@
+{
+  "aerobic":
+  {
+    "move1":"Fast walking/slow jog/dancing"
+  },
+  "strength":
+  {
+    "move1":"Stationary body lunges with weight",
+    "move2":"Squats with weight",
+    "move3":"Step lunges with weight ",
+    "move4":"Calve raises with weight",
+    "move5":"Front raises",
+    "move6":"Overhead press",
+    "move7":"Bent over rowing",
+    "move8":"Tricep dips",
+    "move9":"Crunches",
+    "move10":"Plank"
+
+  },
+  "balance":
+  {
+    "move1":"Balance Board"
+  },
+  "flex":
+  {
+    "move1":"Cat and camel",
+    "move2":"Hamstring stretch",
+    "move3":"Quadriceps stretch",
+    "move4":"Bum stretch",
+    "move5":"Back stretch"
+  },
+  "sets":
+  {
+    "move1":"30min",
+    "move2":"3 x 15",
+    "move3":"3 x 15",
+    "move4":"3 x 15",
+    "move5":"3 x 15",
+    "move6":"3 x 15",
+    "move7":"3 x 15",
+    "move8":"3 x 15",
+    "move9":"3 x 15",
+    "move10":"3 x 20",
+    "move11":"2 x 1 min",
+    "move12":"2 x 60s",
+    "move13":"2 x 30s",
+    "move14":"2 x 30s",
+    "move15":"2 x 30s",
+    "move16":"2 x 30s",
+    "move17":"2 x 30s"
+  },
+  "animations_male":
+  {
+    "move1":"high_knees_male",
+    "move2":"high_knees_male",
+    "move3":"high_knees_male",
+    "move4":"high_knees_male",
+    "move5":"high_knees_male",
+    "move6":"high_knees_male",
+    "move7":"high_knees_male",
+    "move8":"high_knees_male",
+    "move9":"high_knees_male",
+    "move10":"high_knees_male",
+    "move11":"high_knees_male",
+    "move12":"high_knees_male",
+    "move13":"high_knees_male",
+    "move14":"high_knees_male",
+    "move15":"high_knees_male",
+    "move16":"high_knees_male",
+    "move17":"high_knees_male"
+  },
+  "animations_female":
+  {
+    "move1":"calf_raises_female",
+    "move3":"calf_raises_female",
+    "move4":"calf_raises_female",
+    "move2":"calf_raises_female",
+    "move6":"calf_raises_female",
+    "move5":"calf_raises_female",
+    "move7":"calf_raises_female",
+    "move8":"calf_raises_female",
+    "move9":"calf_raises_female",
+    "move10":"calf_raises_female",
+    "move11":"calf_raises_female",
+    "move12":"calf_raises_female",
+    "move13":"calf_raises_female",
+    "move14":"calf_raises_female",
+    "move15":"calf_raises_female",
+    "move16":"calf_raises_female",
+    "move17":"calf_raises_female"
+  }
+}
