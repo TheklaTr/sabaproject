@@ -1,56 +1,53 @@
 {
   "aerobic":
   {
-    "move1":"Rhytmic step-ups"
+    "move1":"Fast walking/slow jog/dancing"
   },
   "strength":
   {
-    "move1":"Squats with small weight",
-    "move2":"Standing Calv raises with small weight",
-    "move3":"Stationary lunge",
-    "move4":"Straight leg raise",
-    "move5":"Bicep curls",
-    "move6":"Tricep extention",
-    "move7":"Diagonal inward shoulder raise",
-    "move8":"Overhead press"
+    "move1":"Stationary body lunges with weight",
+    "move2":"Squats with weight",
+    "move3":"Step lunges with weight ",
+    "move4":"Calve raises with weight",
+    "move5":"Front raises",
+    "move6":"Overhead press",
+    "move7":"Bent over rowing",
+    "move8":"Tricep dips",
+    "move9":"Crunches",
+    "move10":"Plank"
+
   },
   "balance":
   {
-    "move1":"Heel to toe",
-    "move2":"Balancing sticks",
-    "move3":"Single limb with arm",
-    "move4":"Body circles"
+    "move1":"Balance Board"
   },
   "flex":
   {
-    "move1":"Arms up",
-    "move2":"Shoulder blade squeeze",
-    "move3":"Wall tilts",
-    "move4":"Back stretch",
-    "move5":"Soleus stretch",
-    "move6":"Hamstring stretch"
+    "move1":"Cat and camel",
+    "move2":"Hamstring stretch",
+    "move3":"Quadriceps stretch",
+    "move4":"Bum stretch",
+    "move5":"Back stretch"
   },
   "sets":
   {
-    "move1":"15min",
-    "move2":"2 x 10",
-    "move3":"2 x 10",
-    "move4":"2 x 10",
-    "move5":"2 x 10",
-    "move6":"2 x 10",
-    "move7":"2 x 10",
-    "move8":"2 x 10",
-    "move9":"2 x 10",
-    "move10":"2 x 30s",
-    "move11":"2 x 30s",
-    "move12":"2 x 30s",
+    "move1":"30min",
+    "move2":"3 x 15",
+    "move3":"3 x 15",
+    "move4":"3 x 15",
+    "move5":"3 x 15",
+    "move6":"3 x 15",
+    "move7":"3 x 15",
+    "move8":"3 x 15",
+    "move9":"3 x 15",
+    "move10":"3 x 20",
+    "move11":"2 x 1 min",
+    "move12":"2 x 60s",
     "move13":"2 x 30s",
-    "move14":"2 x 5",
-    "move15":"2 x 5",
-    "move16":"2 x 5",
-    "move17":"2 x 30s",
-    "move18":"2 x 30s",
-    "move19":"2 x 30s"
+    "move14":"2 x 30s",
+    "move15":"2 x 30s",
+    "move16":"2 x 30s",
+    "move17":"2 x 30s"
   },
   "animations_male":
   {
@@ -70,9 +67,7 @@
     "move14":"high_knees_male",
     "move15":"high_knees_male",
     "move16":"high_knees_male",
-    "move17":"high_knees_male",
-    "move18":"high_knees_male",
-    "move19":"high_knees_male"
+    "move17":"high_knees_male"
   },
   "animations_female":
   {
@@ -92,8 +87,6 @@
     "move14":"calf_raises_female",
     "move15":"calf_raises_female",
     "move16":"calf_raises_female",
-    "move17":"calf_raises_female",
-    "move18":"calf_raises_female",
-    "move19":"calf_raises_female"
+    "move17":"calf_raises_female"
   }
 }

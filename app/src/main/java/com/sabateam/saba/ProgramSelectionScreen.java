@@ -44,139 +44,120 @@ public class ProgramSelectionScreen extends AppCompatActivity implements View.On
 
             case R.id.week1:
                 returnedJson = LoadJsonFromAssets("week1to3.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week2:
                 returnedJson = LoadJsonFromAssets("week1to3.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week3:
                 returnedJson = LoadJsonFromAssets("week1to3.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week4:
                 returnedJson = LoadJsonFromAssets("week4.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week5:
                 returnedJson = LoadJsonFromAssets("week5.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week6:
                 returnedJson = LoadJsonFromAssets("week6to8.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week7:
                 returnedJson = LoadJsonFromAssets("week6to8.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week8:
                 returnedJson = LoadJsonFromAssets("week6to8.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week9:
                 returnedJson = LoadJsonFromAssets("week9to11.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week10:
                 returnedJson = LoadJsonFromAssets("week9to11.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week11:
                 returnedJson = LoadJsonFromAssets("week9to11.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week12:
                 returnedJson = LoadJsonFromAssets("week12to16.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week13:
                 returnedJson = LoadJsonFromAssets("week12to16.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week14:
                 returnedJson = LoadJsonFromAssets("week12to16.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week15:
                 returnedJson = LoadJsonFromAssets("week12to16.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week16:
                 returnedJson = LoadJsonFromAssets("week12to16.json");
-                //JsonIntoArray(returnedJson);
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
+            case R.id.week17:
+                returnedJson = LoadJsonFromAssets("week17to24.json");
+                FetchProgramAndSendIt(returnedJson);
+
             case R.id.week18:
-                returnedJson = LoadJsonFromAssets("week1to3.json");
-                //JsonIntoArray(returnedJson);
+                returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week19:
-                returnedJson = LoadJsonFromAssets("week1to3.json");
-                //JsonIntoArray(returnedJson);
+                returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week20:
-                returnedJson = LoadJsonFromAssets("week1to3.json");
-                //JsonIntoArray(returnedJson);
+                returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week21:
-                returnedJson = LoadJsonFromAssets("week1to3.json");
-                //JsonIntoArray(returnedJson);
+                returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week22:
-                returnedJson = LoadJsonFromAssets("week1to3.json");
-                //JsonIntoArray(returnedJson);
+                returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week23:
-                returnedJson = LoadJsonFromAssets("week1to3.json");
-                //JsonIntoArray(returnedJson);
+                returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
                 break;
 
             case R.id.week24:
-                returnedJson = LoadJsonFromAssets("week1to3.json");
-                //JsonIntoArray(returnedJson);
+                returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
                 break;
         }

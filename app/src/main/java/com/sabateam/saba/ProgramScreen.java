@@ -65,11 +65,17 @@ public class ProgramScreen extends AppCompatActivity {
     LinearLayout linear12;
 
     String receivedJson;
+    String selectedAvatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_program_screen);
+
+        selectedAvatar = DataCollection.getStringForDataBase(this, "selectedAvatar");
+
+        // For debugging
+        Toast.makeText(ProgramScreen.this, "selected avatar " + selectedAvatar, Toast.LENGTH_LONG).show();
 
 
         receivedJson = (String) getIntent().getStringExtra("sentItem");
@@ -165,8 +171,7 @@ public class ProgramScreen extends AppCompatActivity {
 
         @Override
         public void onClick(View v){
-            // For debugging
-            Toast.makeText(ProgramScreen.this, "ID " + v.getId(), Toast.LENGTH_LONG).show();
+
 
             ShowExerciseInDialog(v.getId());
         }
@@ -176,13 +181,19 @@ public class ProgramScreen extends AppCompatActivity {
 
         for(int i = 0; i < size; i++){
 
-            // TODO Avatar check in here
             // if user has selected male, populate videoArray with male moves else with female moves
+            if(selectedAvatar.equals("Male")){
 
-            String nameOfAnimation = animationsMale.get(i);
-            int resID = getResources().getIdentifier(nameOfAnimation, "raw", getPackageName());
+                String nameOfAnimation = animationsMale.get(i);
+                int resID = getResources().getIdentifier(nameOfAnimation, "raw", getPackageName());
+                videoArray[i] = resID;
 
-            videoArray[i] = resID;
+            } else {
+
+                String nameOfAnimation = animationsFemale.get(i);
+                int resID = getResources().getIdentifier(nameOfAnimation, "raw", getPackageName());
+                videoArray[i] = resID;
+            }
         }
     }
 

@@ -1,8 +1,10 @@
 package com.sabateam.saba;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -10,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -21,6 +24,13 @@ public class MainActivity extends AppCompatActivity {
     EditText givenUsername;
     EditText givenPassword;
 
+    ImageButton clickedUK;
+    ImageButton clickedSA;
+
+    int[] flags = {R.drawable.ukflag, R.drawable.ukflag_small, R.drawable.saflag, R.drawable.saflag_small};
+
+    String currentLocale;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +39,24 @@ public class MainActivity extends AppCompatActivity {
 
         givenUsername = (EditText)findViewById(R.id.userName);
         givenPassword = (EditText)findViewById(R.id.passwordField);
+        clickedUK = (ImageButton)findViewById(R.id.selectUk);
+        clickedSA = (ImageButton)findViewById(R.id.selectSA);
 
         Log.d("test tag", "test message");
+
+        currentLocale = getResources().getConfiguration().locale.getLanguage();
+        // For debugging
+        Toast.makeText(MainActivity.this, "selected language " + currentLocale, Toast.LENGTH_LONG).show();
+
+        if(currentLocale.equals("en")){
+            clickedUK.setImageResource(flags[0]);
+            clickedSA.setImageResource(flags[3]);
+        }
+        else {
+            clickedUK.setImageResource(flags[1]);
+            clickedSA.setImageResource(flags[2]);
+        }
+
 
     }
 
