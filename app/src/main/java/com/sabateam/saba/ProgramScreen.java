@@ -207,10 +207,22 @@ public class ProgramScreen extends AppCompatActivity {
 
     }
 
+    String dataBaseTest = "ProgramTest: ";
 
 
     // Temp method for demonstration
     public void ShowExerciseInDialog(int idNumber) {
+
+        String exerciseViewed = "";
+
+        if(selectedAvatar.equals("Male")){
+            exerciseViewed = animationsMale.get(idNumber);
+        } else {
+            exerciseViewed = animationsFemale.get(idNumber);
+        }
+
+        exerciseViewed = exerciseViewed + exerciseViewed + ", ";
+        DataCollection.saveStringForDataBase(this,"exerciseViewed", exerciseViewed);
 
         VideoView videoFeed = new VideoView(this);
         String videoPath = "android.resource://" + getPackageName() + "/" + getResources().getIdentifier("" + videoArray[idNumber], "raw", getPackageName());

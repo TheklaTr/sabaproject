@@ -110,6 +110,8 @@ public class MenuScreen extends AppCompatActivity {
     private void Logout(){
         SendToDatabase();
         flushSharedPreferences();
+        flushDBHTBA();
+        flushFAQDB();
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
@@ -121,6 +123,35 @@ public class MenuScreen extends AppCompatActivity {
         editor.commit();
     }
 
+    public void flushDBHTBA(){
+        BeActiveScreen.dbHowTo1=0;
+        BeActiveScreen.dbHowTo2=0;
+        BeActiveScreen.dbHowTo3=0;
+        BeActiveScreen.dbHowTo4=0;
+        BeActiveScreen.dbHowTo5=0;
+    }
+    public void flushFAQDB(){
+        FAQScreen.faq1Access = 0;
+        FAQScreen.faq2Access = 0;
+        FAQScreen.faq3Access = 0;
+        FAQScreen.faq4Access = 0;
+        FAQScreen.faq5Access = 0;
+        FAQScreen.faq6Access = 0;
+        FAQScreen.faq7Access = 0;
+        FAQScreen.faq8Access = 0;
+        FAQScreen.faq9Access = 0;
+        FAQScreen.faq10Access = 0;
+        FAQScreen.faq11Access = 0;
+        FAQScreen.faq12Access = 0;
+        FAQScreen.faq13Access = 0;
+        FAQScreen.faq14Access = 0;
+        FAQScreen.faq15Access = 0;
+        FAQScreen.faq16Access = 0;
+        FAQScreen.faq17Access = 0;
+        FAQScreen.faq18Access = 0;
+        FAQScreen.faq19Access = 0;
+
+    }
     private void storeDataExample(int dataExample){ //make creators in .javas to store in sharedpreference
         SharedPreferences mSharedPreferences = getSharedPreferences("dataBaseSharedPreferences", MODE_PRIVATE);
         SharedPreferences.Editor mEditor = mSharedPreferences.edit();
@@ -128,31 +159,11 @@ public class MenuScreen extends AppCompatActivity {
         mEditor.apply();
     }
 
-    private int getSharedData() {
-        SharedPreferences mSharedPreferences = getSharedPreferences("dataBaseSharedPreferences", MODE_PRIVATE);
-        int dataToBeSent = mSharedPreferences.getInt("dataExampleOne", 0);
-        return  dataToBeSent;
-    }
-    private int getDataBaseFAQData() {
-        SharedPreferences mSharedPreferences = getSharedPreferences("dataBaseSharedPreferences", MODE_PRIVATE);
-        int dataToBeSent = mSharedPreferences.getInt("bdFAQData1a", 0);
-        return  dataToBeSent;
-    }
-    /*
-    private int getDataBaseFAQData2() {
-        SharedPreferences mSharedPreferences = getSharedPreferences("dataBaseSharedPreferences", MODE_PRIVATE);
-        int dataToBeSent2 = mSharedPreferences.getInt("bdFAQData2a", 0);
-        return  dataToBeSent2;
-    }
-    */
-
 
     private void SendToDatabase(){
 
         // Set the values of Data collection object
-        String msg1 = "user:" + user.GetUsername();
-        Integer msg2 = DataCollection.getIntForDataBase(this, "dataExampleOne");
-        Integer msg3 = 6;
+        String userLog = "user:" + user.GetUsername();
         String avatar = DataCollection.getStringForDataBase(this, "selectedAvatar");
         Integer FAQAccessed = DataCollection.getIntForDataBase(this, "faqPageAccessed");
         Integer faqdata1 = DataCollection.getIntForDataBase(this, "faq1Access");
@@ -175,14 +186,18 @@ public class MenuScreen extends AppCompatActivity {
         Integer faqdata18 = DataCollection.getIntForDataBase(this, "faq18Access");
         Integer sentToPhone = DataCollection.getIntForDataBase(this, "sentToPhone");
         Integer trainingProgrammesAccessed = DataCollection.getIntForDataBase(this, "trainingProgrammesAccessed");
-
+        String exerciseViewed = DataCollection.getStringForDataBase(this, "exerciseViewed");
+        String dataBaseWeekAccessed = DataCollection.getStringForDataBase(this, "dataBaseWeekAccessed");
+        Integer htbaAccess1 = DataCollection.getIntForDataBase(this, "howTo1");
+        Integer htbaAccess2 = DataCollection.getIntForDataBase(this, "howTo2");
+        Integer htbaAccess3 = DataCollection.getIntForDataBase(this, "howTo3");
+        Integer htbaAccess4 = DataCollection.getIntForDataBase(this, "howTo4");
+        Integer htbaAccess5 = DataCollection.getIntForDataBase(this, "howTo5");
 
 
         // This class handles the creation of object that is sent to Firebase
         DataCollection dCollection = new DataCollection(
-                msg1,
-                msg2,
-                msg3,
+                userLog,
                 avatar,
                 FAQAccessed,
                 faqdata1,
@@ -204,7 +219,14 @@ public class MenuScreen extends AppCompatActivity {
                 faqdata17,
                 faqdata18,
                 sentToPhone,
-                trainingProgrammesAccessed
+                trainingProgrammesAccessed,
+                exerciseViewed,
+                dataBaseWeekAccessed,
+                htbaAccess1,
+                htbaAccess2,
+                htbaAccess3,
+                htbaAccess4,
+                htbaAccess5
                 );
 
         // Sends the data to a collection named 'messages' in Firebase
@@ -218,18 +240,19 @@ public class MenuScreen extends AppCompatActivity {
         FAQ Access (Y/N)                DONE
             Which questions             DONE
             How many times              DONE
-        How To be Active Access (Y/N)   LATER
-            Which entries               ^
-            How many times              ^
+        How To be Active Access (Y/N)   DONE
+            Which entries               DONE
+            How many times              DONE
         Exercise programs               DONE
             # times accessed            DONE
             Downloaded (Y/N)            Done for phone, print not in the code yet (I think)
                 Phone or print
             Time since last download (post data collection problem?)
-            Exercises                   Not done, not sure if I want to make all of them separately like the FAQ
-                Which ones              ^
-                # times                 ^
-            Current phase + week        Is this in the code yet?
+            Exercises                   DONE
+                Which ones              DONE
+                # times                 DONE
+        Current phase + week        Is this in the code yet?
+        Sending and flushing in case logout is not used         NOT DONE
     */
 
 

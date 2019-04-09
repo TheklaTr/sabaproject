@@ -32,13 +32,11 @@ public class DataCollection implements Serializable {
     }
     public static String getStringForDataBase(Context context, String key){
         SharedPreferences mSharedPreferences = context.getSharedPreferences("dataBaseSharedPreferences", context.MODE_PRIVATE);
-        String dataToBeSent = mSharedPreferences.getString(key, null);
+        String dataToBeSent = mSharedPreferences.getString(key, " ");
         return  dataToBeSent;
     }
 
-    private String data1;
-    private Integer data2;
-    private Integer data3;
+    private String userLog;
     private String avatar;
     private Integer FAQAccessed;
     private Integer fdata1;
@@ -61,13 +59,17 @@ public class DataCollection implements Serializable {
     private Integer fdata18;
     private Integer sentToPhone;
     private Integer trainingProgrammesAccessed;
+    private String exerciseViewed;
+    private String dataBaseWeekAccessed;
+    private Integer htbaAccess1;
+    private Integer htbaAccess2;
+    private Integer htbaAccess3;
+    private Integer htbaAccess4;
+    private Integer htbaAccess5;
 
 
 
-
-    public DataCollection(String data1,
-                          Integer data2,
-                          Integer data3,
+    public DataCollection(String userLog,
                           String avatar,
                           Integer FAQAccessed,
                           Integer fdata1,
@@ -89,11 +91,17 @@ public class DataCollection implements Serializable {
                           Integer fdata17,
                           Integer fdata18,
                           Integer sentToPhone,
-                          Integer trainingProgrammesAccessed
-                            ) {
-        this.data1 = data1;
-        this.data2 = data2;
-        this.data3 = data3;
+                          Integer trainingProgrammesAccessed,
+                          String exerciseViewed,
+                          String dataBaseWeekAccessed,
+                          Integer htbaAccess1,
+                          Integer htbaAccess2,
+                          Integer htbaAccess3,
+                          Integer htbaAccess4,
+                          Integer htbaAccess5
+
+    ) {
+        this.userLog = userLog;
         this.avatar = avatar;
         this.FAQAccessed = FAQAccessed;
         this.fdata1 = fdata1;
@@ -116,22 +124,22 @@ public class DataCollection implements Serializable {
         this.fdata18 = fdata18;
         this.sentToPhone = sentToPhone;
         this.trainingProgrammesAccessed = trainingProgrammesAccessed;
+        this.exerciseViewed = exerciseViewed;
+        this.dataBaseWeekAccessed = dataBaseWeekAccessed;
+        this.htbaAccess1 = htbaAccess1;
+        this.htbaAccess2 = htbaAccess2;
+        this.htbaAccess3 = htbaAccess3;
+        this.htbaAccess4 = htbaAccess4;
+        this.htbaAccess5 = htbaAccess5;
+
     }
 
     public DataCollection() {
         //Firebase requires empty constructor
     }
 
-    public String getData1() {
-        return data1;
-    }
-
-    public int getData2() {
-        return data2;
-    }
-
-    public int getData3() {
-        return data3;
+    public String getuserLog() {
+        return userLog;
     }
 
     public String getavatar() {
@@ -143,71 +151,54 @@ public class DataCollection implements Serializable {
     public int getfData1() {
         return fdata1;
     }
-
     public int getfData2() {
         return fdata2;
     }
-
     public int getfData3() {
         return fdata3;
     }
-
     public int getfData4() {
         return fdata4;
     }
-
     public int getfData5() {
         return fdata5;
     }
-
     public int getfData6() {
         return fdata6;
     }
-
     public int getfData7() {
         return fdata7;
     }
-
     public int getfData8() {
         return fdata8;
     }
-
     public int getfData9() {
         return fdata9;
     }
-
     public int getfData10() {
         return fdata10;
     }
-
     public int getfData11() {
         return fdata11;
     }
-
     public int getfData12() {
         return fdata12;
     }
-
     public int getfData13() {
         return fdata13;
     }
-
     public int getfData14() {
         return fdata14;
     }
-
     public int getfData15() {
         return fdata15;
     }
-
     public int getfData16() {
         return fdata16;
     }
-
     public int getfData17() {
         return fdata17;
     }
-
     public int getfData18() {
         return fdata18;
     }
@@ -216,5 +207,26 @@ public class DataCollection implements Serializable {
 
     public int gettrainingProgrammesAccessed() {return trainingProgrammesAccessed;}
 
+    public String getexerciseViewed() {
+        return exerciseViewed;
+    }
+
+    public String getdataBaseWeekAccessed() {return  dataBaseWeekAccessed;}
+
+    public int gethtbaAccess1() {
+        return htbaAccess1;
+    }
+    public int gethtbaAccess2() {
+        return htbaAccess2;
+    }
+    public int gethtbaAccess3() {
+        return htbaAccess3;
+    }
+    public int gethtbaAccess4() {
+        return htbaAccess4;
+    }
+    public int gethtbaAccess5() {
+        return htbaAccess5;
+    }
 
 }

@@ -16,6 +16,11 @@ public class BeActiveScreen extends AppCompatActivity {
     int howto4;
     int howto5;
 
+    public static int dbHowTo1 = 0;
+    public static int dbHowTo2 = 0;
+    public static int dbHowTo3 = 0;
+    public static int dbHowTo4 = 0;
+    public static  int dbHowTo5 = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,23 +41,34 @@ public class BeActiveScreen extends AppCompatActivity {
         super.onBackPressed();
         finish();
     }
+
     public void Howto1(View view){
+        dbHowTo1++;
+        DataCollection.saveIntForDataBase(this, "howTo1", dbHowTo1);
         sounds.play(howto1, 1, 1, 1, 0, 1);
 
     }
     public void Howto2(View view){
+        dbHowTo2++;
+        DataCollection.saveIntForDataBase(this, "howTo2", dbHowTo2);
         sounds.play(howto2, 1, 1, 1, 0, 1);
 
     }
     public void Howto3(View view){
+        dbHowTo3++;
+        DataCollection.saveIntForDataBase(this, "howTo3", dbHowTo3);
         sounds.play(howto3, 1, 1, 1, 0, 1);
 
     }
     public void Howto4(View view){
+        dbHowTo4++;
+        DataCollection.saveIntForDataBase(this, "howTo4", dbHowTo4);
         sounds.play(howto4, 1, 1, 1, 0, 1);
 
     }
     public void Howto5(View view){
+        dbHowTo5++;
+        DataCollection.saveIntForDataBase(this, "howTo5", dbHowTo5);
         sounds.play(howto5, 1, 1, 1, 0, 1);
 
     }

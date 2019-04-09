@@ -125,25 +125,26 @@ public class FAQScreen extends AppCompatActivity {
              *       play sound from same index at tswana voice array*/
         }
     }
-    int faq1Access = 0;
-    int faq2Access = 0;
-    int faq3Access = 0;
-    int faq4Access = 0;
-    int faq5Access = 0;
-    int faq6Access = 0;
-    int faq7Access = 0;
-    int faq8Access = 0;
-    int faq9Access = 0;
-    int faq10Access = 0;
-    int faq11Access = 0;
-    int faq12Access = 0;
-    int faq13Access = 0;
-    int faq14Access = 0;
-    int faq15Access = 0;
-    int faq16Access = 0;
-    int faq17Access = 0;
-    int faq18Access = 0;
-    int faq19Access = 0;
+    //for database
+    public static int faq1Access = 0;
+    public static int faq2Access = 0;
+    public static int faq3Access = 0;
+    public static int faq4Access = 0;
+    public static int faq5Access = 0;
+    public static int faq6Access = 0;
+    public static int faq7Access = 0;
+    public static int faq8Access = 0;
+    public static int faq9Access = 0;
+    public static int faq10Access = 0;
+    public static int faq11Access = 0;
+    public static int faq12Access = 0;
+    public static int faq13Access = 0;
+    public static int faq14Access = 0;
+    public static int faq15Access = 0;
+    public static int faq16Access = 0;
+    public static int faq17Access = 0;
+    public static int faq18Access = 0;
+    public static int faq19Access = 0;
 
 
     public void Faq1AnswerToggle(View v){
@@ -377,16 +378,8 @@ public class FAQScreen extends AppCompatActivity {
         DataCollection.saveIntForDataBase(this, "faq19Access", faq19Access);
     }
 
-    private void setDataBaseFAQData (int dbFAQData1){
-        SharedPreferences mSharedPreferences = getSharedPreferences("bdFAQData1", MODE_PRIVATE);
-        SharedPreferences.Editor mEditor = mSharedPreferences.edit();
-        mEditor.putInt("bdFAQData1", dbFAQData1);
-        mEditor.apply();
-    }
-
 
     public void BackButton(View view){
-        setDataBaseFAQData(122);
         super.onBackPressed();
         finish();
     }

@@ -34,133 +34,159 @@ public class ProgramSelectionScreen extends AppCompatActivity implements View.On
         }
 
     }
+    String dataBaseWeekAccessed = "Weeks: "; //clean for final
 
     // Switch structure for buttons and fetching the correct training program
     // This is probably the best structure we can have for now
     @Override
     public void onClick(View v){
-
         switch (v.getId()) {
 
             case R.id.week1:
                 returnedJson = LoadJsonFromAssets("week1to3.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",1";
                 break;
 
             case R.id.week2:
                 returnedJson = LoadJsonFromAssets("week1to3.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",2";
                 break;
 
             case R.id.week3:
                 returnedJson = LoadJsonFromAssets("week1to3.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",3";
                 break;
 
             case R.id.week4:
                 returnedJson = LoadJsonFromAssets("week4.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",4";
                 break;
 
             case R.id.week5:
                 returnedJson = LoadJsonFromAssets("week5.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",5";
                 break;
 
             case R.id.week6:
                 returnedJson = LoadJsonFromAssets("week6to8.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",6";
                 break;
 
             case R.id.week7:
                 returnedJson = LoadJsonFromAssets("week6to8.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",7";
                 break;
 
             case R.id.week8:
                 returnedJson = LoadJsonFromAssets("week6to8.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",8";
                 break;
 
             case R.id.week9:
                 returnedJson = LoadJsonFromAssets("week9to11.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",9";
                 break;
 
             case R.id.week10:
                 returnedJson = LoadJsonFromAssets("week9to11.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",10";
                 break;
 
             case R.id.week11:
                 returnedJson = LoadJsonFromAssets("week9to11.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",11";
                 break;
 
             case R.id.week12:
                 returnedJson = LoadJsonFromAssets("week12to16.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",12";
                 break;
 
             case R.id.week13:
                 returnedJson = LoadJsonFromAssets("week12to16.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",13";
                 break;
 
             case R.id.week14:
                 returnedJson = LoadJsonFromAssets("week12to16.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",14";
                 break;
 
             case R.id.week15:
                 returnedJson = LoadJsonFromAssets("week12to16.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",15";
                 break;
 
             case R.id.week16:
                 returnedJson = LoadJsonFromAssets("week12to16.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",16";
                 break;
 
             case R.id.week17:
                 returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",17";
+                break;
 
             case R.id.week18:
                 returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",18";
                 break;
 
             case R.id.week19:
                 returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",19";
                 break;
 
             case R.id.week20:
                 returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",20";
                 break;
 
             case R.id.week21:
                 returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",21";
                 break;
 
             case R.id.week22:
                 returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",22";
                 break;
 
             case R.id.week23:
                 returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",23";
                 break;
 
             case R.id.week24:
                 returnedJson = LoadJsonFromAssets("week17to24.json");
                 FetchProgramAndSendIt(returnedJson);
+                dataBaseWeekAccessed = dataBaseWeekAccessed + ",24";
                 break;
         }
+        DataCollection.saveStringForDataBase(this,"dataBaseWeekAccessed", dataBaseWeekAccessed);
     }
 
 
