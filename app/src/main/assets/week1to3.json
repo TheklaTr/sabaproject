@@ -95,5 +95,7 @@
     "move17":"calf_raises_female",
     "move18":"calf_raises_female",
     "move19":"calf_raises_female"
-  }
+  },
+  "_comment":"Since weeks 1 to 3 are same, using week 1",
+  "bluetoothFile": "week1.jpeg"
 }

@@ -79,5 +79,7 @@
     "move13":"calf_raises_female",
     "move14":"calf_raises_female",
     "move15":"calf_raises_female"
-  }
+  },
+  "_comment":"Since weeks 9 to 11 are same, using week 9",
+  "bluetoothFile": "week9.jpeg"
 }

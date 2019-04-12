@@ -95,5 +95,7 @@
     "move17":"calf_raises_female",
     "move18":"calf_raises_female",
     "move19":"calf_raises_female"
-  }
+  },
+  "_comment":"Since weeks 6 to 8 are same, using week 6",
+  "bluetoothFile": "week6.jpeg"
 }

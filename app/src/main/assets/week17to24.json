@@ -88,5 +88,7 @@
     "move15":"calf_raises_female",
     "move16":"calf_raises_female",
     "move17":"calf_raises_female"
-  }
+  },
+  "_comment":"Since weeks 17 to 24 are same, using week 17",
+  "bluetoothFile": "week17.jpeg"
 }

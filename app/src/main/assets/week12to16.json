@@ -67,5 +67,7 @@
     "move10":"calf_raises_female",
     "move11":"calf_raises_female",
     "move12":"calf_raises_female"
-  }
+  },
+  "_comment":"Since weeks 12 to 16 are same, using week 12",
+  "bluetoothFile": "week12.jpeg"
 }

@@ -66,6 +66,7 @@ public class ProgramScreen extends AppCompatActivity {
 
     String receivedJson;
     String selectedAvatar;
+    String bluetoothFilename;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,10 +89,15 @@ public class ProgramScreen extends AppCompatActivity {
         animationsFemale = JsonIntoList(receivedJson, "animations_female");
         sets = JsonIntoList(receivedJson, "sets");
 
+        // Nico use this variable in bluetooth code
+        bluetoothFilename = getStringFromJSON(receivedJson, "bluetoothFile");
+
+
         moveTexts = new TextView[sets.size()];
         moveSetTexts = new TextView[sets.size()];
         moveAnimations = new ImageButton[sets.size()];
         videoArray = new int[sets.size()];
+
 
         linear1 = (LinearLayout) findViewById(R.id.aerobicMoves);
         linear2 = (LinearLayout) findViewById(R.id.strengthMoves);
@@ -127,6 +133,8 @@ public class ProgramScreen extends AppCompatActivity {
         strengthBox.setVisibility(View.GONE);
         balanceBox.setVisibility(View.GONE);
         flexBox.setVisibility(View.GONE);
+
+
     }
 
     public void SetContent(int size, LinearLayout linearA, LinearLayout linearB, LinearLayout linearC, List<String> moveList) {
@@ -276,6 +284,22 @@ public class ProgramScreen extends AppCompatActivity {
         }
 
         return (ArrayList<String>) list;
+    }
+
+    public String getStringFromJSON(String jsonString, String stringToGet){
+
+        String filename = "";
+
+        try {
+            JSONObject json = new JSONObject(jsonString);
+            filename = json.getString(stringToGet);
+
+        } catch (JSONException ex) {
+            ex.printStackTrace();
+        }
+
+        return filename;
+
     }
 
 
