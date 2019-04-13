@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class AvatarScreen extends AppCompatActivity {
 
-    User user;
+    String userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,33 +16,29 @@ public class AvatarScreen extends AppCompatActivity {
         setContentView(R.layout.activity_avatar_screen);
 
         TextView userText = (TextView)findViewById(R.id.userTxt);
+        userName = DataCollection.getStringForDataBase(this, "userName");
 
-        // Gets the User object from previous intent
-        Intent intent = getIntent();
-        user = (User)intent.getSerializableExtra("userObject");
-
-        userText.setText(user.GetUsername());
+        userText.setText(userName);
     }
 
     public void SelectedMale(View view) {
 
-        SetAvatarAndGo("male");
+
         DataCollection.saveStringForDataBase(this, "selectedAvatar", "Male");
+        SetAvatarAndGo();
     }
 
     public void SelectedFemale(View view) {
 
-        SetAvatarAndGo("female");
+
         DataCollection.saveStringForDataBase(this, "selectedAvatar", "Female");
+        SetAvatarAndGo();
     }
 
-    public void SetAvatarAndGo(String avatar) {
-
-        user.SetAvatar(avatar);
+    public void SetAvatarAndGo() {
 
         Intent intent = new Intent(this, MenuScreen.class);
-        intent.putExtra("userObject", user);
-        startActivity(intent);
         finish();
+        startActivity(intent);
     }
 }

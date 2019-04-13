@@ -42,13 +42,6 @@ public class MenuScreen extends AppCompatActivity {
         // For database
         databaseReference = FirebaseDatabase.getInstance().getReference();
 
-        // Some debugging stuff. Will be removed when not needed anymore
-        TextView idTxt = (TextView)findViewById(R.id.debugID);
-        TextView usernameTxt = (TextView)findViewById(R.id.debugUser);
-        TextView avatarTxt = (TextView)findViewById(R.id.debugAvatar);
-        idTxt.setText(Integer.toString(user.GetId()));
-        usernameTxt.setText((user.GetUsername()));
-        avatarTxt.setText(user.GetAvatar());
 
     }
     int timesTrainingProgrammesAccessed =0;
@@ -163,7 +156,7 @@ public class MenuScreen extends AppCompatActivity {
     private void SendToDatabase(){
 
         // Set the values of Data collection object
-        String userLog = "user:" + user.GetUsername();
+        String userLog = "user:" + DataCollection.getStringForDataBase(this, "userName");
         String avatar = DataCollection.getStringForDataBase(this, "selectedAvatar");
         Integer FAQAccessed = DataCollection.getIntForDataBase(this, "faqPageAccessed");
         Integer faqdata1 = DataCollection.getIntForDataBase(this, "faq1Access");

@@ -67,6 +67,7 @@ public class ProgramScreen extends AppCompatActivity {
     String receivedJson;
     String selectedAvatar;
     String bluetoothFilename;
+    String exercisesViewed = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -221,16 +222,17 @@ public class ProgramScreen extends AppCompatActivity {
     // Temp method for demonstration
     public void ShowExerciseInDialog(int idNumber) {
 
-        String exerciseViewed = "";
+
+        String currentExercise;
 
         if(selectedAvatar.equals("Male")){
-            exerciseViewed = animationsMale.get(idNumber);
+            currentExercise = animationsMale.get(idNumber);
         } else {
-            exerciseViewed = animationsFemale.get(idNumber);
+            currentExercise = animationsFemale.get(idNumber);
         }
 
-        exerciseViewed = exerciseViewed + exerciseViewed + ", ";
-        DataCollection.saveStringForDataBase(this,"exerciseViewed", exerciseViewed);
+        exercisesViewed += currentExercise + ", ";
+        DataCollection.saveStringForDataBase(this,"exerciseViewed", exercisesViewed);
 
         VideoView videoFeed = new VideoView(this);
         String videoPath = "android.resource://" + getPackageName() + "/" + getResources().getIdentifier("" + videoArray[idNumber], "raw", getPackageName());
