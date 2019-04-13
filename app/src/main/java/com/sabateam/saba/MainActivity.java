@@ -86,41 +86,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-//    public void Login(View view) {
-//
-//        // When user pressed login button, we need to check given data against database that
-//        // holds login information. So replace this placeholder with that implementation when
-//        // it is ready
-//
-//        if(givenUsername.getText().toString().equals("user") &&
-//                givenPassword.getText().toString().equals("1111")) {
-//
-//            // Database checks here, if user is found then populate User object with data that is needed
-//            // Current data is just placeholder for now. This section might need bit rearranging
-//
-//            User user = new User(1, givenUsername.getText().toString());
-//
-//            // If the avatar is null, then it is presumed that user is logging in for the first time
-//            // and is redirected to the avatar selection screen. After first login and logout, avatar
-//            // data is saved to database and next time they will skip this check
-//            if(user.GetAvatar() == null) {
-//                Intent intent = new Intent(this, AvatarScreen.class);
-//                intent.putExtra("userObject", user);
-//                startActivity(intent);
-//                finish();
-//
-//            } else {
-//                Intent intent = new Intent(this, MenuScreen.class);
-//                intent.putExtra("userObject", user);
-//                startActivity(intent);
-//                DataCollection.saveStringForDataBase(this, "selectedAvatar", user.GetAvatar());
-//                finish();
-//            }
-//
-//        } else {
-//            Toast.makeText(this, "Wrong username or password", Toast.LENGTH_SHORT).show();
-//        }
-//    }
 
     // Executed when Sign in button pressed
     public void signInExistingUser(View v)   {
@@ -137,6 +102,8 @@ public class MainActivity extends AppCompatActivity {
 
         // If both fields are empty, stop login process
         if(login.equals("") || password.equals("")) return;
+
+        Toast.makeText(this, "Login in progress.. Please be patient", Toast.LENGTH_SHORT).show();
 
         auth.signInWithEmailAndPassword(fullLogin, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
