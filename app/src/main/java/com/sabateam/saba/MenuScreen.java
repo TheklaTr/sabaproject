@@ -118,6 +118,7 @@ public class MenuScreen extends AppCompatActivity {
     public void flushStatics(){
         BeActiveScreen.dbHowTo = "";
         FAQScreen.faqAccess = "";
+        ProgramSelectionScreen.currentWeek ="";
     }
 
 
@@ -127,12 +128,13 @@ public class MenuScreen extends AppCompatActivity {
         String userLog = "user:" + DataCollection.getStringForDataBase(this, "userName");
         String avatar = DataCollection.getStringForDataBase(this, "selectedAvatar");
         Integer FAQMenuAccessed = DataCollection.getIntForDataBase(this, "faqPageAccessed");
-        Integer sentToPhone = DataCollection.getIntForDataBase(this, "sentToPhone");
+        String sentToPhone = DataCollection.getStringForDataBase(this, "sentToPhone");
         Integer trainingProgrammesAccessed = DataCollection.getIntForDataBase(this, "trainingProgrammesAccessed");
         String exerciseViewed = DataCollection.getStringForDataBase(this, "exerciseViewed");
         String WeekAccessed = DataCollection.getStringForDataBase(this, "dataBaseWeekAccessed");
         String howToAnswerViewed = DataCollection.getStringForDataBase(this, "dbHowToNew");
         String faqAccessNew = DataCollection.getStringForDataBase(this, "faqAccessNew");
+        String sentToPrinter = DataCollection.getStringForDataBase(this, "sentToPrinter");
 
         // This class handles the creation of object that is sent to Firebase
         DataCollection dCollection = new DataCollection(
@@ -144,14 +146,15 @@ public class MenuScreen extends AppCompatActivity {
                 exerciseViewed,
                 WeekAccessed,
                 howToAnswerViewed,
-                faqAccessNew
+                faqAccessNew,
+                sentToPrinter
         );
 
         // Sends the data to a collection named 'messages' in Firebase
         databaseReference.child("messages").push().setValue(dCollection);
     /*
       To do:
-      Security rules
+      Security rules                    DONE
       Sending data on startup if previous user didn't log out
       Data tracking:
         Login identifier = Date+Time+User

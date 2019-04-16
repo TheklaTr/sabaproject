@@ -4,6 +4,8 @@ package com.sabateam.saba;
 //import com.google.firebase.database.FirebaseDatabase;
 import android.content.Context;
 import android.content.SharedPreferences;
+
+import java.io.PrintStream;
 import java.io.Serializable;
 
 public class DataCollection implements Serializable {
@@ -39,24 +41,27 @@ public class DataCollection implements Serializable {
     private String userLog;
     private String avatar;
     private Integer faqMenuAccessed;
-    private Integer sentToPhone;
+    private String sentToPhone;
     private Integer trainingProgrammesAccessed;
-    private String exerciseViewed;
+    private String exercisesViewed;
     private String WeekAccessed;
     private String howToAnswerViewed;
     private String faqViewed;
+    private String sentToPrinter;
+
 
 
 
     public DataCollection(String userLog,
                           String avatar,
                           Integer faqMenuAccessed,
-                          Integer sentToPhone,
+                          String sentToPhone,
                           Integer trainingProgrammesAccessed,
-                          String exerciseViewed,
+                          String exercisesViewed,
                           String WeekAccessed,
                           String howToAnswerViewed,
-                          String faqViewed
+                          String faqViewed,
+                          String sentToPrinter
 
     ) {
         this.userLog = userLog;
@@ -64,10 +69,11 @@ public class DataCollection implements Serializable {
         this.faqMenuAccessed = faqMenuAccessed;
         this.sentToPhone = sentToPhone;
         this.trainingProgrammesAccessed = trainingProgrammesAccessed;
-        this.exerciseViewed = exerciseViewed;
+        this.exercisesViewed = exercisesViewed;
         this.WeekAccessed = WeekAccessed;
         this.howToAnswerViewed  = howToAnswerViewed;
         this.faqViewed = faqViewed;
+        this.sentToPrinter = sentToPrinter;
     }
 
     public DataCollection() {
@@ -80,16 +86,18 @@ public class DataCollection implements Serializable {
 
     public int getfaqMenuAccessed() { return faqMenuAccessed;}
 
-    public int getsentToPhone() {return sentToPhone;}
+    public String getsentToPhone() {return sentToPhone;}
 
     public int gettrainingProgrammesAccessed() {return trainingProgrammesAccessed;}
 
-    public String getexerciseViewed() {return exerciseViewed;}
+    public String getexercisesViewed() {return exercisesViewed;}
 
     public String getWeekAccessed() {return  WeekAccessed;}
 
     public String gethowToAnswerViewed() {return howToAnswerViewed; }
 
     public String getfaqViewed() {return  faqViewed;}
+
+    public String getsentToPrinter() {return sentToPrinter;}
 
 }

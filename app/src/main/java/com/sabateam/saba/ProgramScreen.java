@@ -180,8 +180,6 @@ public class ProgramScreen extends AppCompatActivity {
 
         @Override
         public void onClick(View v){
-
-
             ShowExerciseInDialog(v.getId());
         }
     };
@@ -213,17 +211,13 @@ public class ProgramScreen extends AppCompatActivity {
         Intent intent = new Intent(this, ExerciseInfo.class);
         startActivity(intent);
 
-
     }
 
-    String dataBaseTest = "ProgramTest: ";
 
+    String currentExercise;
 
     // Temp method for demonstration
     public void ShowExerciseInDialog(int idNumber) {
-
-
-        String currentExercise;
 
         if(selectedAvatar.equals("Male")){
             currentExercise = animationsMale.get(idNumber);
@@ -242,8 +236,7 @@ public class ProgramScreen extends AppCompatActivity {
                 new AlertDialog.Builder(this).
                         setView(videoFeed).
                         setPositiveButton("OK", null);
-
-
+        
         videoFeed.setZOrderOnTop(true);
         videoFeed.start();
         builder.create().show();
@@ -256,15 +249,24 @@ public class ProgramScreen extends AppCompatActivity {
         });
     }
 
-
+    public static String exercisesSentToPhone = "Weeks: ";
     public void SendProgramToPhone(View view) {
 
         // Implementation here
         // Either send directly, or open up a new screen where the connection is established
         // with instructions
-        DataCollection.saveIntForDataBase(this,"sentToPhone", 1); //save info for database
+        exercisesSentToPhone = exercisesSentToPhone + ProgramSelectionScreen.currentWeek + ", ";
+        DataCollection.saveStringForDataBase(this, "sentToPhone", exercisesSentToPhone);
     }
 
+    public static String exercisesSentToPrinter = "Weeks: ";
+    public void SendProgramToPrinter (View view) {
+        // Implementation here
+
+        //database underneath
+        exercisesSentToPrinter = exercisesSentToPrinter + ProgramSelectionScreen.currentWeek + ", ";
+        DataCollection.saveStringForDataBase(this, "sentToPrinter", exercisesSentToPrinter);
+    }
 
     public ArrayList<String> JsonIntoList(String jsonString, String moveType) {
 
