@@ -5,30 +5,30 @@
   },
   "strength":
   {
-    "move1":"Stationary body weight squats",
-    "move2":"Standing calve raises",
-    "move3":"Leg extensions",
-    "move4":"Standing knee flexion",
-    "move5":"Bicep curls",
-    "move6":"Tricep kickbacks",
-    "move7":"Shrugs",
-    "move8":"Upright rows"
+    "move1":"Stationary body weight squats",//2
+    "move2":"Standing calve raises",//3
+    "move3":"Leg extensions",//4
+    "move4":"Standing knee flexion",//5
+    "move5":"Bicep curls",//6
+    "move6":"Tricep kickbacks",//7
+    "move7":"Shrugs",//8
+    "move8":"Upright rows"//9
   },
   "balance":
   {
-    "move1":"Balance on one leg (chair for support)",
-    "move2":"Balance on one leg closed eyes",
-    "move3":"Staggered stance (with each leg)",
-    "move4":"Clock reach (Each side)"
+    "move1":"Balance on one leg (chair for support)",//10
+    "move2":"Balance on one leg closed eyes",//11
+    "move3":"Staggered stance (with each leg)",//12
+    "move4":"Clock reach (Each side)"//13
   },
   "flex":
   {
-    "move1":"Seated shoulder and upper back stretch",
-    "move2":"Shoulder rolls",
-    "move3":"Tricep stretch",
-    "move4":"Standing quad stretch (both legs)",
-    "move5":"Calf stretch",
-    "move6":"Knee to chest"
+    "move1":"Seated shoulder and upper back stretch",//14
+    "move2":"Shoulder rolls",//15
+    "move3":"Tricep stretch",//16
+    "move4":"Standing quad stretch (both legs)",//17
+    "move5":"Calf stretch",//18
+    "move6":"Knee to chest"//19
   },
   "sets":
   {
@@ -54,18 +54,18 @@
   },
   "animations_male":
   {
-    "move1":"high_knees_male",
-    "move2":"push_ups_male",
-    "move3":"high_knees_male",
+    "move1":"rhythmic_step_ups_male",
+    "move2":"stationary_body_weight_squats_male",
+    "move3":"calf_raises_male",
     "move4":"high_knees_male",
     "move5":"high_knees_male",
-    "move6":"high_knees_male",
+    "move6":"bicep_curl_male",
     "move7":"high_knees_male",
-    "move8":"high_knees_male",
+    "move8":"shrug_male",
     "move9":"high_knees_male",
-    "move10":"high_knees_male",
-    "move11":"high_knees_male",
-    "move12":"high_knees_male",
+    "move10":"balance_one_leg_chair_support_male",
+    "move11":"balance_one_leg_eyes_closed_male",
+    "move12":"staggered_stance_male",
     "move13":"high_knees_male",
     "move14":"high_knees_male",
     "move15":"high_knees_male",
@@ -76,18 +76,18 @@
   },
   "animations_female":
   {
-    "move1":"calf_raises_female",
+    "move1":"rhythmic_step_ups_female",
     "move3":"calf_raises_female",
     "move4":"calf_raises_female",
-    "move2":"calf_raises_female",
-    "move6":"calf_raises_female",
+    "move2":"stationary_body_weight_squats_female",
+    "move6":"bicep_curl_female",
     "move5":"calf_raises_female",
     "move7":"calf_raises_female",
-    "move8":"calf_raises_female",
+    "move8":"shrug_female",
     "move9":"calf_raises_female",
-    "move10":"calf_raises_female",
-    "move11":"calf_raises_female",
-    "move12":"calf_raises_female",
+    "move10":"balance_one_leg_chair_support_female",
+    "move11":"balance_one_leg_eyes_closed_female",
+    "move12":"staggered_stance_female",
     "move13":"calf_raises_female",
     "move14":"calf_raises_female",
     "move15":"calf_raises_female",
