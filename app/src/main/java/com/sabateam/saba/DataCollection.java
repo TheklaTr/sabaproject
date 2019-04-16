@@ -38,51 +38,47 @@ public class DataCollection implements Serializable {
 
     private String userLog;
     private String avatar;
-    private Integer FAQAccessed;
+    private Integer faqMenuAccessed;
     private Integer sentToPhone;
     private Integer trainingProgrammesAccessed;
     private String exerciseViewed;
-    private String dataBaseWeekAccessed;
-    private String dbHowToNew;
-    private String faqAccessNew;
+    private String WeekAccessed;
+    private String howToAnswerViewed;
+    private String faqViewed;
 
 
 
     public DataCollection(String userLog,
                           String avatar,
-                          Integer FAQAccessed,
+                          Integer faqMenuAccessed,
                           Integer sentToPhone,
                           Integer trainingProgrammesAccessed,
                           String exerciseViewed,
-                          String dataBaseWeekAccessed,
-                          String dbHowToNew,
-                          String faqAccessNew
+                          String WeekAccessed,
+                          String howToAnswerViewed,
+                          String faqViewed
 
     ) {
         this.userLog = userLog;
         this.avatar = avatar;
-        this.FAQAccessed = FAQAccessed;
+        this.faqMenuAccessed = faqMenuAccessed;
         this.sentToPhone = sentToPhone;
         this.trainingProgrammesAccessed = trainingProgrammesAccessed;
         this.exerciseViewed = exerciseViewed;
-        this.dataBaseWeekAccessed = dataBaseWeekAccessed;
-        this.dbHowToNew  = dbHowToNew;
-        this.faqAccessNew = faqAccessNew;
+        this.WeekAccessed = WeekAccessed;
+        this.howToAnswerViewed  = howToAnswerViewed;
+        this.faqViewed = faqViewed;
     }
 
     public DataCollection() {
         //Firebase requires empty constructor
     }
 
-    public String getuserLog() {
-        return userLog;
-    }
+    public String getuserLog() {return userLog;}
 
-    public String getavatar() {
-        return avatar;
-    }
+    public String getavatar() {return avatar;}
 
-    public int getFAQAccessed() { return FAQAccessed;}
+    public int getfaqMenuAccessed() { return faqMenuAccessed;}
 
     public int getsentToPhone() {return sentToPhone;}
 
@@ -90,9 +86,10 @@ public class DataCollection implements Serializable {
 
     public String getexerciseViewed() {return exerciseViewed;}
 
-    public String getdataBaseWeekAccessed() {return  dataBaseWeekAccessed;}
+    public String getWeekAccessed() {return  WeekAccessed;}
 
-    public String getdbHowToNew() {return dbHowToNew; }
-    public String getfaqAccessNew() {return  faqAccessNew;}
+    public String gethowToAnswerViewed() {return howToAnswerViewed; }
+
+    public String getfaqViewed() {return  faqViewed;}
 
 }

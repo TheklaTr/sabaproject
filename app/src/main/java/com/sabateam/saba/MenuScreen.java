@@ -126,24 +126,24 @@ public class MenuScreen extends AppCompatActivity {
         // Set the values of Data collection object
         String userLog = "user:" + DataCollection.getStringForDataBase(this, "userName");
         String avatar = DataCollection.getStringForDataBase(this, "selectedAvatar");
-        Integer FAQAccessed = DataCollection.getIntForDataBase(this, "faqPageAccessed");
+        Integer FAQMenuAccessed = DataCollection.getIntForDataBase(this, "faqPageAccessed");
         Integer sentToPhone = DataCollection.getIntForDataBase(this, "sentToPhone");
         Integer trainingProgrammesAccessed = DataCollection.getIntForDataBase(this, "trainingProgrammesAccessed");
         String exerciseViewed = DataCollection.getStringForDataBase(this, "exerciseViewed");
-        String dataBaseWeekAccessed = DataCollection.getStringForDataBase(this, "dataBaseWeekAccessed");
-        String dbHowToNew = DataCollection.getStringForDataBase(this, "dbHowToNew");
+        String WeekAccessed = DataCollection.getStringForDataBase(this, "dataBaseWeekAccessed");
+        String howToAnswerViewed = DataCollection.getStringForDataBase(this, "dbHowToNew");
         String faqAccessNew = DataCollection.getStringForDataBase(this, "faqAccessNew");
 
         // This class handles the creation of object that is sent to Firebase
         DataCollection dCollection = new DataCollection(
                 userLog,
                 avatar,
-                FAQAccessed,
+                FAQMenuAccessed,
                 sentToPhone,
                 trainingProgrammesAccessed,
                 exerciseViewed,
-                dataBaseWeekAccessed,
-                dbHowToNew,
+                WeekAccessed,
+                howToAnswerViewed,
                 faqAccessNew
         );
 
