@@ -33,7 +33,7 @@ public class MenuScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_screen);
-
+        DataCollection.saveIntForDataBase(this, "logOutFollower", 1);
 
         // Gets the User object from previous intent
         Intent intent = getIntent();
@@ -55,23 +55,26 @@ public class MenuScreen extends AppCompatActivity {
 
         startActivity(intent);
     }
-
+    int timesFAQAccessed =0;
     public void ToFAQ(View view){
 
         // No need to pass in User object here but we might need to pass in some
         // Data object here if we are gathering data on what FAQ's users are clicking
-        DataCollection.saveIntForDataBase(this, "faqPageAccessed", 1);
+        timesFAQAccessed++;
+        DataCollection.saveIntForDataBase(this, "faqPageAccessed", timesFAQAccessed);
         Intent intent = new Intent(this, FAQScreen.class);
         startActivity(intent);
     }
 
+    int timesHTBAAccessed =0;
     public void ToHowToBeActive(View view) {
 
         // Depending on the structure of this page, which is a mystery at the moment
         // we might have to pass in the Data model in case we need to track happenings
         // inside 'How to be Active'
         Intent intent = new Intent(this, BeActiveScreen.class);
-        DataCollection.saveIntForDataBase(this, "howToBeActiveAccessed", 1);
+        timesHTBAAccessed++;
+        DataCollection.saveIntForDataBase(this, "howToBeActiveAccessed", timesHTBAAccessed);
         startActivity(intent);
     }
 
@@ -154,12 +157,13 @@ public class MenuScreen extends AppCompatActivity {
 
         // Sends the data to a collection named 'messages' in Firebase
         databaseReference.child("messages").push().setValue(dCollection);
+        DataCollection.saveIntForDataBase(this, "logOutFollower", 0);
     /*
       To do:
       Security rules                    DONE
-      Sending data on startup if previous user didn't log out
+      Sending data on startup if previous user didn't log out       DONE
       Data tracking:
-        Login identifier = Date+Time+User
+        Login identifier = Date+Time+User       MISSING TIME AND DATE
         FAQ Access (Y/N)                DONE
             Which questions             DONE
             How many times              DONE
@@ -169,13 +173,11 @@ public class MenuScreen extends AppCompatActivity {
         Exercise programs               DONE
             # times accessed            DONE
             Downloaded (Y/N)            Done for phone, print not in the code yet (I think)
-                Phone or print
+                Phone or print          DONE, waiting for functionality
             Time since last download (post data collection problem?)
             Exercises                   DONE
                 Which ones              DONE
                 # times                 DONE
-        Current phase + week        Is this in the code yet?
-        Sending and flushing in case logout is not used         NOT DONE
     */
 
 
