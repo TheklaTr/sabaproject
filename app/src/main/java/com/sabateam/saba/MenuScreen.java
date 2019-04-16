@@ -119,6 +119,8 @@ public class MenuScreen extends AppCompatActivity {
         BeActiveScreen.dbHowTo = "";
         FAQScreen.faqAccess = "";
         ProgramSelectionScreen.currentWeek ="";
+        ProgramScreen.exercisesSentToPhone = "";
+        ProgramScreen.exercisesSentToPrinter = "";
     }
 
 

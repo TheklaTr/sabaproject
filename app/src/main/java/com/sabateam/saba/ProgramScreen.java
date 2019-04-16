@@ -236,7 +236,7 @@ public class ProgramScreen extends AppCompatActivity {
                 new AlertDialog.Builder(this).
                         setView(videoFeed).
                         setPositiveButton("OK", null);
-        
+
         videoFeed.setZOrderOnTop(true);
         videoFeed.start();
         builder.create().show();
