@@ -117,12 +117,9 @@ public class MenuScreen extends AppCompatActivity {
     }
 
     public void flushDBHTBA(){
-        BeActiveScreen.dbHowTo1=0;
-        BeActiveScreen.dbHowTo2=0;
-        BeActiveScreen.dbHowTo3=0;
-        BeActiveScreen.dbHowTo4=0;
-        BeActiveScreen.dbHowTo5=0;
+        BeActiveScreen.dbHowTo = "";
     }
+
     public void flushFAQDB(){
         FAQScreen.faq1Access = 0;
         FAQScreen.faq2Access = 0;
@@ -144,12 +141,6 @@ public class MenuScreen extends AppCompatActivity {
         FAQScreen.faq18Access = 0;
         FAQScreen.faq19Access = 0;
 
-    }
-    private void storeDataExample(int dataExample){ //make creators in .javas to store in sharedpreference
-        SharedPreferences mSharedPreferences = getSharedPreferences("dataBaseSharedPreferences", MODE_PRIVATE);
-        SharedPreferences.Editor mEditor = mSharedPreferences.edit();
-        mEditor.putInt("dataExampleOne", dataExample);
-        mEditor.apply();
     }
 
 
@@ -181,12 +172,7 @@ public class MenuScreen extends AppCompatActivity {
         Integer trainingProgrammesAccessed = DataCollection.getIntForDataBase(this, "trainingProgrammesAccessed");
         String exerciseViewed = DataCollection.getStringForDataBase(this, "exerciseViewed");
         String dataBaseWeekAccessed = DataCollection.getStringForDataBase(this, "dataBaseWeekAccessed");
-        Integer htbaAccess1 = DataCollection.getIntForDataBase(this, "howTo1");
-        Integer htbaAccess2 = DataCollection.getIntForDataBase(this, "howTo2");
-        Integer htbaAccess3 = DataCollection.getIntForDataBase(this, "howTo3");
-        Integer htbaAccess4 = DataCollection.getIntForDataBase(this, "howTo4");
-        Integer htbaAccess5 = DataCollection.getIntForDataBase(this, "howTo5");
-
+        String dbHowToNew = DataCollection.getStringForDataBase(this, "dbHowToNew");
 
         // This class handles the creation of object that is sent to Firebase
         DataCollection dCollection = new DataCollection(
@@ -215,12 +201,8 @@ public class MenuScreen extends AppCompatActivity {
                 trainingProgrammesAccessed,
                 exerciseViewed,
                 dataBaseWeekAccessed,
-                htbaAccess1,
-                htbaAccess2,
-                htbaAccess3,
-                htbaAccess4,
-                htbaAccess5
-                );
+                dbHowToNew
+        );
 
         // Sends the data to a collection named 'messages' in Firebase
         databaseReference.child("messages").push().setValue(dCollection);

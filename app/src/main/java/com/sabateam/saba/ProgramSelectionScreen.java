@@ -34,7 +34,7 @@ public class ProgramSelectionScreen extends AppCompatActivity implements View.On
         }
 
     }
-    String dataBaseWeekAccessed = "Weeks: "; //clean for final
+    String dataBaseWeekAccessed = "Weeks: ";
 
     // Switch structure for buttons and fetching the correct training program
     // This is probably the best structure we can have for now

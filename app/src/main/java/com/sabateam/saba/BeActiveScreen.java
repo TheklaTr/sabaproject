@@ -22,6 +22,7 @@ public class BeActiveScreen extends AppCompatActivity {
     public static int dbHowTo4 = 0;
     public static  int dbHowTo5 = 0;
 
+    public static String dbHowTo = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,32 +44,33 @@ public class BeActiveScreen extends AppCompatActivity {
     }
 
     public void Howto1(View view){
-        dbHowTo1++;
-        DataCollection.saveIntForDataBase(this, "howTo1", dbHowTo1);
+        dbHowTo = dbHowTo + "1, ";
+        DataCollection.saveStringForDataBase(this, "dbHowToNew", dbHowTo);
+
         sounds.play(howto1, 1, 1, 1, 0, 1);
 
     }
     public void Howto2(View view){
-        dbHowTo2++;
-        DataCollection.saveIntForDataBase(this, "howTo2", dbHowTo2);
+        dbHowTo = dbHowTo + "2, ";
+        DataCollection.saveStringForDataBase(this, "dbHowToNew", dbHowTo);
         sounds.play(howto2, 1, 1, 1, 0, 1);
 
     }
     public void Howto3(View view){
-        dbHowTo3++;
-        DataCollection.saveIntForDataBase(this, "howTo3", dbHowTo3);
+        dbHowTo = dbHowTo + "3, ";
+        DataCollection.saveStringForDataBase(this, "dbHowToNew", dbHowTo);
         sounds.play(howto3, 1, 1, 1, 0, 1);
 
     }
     public void Howto4(View view){
-        dbHowTo4++;
-        DataCollection.saveIntForDataBase(this, "howTo4", dbHowTo4);
+        dbHowTo = dbHowTo + "4, ";
+        DataCollection.saveStringForDataBase(this, "dbHowToNew", dbHowTo);
         sounds.play(howto4, 1, 1, 1, 0, 1);
 
     }
     public void Howto5(View view){
-        dbHowTo5++;
-        DataCollection.saveIntForDataBase(this, "howTo5", dbHowTo5);
+        dbHowTo = dbHowTo + "5, ";
+        DataCollection.saveStringForDataBase(this, "dbHowToNew", dbHowTo);
         sounds.play(howto5, 1, 1, 1, 0, 1);
 
     }

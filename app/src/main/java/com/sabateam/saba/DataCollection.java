@@ -61,11 +61,7 @@ public class DataCollection implements Serializable {
     private Integer trainingProgrammesAccessed;
     private String exerciseViewed;
     private String dataBaseWeekAccessed;
-    private Integer htbaAccess1;
-    private Integer htbaAccess2;
-    private Integer htbaAccess3;
-    private Integer htbaAccess4;
-    private Integer htbaAccess5;
+    private String dbHowToNew;
 
 
 
@@ -94,11 +90,7 @@ public class DataCollection implements Serializable {
                           Integer trainingProgrammesAccessed,
                           String exerciseViewed,
                           String dataBaseWeekAccessed,
-                          Integer htbaAccess1,
-                          Integer htbaAccess2,
-                          Integer htbaAccess3,
-                          Integer htbaAccess4,
-                          Integer htbaAccess5
+                          String dbHowToNew
 
     ) {
         this.userLog = userLog;
@@ -126,12 +118,7 @@ public class DataCollection implements Serializable {
         this.trainingProgrammesAccessed = trainingProgrammesAccessed;
         this.exerciseViewed = exerciseViewed;
         this.dataBaseWeekAccessed = dataBaseWeekAccessed;
-        this.htbaAccess1 = htbaAccess1;
-        this.htbaAccess2 = htbaAccess2;
-        this.htbaAccess3 = htbaAccess3;
-        this.htbaAccess4 = htbaAccess4;
-        this.htbaAccess5 = htbaAccess5;
-
+        this.dbHowToNew  = dbHowToNew;
     }
 
     public DataCollection() {
@@ -213,20 +200,6 @@ public class DataCollection implements Serializable {
 
     public String getdataBaseWeekAccessed() {return  dataBaseWeekAccessed;}
 
-    public int gethtbaAccess1() {
-        return htbaAccess1;
-    }
-    public int gethtbaAccess2() {
-        return htbaAccess2;
-    }
-    public int gethtbaAccess3() {
-        return htbaAccess3;
-    }
-    public int gethtbaAccess4() {
-        return htbaAccess4;
-    }
-    public int gethtbaAccess5() {
-        return htbaAccess5;
-    }
+    public String getdbHowToNew() {return dbHowToNew; }
 
 }
