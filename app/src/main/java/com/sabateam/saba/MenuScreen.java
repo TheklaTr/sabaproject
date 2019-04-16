@@ -140,6 +140,7 @@ public class MenuScreen extends AppCompatActivity {
         String howToAnswerViewed = DataCollection.getStringForDataBase(this, "dbHowToNew");
         String faqAccessNew = DataCollection.getStringForDataBase(this, "faqAccessNew");
         String sentToPrinter = DataCollection.getStringForDataBase(this, "sentToPrinter");
+        String logInDate = DataCollection.getStringForDataBase(this, "dateOfLogin");
 
         // This class handles the creation of object that is sent to Firebase
         DataCollection dCollection = new DataCollection(
@@ -152,7 +153,8 @@ public class MenuScreen extends AppCompatActivity {
                 WeekAccessed,
                 howToAnswerViewed,
                 faqAccessNew,
-                sentToPrinter
+                sentToPrinter,
+                logInDate
         );
 
         // Sends the data to a collection named 'messages' in Firebase

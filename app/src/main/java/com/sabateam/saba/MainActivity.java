@@ -179,6 +179,7 @@ public class MainActivity extends AppCompatActivity {
         String howToAnswerViewed = DataCollection.getStringForDataBase(this, "dbHowToNew");
         String faqAccessNew = DataCollection.getStringForDataBase(this, "faqAccessNew");
         String sentToPrinter = DataCollection.getStringForDataBase(this, "sentToPrinter");
+        String logInDate = DataCollection.getStringForDataBase(this, "dateOfLogin");
 
         // This class handles the creation of object that is sent to Firebase
         DataCollection dCollection = new DataCollection(
@@ -191,7 +192,8 @@ public class MainActivity extends AppCompatActivity {
                 WeekAccessed,
                 howToAnswerViewed,
                 faqAccessNew,
-                sentToPrinter
+                sentToPrinter,
+                logInDate
         );
         databaseReference.child("messages").push().setValue(dCollection);
         DataCollection.saveIntForDataBase(this, "logOutFollower", 0);

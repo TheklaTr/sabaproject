@@ -48,6 +48,7 @@ public class DataCollection implements Serializable {
     private String howToAnswerViewed;
     private String faqViewed;
     private String sentToPrinter;
+    private String logInDate;
 
 
 
@@ -61,7 +62,8 @@ public class DataCollection implements Serializable {
                           String WeekAccessed,
                           String howToAnswerViewed,
                           String faqViewed,
-                          String sentToPrinter
+                          String sentToPrinter,
+                          String logInDate
 
     ) {
         this.userLog = userLog;
@@ -74,6 +76,7 @@ public class DataCollection implements Serializable {
         this.howToAnswerViewed  = howToAnswerViewed;
         this.faqViewed = faqViewed;
         this.sentToPrinter = sentToPrinter;
+        this.logInDate = logInDate;
     }
 
     public DataCollection() {
@@ -99,5 +102,7 @@ public class DataCollection implements Serializable {
     public String getfaqViewed() {return  faqViewed;}
 
     public String getsentToPrinter() {return sentToPrinter;}
+
+    public String getlogInDate() {return logInDate;}
 
 }
