@@ -29,11 +29,11 @@ public class BeActiveScreen extends AppCompatActivity {
 
 
         sounds = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
-        howto1 = sounds.load(this, R.raw.donald, 1);
-        howto2 = sounds.load(this, R.raw.donald, 1);
-        howto3 = sounds.load(this, R.raw.donald, 1);
-        howto4 = sounds.load(this, R.raw.donald, 1);
-        howto5 = sounds.load(this, R.raw.donald, 1);
+        howto1 = sounds.load(this, R.raw.tipss1, 1);
+        howto2 = sounds.load(this, R.raw.tips2, 1);
+        howto3 = sounds.load(this, R.raw.tips3, 1);
+        howto4 = sounds.load(this, R.raw.tips4, 1);
+        howto5 = sounds.load(this, R.raw.tips5, 1);
     }
 
     public void BackButton(View view){
