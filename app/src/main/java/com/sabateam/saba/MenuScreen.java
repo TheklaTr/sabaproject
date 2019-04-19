@@ -33,7 +33,7 @@ public class MenuScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_screen);
-
+        DataCollection.saveIntForDataBase(this, "logOutFollower", 1);
 
         // Gets the User object from previous intent
         Intent intent = getIntent();
@@ -55,23 +55,26 @@ public class MenuScreen extends AppCompatActivity {
 
         startActivity(intent);
     }
-
+    int timesFAQAccessed =0;
     public void ToFAQ(View view){
 
         // No need to pass in User object here but we might need to pass in some
         // Data object here if we are gathering data on what FAQ's users are clicking
-        DataCollection.saveIntForDataBase(this, "faqPageAccessed", 1);
+        timesFAQAccessed++;
+        DataCollection.saveIntForDataBase(this, "faqPageAccessed", timesFAQAccessed);
         Intent intent = new Intent(this, FAQScreen.class);
         startActivity(intent);
     }
 
+    int timesHTBAAccessed =0;
     public void ToHowToBeActive(View view) {
 
         // Depending on the structure of this page, which is a mystery at the moment
         // we might have to pass in the Data model in case we need to track happenings
         // inside 'How to be Active'
         Intent intent = new Intent(this, BeActiveScreen.class);
-        DataCollection.saveIntForDataBase(this, "howToBeActiveAccessed", 1);
+        timesHTBAAccessed++;
+        DataCollection.saveIntForDataBase(this, "howToBeActiveAccessed", timesHTBAAccessed);
         startActivity(intent);
     }
 
@@ -103,8 +106,7 @@ public class MenuScreen extends AppCompatActivity {
     private void Logout(){
         SendToDatabase();
         flushSharedPreferences();
-        flushDBHTBA();
-        flushFAQDB();
+        flushStatics();
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
@@ -116,40 +118,12 @@ public class MenuScreen extends AppCompatActivity {
         editor.commit();
     }
 
-    public void flushDBHTBA(){
-        BeActiveScreen.dbHowTo1=0;
-        BeActiveScreen.dbHowTo2=0;
-        BeActiveScreen.dbHowTo3=0;
-        BeActiveScreen.dbHowTo4=0;
-        BeActiveScreen.dbHowTo5=0;
-    }
-    public void flushFAQDB(){
-        FAQScreen.faq1Access = 0;
-        FAQScreen.faq2Access = 0;
-        FAQScreen.faq3Access = 0;
-        FAQScreen.faq4Access = 0;
-        FAQScreen.faq5Access = 0;
-        FAQScreen.faq6Access = 0;
-        FAQScreen.faq7Access = 0;
-        FAQScreen.faq8Access = 0;
-        FAQScreen.faq9Access = 0;
-        FAQScreen.faq10Access = 0;
-        FAQScreen.faq11Access = 0;
-        FAQScreen.faq12Access = 0;
-        FAQScreen.faq13Access = 0;
-        FAQScreen.faq14Access = 0;
-        FAQScreen.faq15Access = 0;
-        FAQScreen.faq16Access = 0;
-        FAQScreen.faq17Access = 0;
-        FAQScreen.faq18Access = 0;
-        FAQScreen.faq19Access = 0;
-
-    }
-    private void storeDataExample(int dataExample){ //make creators in .javas to store in sharedpreference
-        SharedPreferences mSharedPreferences = getSharedPreferences("dataBaseSharedPreferences", MODE_PRIVATE);
-        SharedPreferences.Editor mEditor = mSharedPreferences.edit();
-        mEditor.putInt("dataExampleOne", dataExample);
-        mEditor.apply();
+    public void flushStatics(){
+        BeActiveScreen.dbHowTo = "";
+        FAQScreen.faqAccess = "";
+        ProgramSelectionScreen.currentWeek ="";
+        ProgramScreen.exercisesSentToPhone = "";
+        ProgramScreen.exercisesSentToPrinter = "";
     }
 
 
@@ -158,78 +132,40 @@ public class MenuScreen extends AppCompatActivity {
         // Set the values of Data collection object
         String userLog = "user:" + DataCollection.getStringForDataBase(this, "userName");
         String avatar = DataCollection.getStringForDataBase(this, "selectedAvatar");
-        Integer FAQAccessed = DataCollection.getIntForDataBase(this, "faqPageAccessed");
-        Integer faqdata1 = DataCollection.getIntForDataBase(this, "faq1Access");
-        Integer faqdata2 = DataCollection.getIntForDataBase(this, "faq2Access");
-        Integer faqdata3 = DataCollection.getIntForDataBase(this, "faq3Access");
-        Integer faqdata4 = DataCollection.getIntForDataBase(this, "faq4Access");
-        Integer faqdata5 = DataCollection.getIntForDataBase(this, "faq5Access");
-        Integer faqdata6 = DataCollection.getIntForDataBase(this, "faq6Access");
-        Integer faqdata7 = DataCollection.getIntForDataBase(this, "faq7Access");
-        Integer faqdata8 = DataCollection.getIntForDataBase(this, "faq8Access");
-        Integer faqdata9 = DataCollection.getIntForDataBase(this, "faq9Access");
-        Integer faqdata10 = DataCollection.getIntForDataBase(this, "faq10Access");
-        Integer faqdata11 = DataCollection.getIntForDataBase(this, "faq11Access");
-        Integer faqdata12 = DataCollection.getIntForDataBase(this, "faq12Access");
-        Integer faqdata13 = DataCollection.getIntForDataBase(this, "faq13Access");
-        Integer faqdata14 = DataCollection.getIntForDataBase(this, "faq14Access");
-        Integer faqdata15 = DataCollection.getIntForDataBase(this, "faq15Access");
-        Integer faqdata16 = DataCollection.getIntForDataBase(this, "faq16Access");
-        Integer faqdata17 = DataCollection.getIntForDataBase(this, "faq17Access");
-        Integer faqdata18 = DataCollection.getIntForDataBase(this, "faq18Access");
-        Integer sentToPhone = DataCollection.getIntForDataBase(this, "sentToPhone");
+        Integer FAQMenuAccessed = DataCollection.getIntForDataBase(this, "faqPageAccessed");
+        String sentToPhone = DataCollection.getStringForDataBase(this, "sentToPhone");
         Integer trainingProgrammesAccessed = DataCollection.getIntForDataBase(this, "trainingProgrammesAccessed");
         String exerciseViewed = DataCollection.getStringForDataBase(this, "exerciseViewed");
-        String dataBaseWeekAccessed = DataCollection.getStringForDataBase(this, "dataBaseWeekAccessed");
-        Integer htbaAccess1 = DataCollection.getIntForDataBase(this, "howTo1");
-        Integer htbaAccess2 = DataCollection.getIntForDataBase(this, "howTo2");
-        Integer htbaAccess3 = DataCollection.getIntForDataBase(this, "howTo3");
-        Integer htbaAccess4 = DataCollection.getIntForDataBase(this, "howTo4");
-        Integer htbaAccess5 = DataCollection.getIntForDataBase(this, "howTo5");
-
+        String WeekAccessed = DataCollection.getStringForDataBase(this, "dataBaseWeekAccessed");
+        String howToAnswerViewed = DataCollection.getStringForDataBase(this, "dbHowToNew");
+        String faqAccessNew = DataCollection.getStringForDataBase(this, "faqAccessNew");
+        String sentToPrinter = DataCollection.getStringForDataBase(this, "sentToPrinter");
+        String logInDate = DataCollection.getStringForDataBase(this, "dateOfLogin");
 
         // This class handles the creation of object that is sent to Firebase
         DataCollection dCollection = new DataCollection(
                 userLog,
                 avatar,
-                FAQAccessed,
-                faqdata1,
-                faqdata2,
-                faqdata3,
-                faqdata4,
-                faqdata5,
-                faqdata6,
-                faqdata7,
-                faqdata8,
-                faqdata9,
-                faqdata10,
-                faqdata11,
-                faqdata12,
-                faqdata13,
-                faqdata14,
-                faqdata15,
-                faqdata16,
-                faqdata17,
-                faqdata18,
+                FAQMenuAccessed,
                 sentToPhone,
                 trainingProgrammesAccessed,
                 exerciseViewed,
-                dataBaseWeekAccessed,
-                htbaAccess1,
-                htbaAccess2,
-                htbaAccess3,
-                htbaAccess4,
-                htbaAccess5
-                );
+                WeekAccessed,
+                howToAnswerViewed,
+                faqAccessNew,
+                sentToPrinter,
+                logInDate
+        );
 
         // Sends the data to a collection named 'messages' in Firebase
         databaseReference.child("messages").push().setValue(dCollection);
+        DataCollection.saveIntForDataBase(this, "logOutFollower", 0);
     /*
       To do:
-      Security rules
-      Sending data on startup if previous user didn't log out
+      Security rules                    DONE
+      Sending data on startup if previous user didn't log out       DONE
       Data tracking:
-        Login identifier = Date+Time+User
+        Login identifier = Date+Time+User       MISSING TIME AND DATE
         FAQ Access (Y/N)                DONE
             Which questions             DONE
             How many times              DONE
@@ -239,13 +175,11 @@ public class MenuScreen extends AppCompatActivity {
         Exercise programs               DONE
             # times accessed            DONE
             Downloaded (Y/N)            Done for phone, print not in the code yet (I think)
-                Phone or print
+                Phone or print          DONE, waiting for functionality
             Time since last download (post data collection problem?)
             Exercises                   DONE
                 Which ones              DONE
                 # times                 DONE
-        Current phase + week        Is this in the code yet?
-        Sending and flushing in case logout is not used         NOT DONE
     */
 
 
