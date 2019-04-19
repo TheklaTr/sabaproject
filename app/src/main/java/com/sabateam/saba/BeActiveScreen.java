@@ -1,6 +1,7 @@
 package com.sabateam.saba;
 
 import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,7 +9,8 @@ import android.view.View;
 
 public class BeActiveScreen extends AppCompatActivity {
 
-    private SoundPool sounds;
+    private MediaPlayer mp;
+
 
     int howto1;
     int howto2;
@@ -28,13 +30,6 @@ public class BeActiveScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_be_active_screen);
 
-
-        sounds = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
-        howto1 = sounds.load(this, R.raw.tipss1, 1);
-        howto2 = sounds.load(this, R.raw.tips2, 1);
-        howto3 = sounds.load(this, R.raw.tips3, 1);
-        howto4 = sounds.load(this, R.raw.tips4, 1);
-        howto5 = sounds.load(this, R.raw.tips5, 1);
     }
 
     public void BackButton(View view){
@@ -47,31 +42,33 @@ public class BeActiveScreen extends AppCompatActivity {
         dbHowTo = dbHowTo + "1, ";
         DataCollection.saveStringForDataBase(this, "dbHowToNew", dbHowTo);
 
-        sounds.play(howto1, 1, 1, 1, 0, 1);
+        mp = MediaPlayer.create(this,R.raw.tips1);
+        mp.start();
 
     }
     public void Howto2(View view){
         dbHowTo = dbHowTo + "2, ";
         DataCollection.saveStringForDataBase(this, "dbHowToNew", dbHowTo);
-        sounds.play(howto2, 1, 1, 1, 0, 1);
-
+        mp = MediaPlayer.create(this,R.raw.tips2);
+        mp.start();
     }
     public void Howto3(View view){
         dbHowTo = dbHowTo + "3, ";
         DataCollection.saveStringForDataBase(this, "dbHowToNew", dbHowTo);
-        sounds.play(howto3, 1, 1, 1, 0, 1);
+        mp = MediaPlayer.create(this,R.raw.tips3);
+        mp.start();
 
     }
     public void Howto4(View view){
         dbHowTo = dbHowTo + "4, ";
         DataCollection.saveStringForDataBase(this, "dbHowToNew", dbHowTo);
-        sounds.play(howto4, 1, 1, 1, 0, 1);
-
+        mp = MediaPlayer.create(this,R.raw.tips4);
+        mp.start();
     }
     public void Howto5(View view){
         dbHowTo = dbHowTo + "5, ";
         DataCollection.saveStringForDataBase(this, "dbHowToNew", dbHowTo);
-        sounds.play(howto5, 1, 1, 1, 0, 1);
-
+        mp = MediaPlayer.create(this,R.raw.tips5);
+        mp.start();
     }
 }
